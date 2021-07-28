@@ -2,7 +2,7 @@
 
 namespace App\Classe;
 
-class Search
+class search
 {
 
     /**

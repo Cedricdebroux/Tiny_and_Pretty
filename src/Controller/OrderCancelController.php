@@ -16,8 +16,9 @@ class OrderCancelController extends AbstractController
         $this->entityManager = $entitymanager;
     }
 
-
-    #[Route('/commandes/erreur/{stripeSessionId}', name: 'order_cancel')]
+    /**
+    * @Route("/commandes/erreur/{stripeSessionId}", name="order_cancel")
+     */
 
     public function index($stripeSessionId): Response
     {

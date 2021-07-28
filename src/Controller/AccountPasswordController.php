@@ -16,7 +16,9 @@ class AccountPasswordController extends AbstractController
     public function __construct(EntityManagerInterface $entityManager){
         $this->entityManager=$entityManager;
     }
-    #[Route('/account/modifier-mon-mdp', name: 'account_password')]
+    /**
+     * @Route("/account/modifier-mon-mdp", name="account_password")
+     */
     public function index(Request $request, UserPasswordEncoderInterface $encoder)
     {
         $notification =null;

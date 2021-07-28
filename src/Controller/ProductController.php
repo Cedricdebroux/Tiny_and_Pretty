@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Classe\Search;
+use App\Classe\search;
 use App\Entity\Products;
 use App\Form\SearchType;
 use Doctrine\ORM\EntityManagerInterface;
@@ -13,36 +13,38 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ProductController extends AbstractController
 {
-
     private $entityManager;
 
-    public function __construct(EntityManagerInterface $entityManager){
+    public function __construct(EntityManagerInterface $entityManager)
+    {
         $this->entityManager = $entityManager;
     }
 
-    #[Route('/nos-produits', name: 'products')]
-    public function index(Request $request)
+    /**
+     * @Route("/nos-produits", name="products")
+     */
+    public function index(Request $request): Response
     {
-
-
-        $search = new Search();
+        $search = new search();
         $form = $this->createForm(SearchType::class, $search);
+
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()){
 
-
+        if ($form->isSubmitted() && $form->isValid()) {
             $products = $this->entityManager->getRepository(Products::class)->findWithSearch($search);
         }else {
             $products = $this->entityManager->getRepository(Products::class)->findAll();
         }
-        return $this->render('product/index.html.twig',[
-            'products'=> $products,
-            'form' => $form-> createView()
+        return $this->render('product/index.html.twig', [
+            'products'=>$products,
+            'form' => $form->createView()
         ]);
     }
 
-    #[Route('/produit/{slug}', name: 'product')]
-    public function show($slug)
+    /**
+     * @Route("/produit/{slug}", name="product")
+     */
+    public function show($slug): Response
     {
 
         $product = $this->entityManager->getRepository(Products::class)->findOneBySlug($slug);
@@ -50,8 +52,8 @@ class ProductController extends AbstractController
         if (!$product) {
             return $this->redirectToRoute('products');
         }
-        return $this->render('product/show.html.twig',[
-            'product'=> $product
+        return $this->render('product/show.html.twig', [
+            'product' => $product
         ]);
     }
 }

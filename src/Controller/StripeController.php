@@ -16,7 +16,10 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class StripeController extends AbstractController
 {
-    #[Route('/commandes/create-session/{reference}', name: 'stripe_create_session')]
+    /**
+     * @Route("/commandes/create-session/{reference}", name="stripe_create_session")
+     */
+
 
     public function index( EntityManagerInterface $entityManager, Cart $cart, $reference)
     {
