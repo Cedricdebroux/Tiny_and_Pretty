@@ -63,7 +63,7 @@ class StripeController extends AbstractController
 
                 'currency' => 'eur',
 
-                'unit_amount' => $order->getCarrierPrice() * 100,
+                'unit_amount' => $order->getCarrierPrice() / 100,
 
                 'product_data' => [
 

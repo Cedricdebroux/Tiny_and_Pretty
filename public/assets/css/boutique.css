@@ -1,74 +1,70 @@
-body{
-    position:relative;
+body {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.navbar-item-custom, .navbar-item-custom a {
-    color:white;
+.logo-img {
+  width: 167px;
+  height: 77px;
+  margin-bottom: 26px;
+  margin-left: 44px;
 }
 
-.footer-custom{
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    background-color: #dfeaff;
-    padding-top:25px;
-    margin-top:50px;
+.navigation {
+  margin-left: 10%;
 }
 
-.product-item h5{
-    text-transform: uppercase;
-    font-size:15px;
-    margin-bottom: 1px;
+.link-home {
+  color: #948E8E;
+  font-size: 14px;
+  display: flex;
+  line-height: 16px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 33px;
+}
+.link-home:hover {
+  text-decoration: underline;
+  color: black;
 }
 
-.product-item .product-subtitle {
-    font-size:14px;
-    display:block;
-    margin-bottom:10px;
+.display-none {
+  display: none;
 }
 
-.product-item {
-    margin-top:50px;
+.items-hover {
+  margin-top: 45px;
+  position: absolute;
+  background: white;
+  z-index: 999;
+  width: 100%;
 }
 
-.product-item .product-price {
-    font-size:14px;
-    font-weight:bold;
+.icon-nav, .cart {
+  text-decoration: none;
+  color: #948E8E;
+}
+.icon-nav a, .cart a {
+  margin-right: 30px;
 }
 
-.product-container{
-    margin-bottom:150px;
+.orange-nav {
+  width: 1440px;
+  height: 54px;
+  left: 0px;
+  top: 115px;
+  background: #FCD474;
+  border-top: 1px solid #B1AEAE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.orange-nav p {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
-.product-page-price{
-
-    font-size:19px;
-
-}
-
-.cart-icon{
-    height: 20px;
-    padding-left:20px;
-}
-
-.block-small{
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-check{
-    background-color:#f4f8ff;
-    padding: 20px 65px;
-    margin-top: 7px;
-}
-
-.col-form-label{
-    font-weight:bold;
-}
-
-.order-summary{
-    background-color:#f4f8ff;
-    padding: 20px;
-    margin-top:22px;
-
-}
+/*# sourceMappingURL=boutique.css.map */
