@@ -21,18 +21,14 @@ class AccountAddressController extends AbstractController
         $this->entityManager = $entityManager;
     }
 
-    /**
-     * @Route("/account/address", name="account_address")
-     */
+    #[Route('/account/address', name: 'account_address')]
 
     public function index()
     {
         return $this->render('account/address.html.twig');
     }
 
-    /**
-     * @Route("/account/ajouter-une-addresse", name="account_address_add")
-     */
+    #[Route('/account/ajouter-une-addresse', name: 'account_address_add')]
 
     public function add(Cart $cart, Request $request)
     {
@@ -54,9 +50,8 @@ class AccountAddressController extends AbstractController
         ]);
     }
 
-    /**
-    * @Route("/account/modifier-une-addresse/{id}", name="account_address_edit")
-    */
+    #[Route('/account/modifier-une-addresse/{id}', name: 'account_address_edit')]
+
 
     public function edit(Request $request, $id)
     {
@@ -78,9 +73,7 @@ class AccountAddressController extends AbstractController
             'form' => $form->createView()
         ]);
     }
-    /**
-     * @Route("/account/supprimer-une-addresse/{id}", name="account_address_delete")
-     */
+    #[Route('/account/supprimer-une-addresse/{id}', name: 'account_address_delete')]
 
     public function delete($id)
     {
