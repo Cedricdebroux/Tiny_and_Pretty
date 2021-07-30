@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7292d5a-ed6a-4158-8cc0-21035c3af110" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountAddressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountAddressController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountOrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderCancelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderCancelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderController.php" afterDir="false" />
-    </list>
+    <list default="true" id="a7292d5a-ed6a-4158-8cc0-21035c3af110" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,7 +200,7 @@
       <workItem from="1627543781415" duration="21249000" />
       <workItem from="1627642540966" duration="3873000" />
       <workItem from="1627651526424" duration="227000" />
-      <workItem from="1627651796321" duration="2881000" />
+      <workItem from="1627651796321" duration="3322000" />
     </task>
     <servers />
   </component>
