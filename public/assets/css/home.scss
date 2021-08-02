@@ -1,96 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+$titleFontRegular: Quicksand, sans-serif;
+
+//banner home
 .bg-image-banner {
-  background: url("../img/banner-mere-et-enfant.webp") no-repeat center fixed;
+  background: url('../img/banner-mere-et-enfant.webp') no-repeat  center fixed;
   background-size: cover;
   height: 60vh;
   width: 120% !important;
-}
 
-.slogan {
-  font-family: Quicksand, sans-serif;
+}
+.slogan{
+  font-family: $titleFontRegular;
   font-size: 4rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.button-banner {
+.button-banner{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 170%);
-}
 
-.btn {
+}
+.btn{
   margin: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  box-shadow: 0 0.5em 0.25em -0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 .5em .25em -.25em rgba(0, 0, 0, .2);
 }
 
-.category {
+//category
+.category{
   margin-top: 10rem !important;
   margin-bottom: 10rem;
-  margin-left: 12.5% !important;
+margin-left: 12.5% !important;
   width: 80%;
 }
 
-.description {
-  font-family: Quicksand, sans-serif;
+.description{
+  font-family: $titleFontRegular;
   font-size: 1.2rem;
   font-weight: lighter;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-75%, -50%);
-}
 
-.separator {
-  font-family: Quicksand, sans-serif;
+}
+.separator{
+  font-family: $titleFontRegular;
   width: 100%;
   font-size: 2rem;
   letter-spacing: 0.3rem;
   margin-top: 5rem;
-}
 
-.bestproducts {
-  margin-top: 5rem !important;
+}
+//bestsellers
+.bestproducts{
+ margin-top: 5rem !important;
   margin-bottom: 10rem !important;
   width: 80%;
 }
 
-.bg-image-deuxieme {
-  background: url("../img/deuxieme-vie-bebe.webp") no-repeat center fixed;
+// deuxième vie
+.bg-image-deuxieme{
+
+  background: url('../img/deuxieme-vie-bebe.webp') no-repeat  center fixed;
   background-size: cover;
   height: 60vh;
   width: 100% !important;
   margin-top: 10rem !important;
   margin-bottom: 5rem;
 }
-
-.box {
+.box{
   width: 20vw;
   height: 45vh;
   background-color: white;
   position: absolute;
   transform: translate(10vw, 15.2vh);
 }
-
-.boxtext {
+.boxtext{
   margin: 2rem;
+  p {
+    color: rgb(106, 104, 104, 80);
+  }
+  .profite{
+    background-color: rgb(252, 212, 116, 100);
+    box-shadow: .25em .25em .25em #aaaaaa;
+    color: white;
+    font-weight: bolder;
+  }
 }
-.boxtext p {
-  color: #6a6868;
-}
-.boxtext .profite {
-  background-color: #fcd474;
-  box-shadow: 0.25em 0.25em 0.25em #aaaaaa;
-  color: white;
-  font-weight: bolder;
-}
-
 /*
 .partenaires{
   margin-top: 10rem !important;
@@ -115,37 +120,44 @@
 
 
  */
-.imgblog {
+
+//BLOG
+.imgblog{
   width: 80%;
   margin-top: 3rem;
 }
-
-.btn-blog {
-  border: 0.1em solid !important;
-  border-color: rgba(148, 142, 142, 0.5) !important;
+.btn-blog{
+border: 0.1em solid !important;
+  border-color: rgb(148, 142, 142, 50%) !important;
   background-color: #FFFFFF;
   padding: 0.5rem;
   font-size: 0.6rem;
   letter-spacing: 0.2rem;
   margin: 1rem;
-  color: #948e8e;
+  color: rgb(148, 142, 142);
 }
-
-.category-blog {
+.category-blog{
   font-size: 0.8rem;
-  color: #6a6868;
+  color: rgb(106, 104, 104, 80);
 }
-
-.title-blog {
+.title-blog{
   font-size: 1.2rem;
-  color: #6a6868;
+  color: rgb(106, 104, 104, 60);
 }
 
-.text-share {
-  font-family: Quicksand, sans-serif;
+//SHARE
+.text-share{
+  font-family: $titleFontRegular;
   letter-spacing: 0.3rem;
   padding-top: 0.3rem;
   padding-bottom: 2rem;
 }
 
-/*# sourceMappingURL=boutique.css.map */
+
+
+
+
+
+
+
+

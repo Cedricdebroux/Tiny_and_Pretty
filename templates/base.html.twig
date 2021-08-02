@@ -6,7 +6,8 @@
     <meta name="description" content=" La boutique qui vend du fromage Belge">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>{% block title %} La boutique Belge {% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{% block title %}Tiny & Pretty{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -35,7 +36,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="{{ path('home') }}">La boutique Belge</a>
+        <a class="navbar-brand" href="{{ path('home') }}">Tiny & Pretty</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -122,9 +123,9 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+<!--
     <div class="container marketing {% if block('carousel') is  not defined %}mt-5{% endif %}">
-
+-->
        {% block content %}
         {% endblock %}
 
@@ -134,7 +135,7 @@
     <footer class="footer-custom">
 
         <p>
-            &copy; 2017-2020 La boutique Belge<br/>
+            &copy; 2021 Tiny&Pretty<br/>
             <a href="#">Privacy</a>  <a href="#">Terms</a>
         </p>
     </footer>
