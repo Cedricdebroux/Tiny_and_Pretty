@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7292d5a-ed6a-4158-8cc0-21035c3af110" name="Default Changelist" comment="" />
+    <list default="true" id="a7292d5a-ed6a-4158-8cc0-21035c3af110" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/product/single_product.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/entities/entities.dat_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/218d38c5-7673-4741-8c61-57c7f687ec79/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210729120302.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210729120442.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProductsCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProductsCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/show.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +219,7 @@
       <workItem from="1627543781415" duration="21249000" />
       <workItem from="1627642540966" duration="3873000" />
       <workItem from="1627651526424" duration="227000" />
-      <workItem from="1627651796321" duration="3322000" />
+      <workItem from="1627651796321" duration="8175000" />
     </task>
     <servers />
   </component>
