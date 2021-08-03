@@ -27,8 +27,7 @@
 .category {
   margin-top: 10rem !important;
   margin-bottom: 10rem;
-  margin-left: 12.5% !important;
-  width: 80%;
+  width: 90%;
 }
 
 .description {
@@ -38,7 +37,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-75%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .separator {
@@ -52,7 +51,11 @@
 .bestproducts {
   margin-top: 5rem !important;
   margin-bottom: 10rem !important;
-  width: 80%;
+  width: 90%;
+}
+
+.descriptionBest {
+  font-size: 1.8vh;
 }
 
 .bg-image-deuxieme {
@@ -73,44 +76,22 @@
 }
 
 .boxtext {
-  margin: 2rem;
+  margin: 2vh;
 }
 .boxtext p {
+  font-size: 1.8vh;
   color: #6a6868;
 }
 .boxtext .profite {
   background-color: #fcd474;
-  box-shadow: 0.25em 0.25em 0.25em #aaaaaa;
+  box-shadow: 0.05em 0.05em 0.05em #aaaaaa;
+  font-size: 1.5vh;
   color: white;
-  font-weight: bolder;
+  border: none;
 }
 
-/*
-.partenaires{
-  margin-top: 10rem !important;
-  margin-bottom: 10rem !important;
-}
-
-.boxlogo{
-  height: calc(10vh + 10vw);
-  width: calc(10vh + 10vw);
-  background-color:rgb(252, 212, 116, 20);
-}
-.soon{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-60%, -50%);
-}
-.logopartenaire{
-  margin-bottom: 10rem !important;
-
-}
-
-
- */
 .imgblog {
-  width: 80%;
+  width: 90%;
   margin-top: 3rem;
 }
 
@@ -119,7 +100,7 @@
   border-color: rgba(148, 142, 142, 0.5) !important;
   background-color: #FFFFFF;
   padding: 0.5rem;
-  responsive-font-size: 0.6rem;
+  font-size: 0.6rem;
   letter-spacing: 0.2rem;
   margin: 1rem;
   color: #948e8e;
@@ -142,6 +123,12 @@
   padding-bottom: 2rem;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
 }
