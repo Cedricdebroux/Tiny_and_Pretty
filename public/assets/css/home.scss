@@ -6,7 +6,8 @@ $titleFontRegular: Quicksand, sans-serif;
 
 //banner home
 .bg-image-banner {
-  background: url('../img/banner-mere-et-enfant.webp') no-repeat  center fixed;
+  position: relative;
+  background: url('../img/banner-mere-et-enfant.webp') no-repeat center fixed;
   background-size: cover;
   height: 60vh;
   width: 120% !important;
@@ -14,18 +15,11 @@ $titleFontRegular: Quicksand, sans-serif;
 }
 .slogan{
   font-family: $titleFontRegular;
-  font-size: 4rem;
+  font-size: 8vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.button-banner{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 170%);
-
 }
 .btn{
   margin: 1rem;
@@ -44,7 +38,7 @@ margin-left: 12.5% !important;
 
 .description{
   font-family: $titleFontRegular;
-  font-size: 1.2rem;
+  font-size: 3vh;
   font-weight: lighter;
   position: absolute;
   top: 50%;
@@ -55,7 +49,7 @@ margin-left: 12.5% !important;
 .separator{
   font-family: $titleFontRegular;
   width: 100%;
-  font-size: 2rem;
+font-size: 4vh;
   letter-spacing: 0.3rem;
   margin-top: 5rem;
 
@@ -131,17 +125,17 @@ border: 0.1em solid !important;
   border-color: rgb(148, 142, 142, 50%) !important;
   background-color: #FFFFFF;
   padding: 0.5rem;
-  font-size: 0.6rem;
+  responsive-font-size: 0.6rem;
   letter-spacing: 0.2rem;
   margin: 1rem;
   color: rgb(148, 142, 142);
 }
 .category-blog{
-  font-size: 0.8rem;
+  font-size: 1.2vh;
   color: rgb(106, 104, 104, 80);
 }
 .title-blog{
-  font-size: 1.2rem;
+ font-size: 1.8vh;
   color: rgb(106, 104, 104, 60);
 }
 
@@ -151,6 +145,16 @@ border: 0.1em solid !important;
   letter-spacing: 0.3rem;
   padding-top: 0.3rem;
   padding-bottom: 2rem;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
 }
 
 
