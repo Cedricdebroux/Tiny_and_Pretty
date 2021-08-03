@@ -30,9 +30,21 @@ $titleFontRegular: Quicksand, sans-serif;
 
 //category
 .category{
-  margin-top: 10rem !important;
+  margin-top: 5rem !important;
   margin-bottom: 10rem;
   width: 90%;
+}
+.Pict{
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  transition-duration: 875ms;
+}
+.Pict:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .description{
@@ -135,10 +147,16 @@ font-size: 0.6rem;
 
 }
 @media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
-
+  .box{
+    width: 60vw;
+    height: 45vh;
+  }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  /* Styles */
+  .box{
+    width: 60vw;
+    height: 45vh;
+  }
 }
 
 
