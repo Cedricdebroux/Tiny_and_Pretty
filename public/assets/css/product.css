@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+.content-layout {
+  padding-top: 3vw !important;
+}
+
+.form {
+  padding-left: 2vw;
+}
+
+#submit {
+  background-color: #FCD474;
+}
+
+.category_description {
+  padding-left: 3vw;
+  margin-bottom: 10rem !important;
+  width: 90%;
+}
+
+.descriptionBest {
+  font-size: 1.8vh;
+  font-family: Quicksand, sans-serif;
+}
+
+/*# sourceMappingURL=product.css.map */

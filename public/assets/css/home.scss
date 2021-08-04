@@ -1,8 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-$titleFontRegular: Quicksand, sans-serif;
 
 //banner home
 .bg-image-banner {
@@ -153,10 +150,10 @@ font-size: 0.6rem;
   }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .box{
-    width: 60vw;
+ .box{
+   width: 60vw;
     height: 45vh;
-  }
+ }
 }
 
 
