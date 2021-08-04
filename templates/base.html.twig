@@ -45,25 +45,107 @@
         </button>
         <div class="collapse navbar-collapse navigation" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link link-home" href="{{ path('products') }}" id="baby-items">Bébé</a>
-                    <div class="display-none" id="div">
+                <li class="nav-item active menu-deroulant">
+                    <a class="nav-link link-home" href="{{ path('products') }}">Bébé</a>
+                    <div class="sous-menu">
                         <ul>
-                            <li>T-shirt x sous-pull</li>
-                            <li>Manteau x veste </li>
-                            <li>Blouse x Gilet</li>
-                            <li>Pull x gilet </li>
-                            <li>Robe x jupe </li>
-                            <li>Pantalon x short</li>
-                            <li>Salopette x combinaison</li>
+                            <h3>Vêtements</h3>
+                            <li><a href="">T-shirt x sous-pull</a></li>
+                            <li><a href="">Manteau x veste </a></li>
+                            <li><a href="">Blouse x Gilet</a></li>
+                            <li><a href="">Pull x gilet </a></li>
+                            <li><a href="">Robe x jupe </a></li>
+                            <li><a href="">Pantalon x short</a></li>
+                            <li><a href="">Salopette x combinaison</a></li>
+                        </ul>
+
+                        <ul>
+                            <h3>Accesoires</h3>
+                            <li><a href="">Bonnet x écharpe</a></li>
+                            <li><a href="">Gants x moufles </a></li>
+                            <li><a href="">Maillot de bain</a></li>
+                            <li><a href="">Cape de bain</a></li>
+                            <li><a href="">Bavoir</a> </li>
+                            <li><a href="">Accesoires cheveux</a></li>
+                        </ul>
+
+                        <ul>
+                            <h3>Coin nuit x sous-vêtements</h3>
+                            <li><a href="">Peluche x doudou</a></li>
+                            <li><a href="">Body</a></li>
+                            <li><a href="">Pyjama</a></li>
+                            <li><a href="">Gigoteuse </a></li>
+                            <li><a href="">Nid d'ange</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="nav-item active menu-deroulant">
+                    <a class="nav-link link-home" href="{{ path('products') }}">Fille</a>
+                    <div class="sous-menu">
+                        <ul>
+                            <h3>Vêtements</h3>
+                            <li><a href="">Top x T-shirt</a></li>
+                            <li><a href="">Chemise x Blouse </a></li>
+                            <li><a href="">Pull x Gilet </a></li>
+                            <li><a href="">Robe x Jupe </a></li>
+                            <li><a href="">Pantalon x Jeans</a></li>
+                            <li><a href="">Short</a></li>
+                            <li><a href="">Salopette x combinaison</a></li>
+                            <li><a href="">Manteau x Veste</a></li>
+                        </ul>
+
+                        <ul>
+                            <h3>Accesoires</h3>
+                            <li><a href="">Bonnet x chapeaux</a></li>
+                            <li><a href="">Echarpe x foulard </a></li>
+                            <li><a href="">Gants x moufles</a></li>
+                            <li><a href="">Maillot de bain</a></li>
+                            <li><a href="">Accessoire de plage</a></li>
+                            <li><a href="">Accesoires cheveux</a></li>
+                        </ul>
+
+                        <ul>
+                            <h3>Coin nuit x sous-vêtements</h3>
+                            <li><a href="">Sous-vêtement</a></li>
+                            <li><a href="">Pyjama</a></li>
+                            <li><a href="">Surpyjama</a></li>
+                            <li><a href="">Cape x peignoir </a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link link-home" href="{{ path('products') }}">Fille</a>
-                </li>
-                <li class="nav-item active">
+                <li class="nav-item active menu-deroulant">
                     <a class="nav-link link-home" href="{{ path('products') }}">Garçon</a>
+                    <div class="sous-menu">
+                        <ul>
+                            <h3>Vêtements</h3>
+                            <li><a href="">Polo x T-shirt</a></li>
+                            <li><a href="">Chemise </a></li>
+                            <li><a href="">Pull x Gilet </a></li>
+                            <li><a href="">Pantalon x Jeans</a></li>
+                            <li><a href="">Short</a></li>
+                            <li><a href="">Salopette x combinaison</a></li>
+                            <li><a href="">Manteau x Veste</a></li>
+                        </ul>
+
+                        <ul>
+                            <h3>Accesoires</h3>
+                            <li><a href="">Bonnet x chapeaux</a></li>
+                            <li><a href="">Echarpe x foulard </a></li>
+                            <li><a href="">Gants x moufles</a></li>
+                            <li><a href="">Maillot de bain</a></li>
+                            <li><a href="">Accessoire de plage</a></li>
+                            <li><a href="">Cravate x Noeud de papillon</a></li>
+                        </ul>
+
+                        <ul>
+                            <h3>Coin nuit x sous-vêtements</h3>
+                            <li><a href="">Sous-vêtement</a></li>
+                            <li><a href="">Pyjama</a></li>
+                            <li><a href="">Surpyjama</a></li>
+                            <li><a href="">Cape x peignoir </a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link link-home" href="{{ path('products') }}">Jouet</a>
@@ -71,8 +153,16 @@
                 <li class="nav-item active">
                     <a class="nav-link link-home" href="{{ path('products') }}">Deuxième vie</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active menu-deroulant">
                     <a class="nav-link link-home" href="{{ path('products') }}">Notre concept</a>
+                        <div class="sous-menu">
+                            <ul>
+                                <li><a href="">Nos ateliers</a>
+                                <li><a href="">Nos partenaires</a>
+                                </li>
+                            </ul>
+                        </div>
+                    
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link link-home" href="{{ path('products') }}">Tiny World</a>
@@ -178,7 +268,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="{{ asset ('assets/js/bootstrap.bundle.js') }}"></script>
 <script src="{{ asset ('assets/js/all.js') }}"></script>
-<script src="{{ asset ('assets/js/script.js') }}"></script>
+<!-- <script src="{{ asset ('assets/js/script.js') }}"></script> -->
 </body>
 
 {% block script %}

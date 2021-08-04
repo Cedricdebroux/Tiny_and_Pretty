@@ -18,7 +18,7 @@ link.addEventListener("mouseover", function(){
 });
 
 link.addEventListener("mouseleave", function(){
-    let div = document.getElementById("div");
+    let div = document.querySelector(".items-hover");
 
     div.classList.add("display-none");
 
