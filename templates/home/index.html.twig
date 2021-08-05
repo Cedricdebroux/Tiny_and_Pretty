@@ -1,58 +1,257 @@
 {% extends 'base.html.twig' %}
-{% block carousel %}{% endblock %}
 
 {% block content %}
-<!-- Three columns of text below the carousel -->
-    <h3>Nos meilleures ventes</h3>
-    <p>Découvrez nos articles les plus vendus.</p>
-<div class="row">
-   {% for product in products %}
-    <div class="col-md-3">
-        {% include 'product/single_product.html.twig' %}
+    <!-- banner -->
+    <div class="container-fluid col-12">
+        <div class="row align-items-center">
+            <div class="bg-image-banner">
+                <div class="container-fluid align-items-center justify-content-center text-center">
+                    <div class="text-white">
+                        <h1 class="slogan">HAPPY CLOTHING,<br> HAPPY CHILDHOOD</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    {% endfor %}
-</div><!-- /.row -->
 
+    <!-- Categories -->
+    <div class="container-fluid text-center category">
+        <div class="row">
+            <div class=" mt-5 col-xl-4 col-lg-4 col-sm-12 col-md-6">
+                <a>
+                    <img src="{{ asset('assets/img/VETEMENTS.webp') }}" style="width:80%" class="Pict" alt=""/>
+                </a>
+                <div class="text-white">
+                    <div class="filter">
+                        <h4 class="description">VÊTEMENTS</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 col-xl-4 col-lg-4 col-sm-12 col-md-6">
+                <a>
+                    <img src="{{ asset('assets/img/ACCESSOIRES.webp') }}" style="width:80%" class="Pict" alt=""/>
+                </a>
+                <div class="text-white">
+                    <div class="filter">
+                        <h4 class="description">ACCESSOIRES</h4>
+                    </div>
+                </div>
 
-<!-- START THE FEATURETTES -->
+            </div>
+            <div class=" mt-5 col-xl-4 col-lg-4 col-sm-12 col-md-6">
+                <a>
+                    <img src="{{ asset('assets/img/JOUETS.webp') }}" style="width:80%" class="Pict" alt=""/>
+                </a>
+                <div class="text-white">
+                    <div class="filter">
+                        <h4 class="description">JOUETS</h4>
+                    </div>
+                </div>
 
-<hr class="featurette-divider">
+            </div>
 
-<div class="row featurette">
-    <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+
     </div>
-    <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    <!-- BESTSELLERS -->
+    <div class="container-fluid  bestsellers">
+        <h3 class="separator text-center">BESTSELLERS</h3>
     </div>
-</div>
 
-<hr class="featurette-divider">
+    <div class="container-fluid col-sm-6 col-md-6 col-lg col-xl col-xxl bestproducts">
+        <div class="row">
+            <div class="col">
+                <a>
+                    <img src="{{ asset('assets/img/pull-bleu.webp') }}" style="width:90%" class="" alt=""/>
+                </a>
+                <div class="descriptionBest">
+                    <p><span>PULL EN TRICOT BLEU PÉTROLE</span></p>
+                    <p><span>MARQUE 1</span></p>
+                    <p><span>€45,00</span></p>
+                </div>
+            </div>
+            <div class="col">
+                <a>
+                    <img src="{{ asset('assets/img/robe-citron-orange-miniature.webp') }}" style="width:90%" class=""
+                         alt=""/>
+                </a>
+                <div class="descriptionBest">
+                    <p><span>ENSEMBLE FLEURI CITRON ET ORANGE</span></p>
+                    <p><span>MARQUE 2</span></p>
+                    <p><span>€25,00</span></p>
+                </div>
+            </div>
+            <div class="col">
+                <a>
+                    <img src="{{ asset('assets/img/pull-lucien-miniature.webp') }}" style="width:90%" class="" alt=""/>
+                </a>
+                <div class="descriptionBest">
+                    <p><span>PULL EN TRICOT BLEU</span></p>
+                    <p><span>MARQUE 2</span></p>
+                    <p><span>€50,00</span></p>
+                </div>
+            </div>
+            <div class="col">
+                <a>
+                    <img src="{{ asset('assets/img/pull-mariniere-miniature.webp') }}" style="width:90%" class=""
+                         alt=""/>
+                </a>
+                <div class="descriptionBest">
+                    <p><span>PULL STYLE MARINIÈRE ET BOUTONS ROUGES</span></p>
+                    <p><span>MARQUE 1</span></p>
+                    <p><span>€25,00</span></p>
+                </div>
+            </div>
+            <div class="col">
+                <a>
+                    <img src="{{ asset('assets/img/pull-marin-miniature.webp') }}" style="width:90%" class="" alt=""/>
+                </a>
+                <div class="descriptionBest">
+                    <p><span>PULL INSPIRATION MARINIÈRE GRIS ET BLANC</span></p>
+                    <p><span>MARQUE 1</span></p>
+                    <p><span>€50,00</span></p>
+                </div>
+            </div>
 
-<div class="row featurette">
-    <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
     </div>
-    <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-    </div>
-</div>
+        <!--deuxième vie -->
 
-<hr class="featurette-divider">
 
-<div class="row featurette">
-    <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-    <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-    </div>
-</div>
+        <div class="bg-image-deuxieme">
+            <div class="container-fluid box">
+                <div class="boxtext">
+                    <h6><span>SHOP, SELL & RECYCLE</span></h6>
+                    <h5><span>DEUXIÈME VIE</span></h5>
+                        <p><span>Achetez des articles d'occasion vendus à des parents comme vous. En rachetant ces articles, nous pouvons
+                            vous garantir la qualité en termes de marques et de style que vous aurez l'habitude de trouver chez
+                            Tiny&Pretty.
+                        </span></p>
+                    <a><button type="button" class=" profite">J'EN PROFITE</button></a>
+                </div>
 
-<hr class="featurette-divider">
+            </div>
+
+        </div>
+
+
+
+    <!-- Nouveautes -->
+    <div class="container">
+        <h3 class="separator text-center">NOUVEAUTÉS</h3>
+    </div>
+
+    <div class="container-fluid container-fluid col-sm-6 col-md-6 col-lg col-xl col-xxl bestproducts">
+    <div class="row">
+        <div class="col">
+            <a>
+                <img src="{{ asset('assets/img/pull-bleu.webp') }}" style="width:90%" class="" alt=""/>
+            </a>
+            <div class="descriptionBest">
+                <p><span>PULL EN TRICOT BLEU PÉTROLE</span></p>
+                <p><span>MARQUE 1</span></p>
+                <p><span>€45,00</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <a>
+                <img src="{{ asset('assets/img/robe-citron-orange-miniature.webp') }}" style="width:90%" class=""
+                     alt=""/>
+            </a>
+            <div class="descriptionBest">
+                <p><span>ENSEMBLE FLEURI CITRON ET ORANGE</span></p>
+                <p><span>MARQUE 2</span></p>
+                <p><span>€25,00</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <a>
+                <img src="{{ asset('assets/img/pull-lucien-miniature.webp') }}" style="width:90%" class="" alt=""/>
+            </a>
+            <div class="descriptionBest">
+                <p><span>PULL EN TRICOT BLEU</span></p>
+                <p><span>MARQUE 2</span></p>
+                <p><span>€50,00</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <a>
+                <img src="{{ asset('assets/img/pull-mariniere-miniature.webp') }}" style="width:90%" class=""
+                     alt=""/>
+            </a>
+            <div class="descriptionBest">
+                <p><span>PULL STYLE MARINIÈRE ET BOUTONS ROUGES</span></p>
+                <p><span>MARQUE 1</span></p>
+                <p><span>€25,00</span></p>
+            </div>
+        </div>
+        <div class="col">
+            <a>
+                <img src="{{ asset('assets/img/pull-marin-miniature.webp') }}" style="width:90%" class="" alt=""/>
+            </a>
+            <div class="descriptionBest">
+                <p><span>PULL INSPIRATION MARINIÈRE GRIS ET BLANC</span></p>
+                <p><span>MARQUE 1</span></p>
+                <p><span>€50,00</span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+  <!-- LE BLOG-->
+    <hr class="blog-divider">
+    <div class="container blog">
+        <h3 class="separator text-center">THE TINY & PRETTY BLOG</h3>
+        <div class="button-blog text-center">
+            <a>
+                <button type="button" class="btn-blog">TOUT VOIR</button>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid text-center imgblog">
+        <div class="row">
+            <div class="col-4">
+                <img src="{{ asset('assets/img/cremesolaire.webp') }}" style="width:90%" class="" alt=""/>
+                <div class="category-blog">
+                    <p><span>Lifestyle · Santé ·</span></p>
+                </div>
+                <div class="title-blog">
+                    <p><span>Crème solaire : laquelle choisir ?</span></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="{{ asset('assets/img/coupdesoleil.webp') }}" style="width:90%" class="" alt=""/>
+                <div class="category-blog">
+                    <p><span>Lifestyle · Santé ·</span></p>
+                </div>
+                <div class="title-blog">
+                    <p><span>Les 8 règles d’or pour exposer bébé au soleil.</span></p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="{{ asset('assets/img/moustique.webp') }}" style="width:90%" class="" alt=""/>
+                <div class="category-blog">
+                    <p><span>Lifestyle · Santé ·</span></p>
+                </div>
+                <div class="title-blog">
+                    <p><span>Protéger bébé des moustiques : tout ce qu’il faut savoir !</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#TINYANDPRETTY-->
+    <hr class="share-divider">
+    <div class="container-fluid text-center share">
+    <div class="col-12">
+        <h3 class="separator text-center">#TINYANDPRETTY</h3>
+        <h5 class="text-share">Partagez avec nous leurs styles uniques !</h5>
+      <a><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        <a><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                <a><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+    </div>
+    </div>
 
 <!-- /END THE FEATURETTES -->
 {% endblock %}
