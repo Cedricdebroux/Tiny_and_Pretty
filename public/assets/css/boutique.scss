@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+@font-face {
+  font-family: "corbel";
+  src: url("fonts/CORBEL.TTF");
+}
+@font-face {
+  font-family: "corbel";
+  src: url("fonts/Corbel Bold.ttf");
+}
+
+$titleFontRegular: Quicksand, sans-serif;
+$textFontRegular: corbel, trueType;
+$yellow: rgb(252, 212, 116, 100);
+
+
+@import 'home';
+@import 'product';
+@import 'show';
+@import 'deuxiemevie';
+@import "header";
+
+
+
