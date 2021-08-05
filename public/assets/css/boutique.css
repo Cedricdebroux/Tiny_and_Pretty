@@ -183,4 +183,29 @@
   font-family: Quicksand, sans-serif;
 }
 
+.aside-description {
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0 !important;
+  padding: 2vh !important;
+}
+
+hr {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#headingOne {
+  border: none !important;
+}
+
+@media only screen and (min-device-width: 960px) and (max-device-width: 2000px) {
+  .aside-description {
+    text-align: left !important;
+  }
+}
+
 /*# sourceMappingURL=boutique.css.map */
