@@ -18,12 +18,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.btn{
-  margin: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  box-shadow: 0 .5em .25em -.25em rgba(0, 0, 0, .2);
-}
 
 //category
 .category{
@@ -92,8 +86,9 @@ font-size: 4vh;
 .boxtext{
   margin: 2vh;
   p {
-    font-size: 1.8vh;
+    font-size: 2.1vh;
     color: rgb(106, 104, 104, 80);
+    font-family: $textFontRegular;
   }
   .profite{
     background-color: rgb(252, 212, 116, 100);

@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-$titleFontRegular: Quicksand, sans-serif;
 
 .content-layout{
   padding-top: 3vw!important;
@@ -11,12 +8,15 @@ $titleFontRegular: Quicksand, sans-serif;
   padding-left: 2vw;
 }
 #submit{
-  background-color: #FCD474;
+  background-color: $yellow;
+  border: none;
 }
 .category_description{
+  font-size: 2.2vh;
   padding-left: 3vw;
   margin-bottom: 10rem !important;
   width: 90%;
+  font-family: $textFontRegular;
 }
 
 .descriptionBest{

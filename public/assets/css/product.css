@@ -1,26 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-.content-layout {
-  padding-top: 3vw !important;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 11 |   background-color: $yellow;
+ *    |                     ^^^^^^^
+ *    '
+ *   product.scss 11:21  root stylesheet */
 
-.form {
-  padding-left: 2vw;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    background-color: $yellow;\d\a    \2502                      ^^^^^^^\a    \2575 \a   product.scss 11:21  root stylesheet";
 }
-
-#submit {
-  background-color: #FCD474;
-}
-
-.category_description {
-  padding-left: 3vw;
-  margin-bottom: 10rem !important;
-  width: 90%;
-}
-
-.descriptionBest {
-  font-size: 1.8vh;
-  font-family: Quicksand, sans-serif;
-}
-
-/*# sourceMappingURL=product.css.map */
