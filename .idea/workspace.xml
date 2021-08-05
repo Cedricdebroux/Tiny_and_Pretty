@@ -1,47 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a7292d5a-ed6a-4158-8cc0-21035c3af110" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laboutique.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer-setup.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210531134808.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210601071137.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210607093148.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210607110026.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210609194416.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210611092533.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210611112049.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210611192523.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210614092747.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210614123826.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210615075551.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210615075712.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210616134403.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210617073804.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classe/Search.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classe/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountAddressController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountAddressController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountOrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountOrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccountPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccountPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderCancelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderCancelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderSuccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrderSuccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/src/Controller/StripeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/StripeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Carrier.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Carrier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/order_show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/order_show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/order/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/order/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/order/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/order/index.html.twig" afterDir="false" />
+>>>>>>> 8cb983a571ee63c6e31b1c84f82c26565c804e61
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +26,19 @@
       <executable path="composer" />
     </execution>
   </component>
+<<<<<<< HEAD
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+=======
+  <component name="ElmWorkspace">
+    <elmProjects />
+    <settings elmCompilerPath="" elmFormatPath="" elmTestPath="" isElmFormatOnSaveEnabled="false" />
+>>>>>>> 8cb983a571ee63c6e31b1c84f82c26565c804e61
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -64,6 +49,22 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/OrderCancelController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/assets/css/header.scss" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/SecurityController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/OrderSuccessController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/AccountAddressController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/AccountController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/AccountOrderController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/OrderController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/StripeController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/assets/css/boutique.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/templates/base.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/CartController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/assets/js/script.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -87,8 +88,6 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -185,6 +184,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
   <component name="ProjectId" id="1vtcm1n9tyK2gkwZIpUFfoN7jnf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -197,9 +199,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/js" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/js" />
+      <recent name="$PROJECT_DIR$/public/assets/css" />
+    </key>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.elm.workspace.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+>>>>>>> 8cb983a571ee63c6e31b1c84f82c26565c804e61
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -216,11 +243,25 @@
       <workItem from="1627402863113" duration="2875000" />
       <workItem from="1627409862315" duration="2000" />
       <workItem from="1627409874762" duration="15000" />
+<<<<<<< HEAD
+      <workItem from="1627409912583" duration="66262000" />
+=======
       <workItem from="1627409912583" duration="17086000" />
+      <workItem from="1627482235203" duration="1931000" />
+      <workItem from="1627543781415" duration="21249000" />
+      <workItem from="1627642540966" duration="3873000" />
+      <workItem from="1627651526424" duration="227000" />
+      <workItem from="1627651796321" duration="9757000" />
+      <workItem from="1628063559065" duration="3577000" />
+>>>>>>> 8cb983a571ee63c6e31b1c84f82c26565c804e61
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

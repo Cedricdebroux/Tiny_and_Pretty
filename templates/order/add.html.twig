@@ -26,7 +26,7 @@
             <div class="form-check">
                 {{ carrier.name }}
                 {{ carrier.description }}
-                {{ (carrier.price / 100) | number_format(2,',','.')  }}  €
+                {{ (carrier.price) | number_format(2,',','.')  }}  €
             </div>
         </div>
 
@@ -62,9 +62,9 @@
             <hr>
             <strong> Sous-total:</strong> {{ ((total / 100)|number_format(2,',', '.')) }} €<br/>
             <strong> Livraison:</strong>{{ (carrier.price)|number_format(2,',', '.') }} €
-            <strong> Total:</strong> {{ ((total / 100) +  carrier.price)|number_format(2,',', '.') }} €
+            <strong> Total:</strong> {{ ((total / 100) +  carrier.price /100)|number_format(2,',', '.') }} €
 
-            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer | {{ ((total / 100) + carrier.price)|number_format(2,',', '.') }} € </a>
+            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer | {{ ((total / 100) + carrier.price /100)|number_format(2,',', '.') }} € </a>
         </div>
     </div>
 
@@ -92,7 +92,7 @@
                 })
 
                 .then(function (session) {
-                    if (session.error == 'order') {
+                    if (session.error === 'order') {
                         window.location.replace('{{ path('order') }}');
                     } else {
                         return stripe.redirectToCheckout({sessionId: session.id});

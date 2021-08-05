@@ -20,9 +20,7 @@ class OrderController extends AbstractController
     public function __construct(EntityManagerInterface $entityManager){
         $this->entityManager = $entityManager;
     }
-    /**
-     * @Route("/commandes", name="order")
-     */
+    #[Route('/commandes', name: 'order')]
 
     public function index(Cart $cart, Request $request): Response
     {
@@ -39,6 +37,8 @@ class OrderController extends AbstractController
             'cart'=> $cart->getFull()
         ]);
     }
+
+
 
     /**
      * @Route("/commandes/recapitulatif", name="order_recap", methods="POST")

@@ -18,9 +18,8 @@ class AccountOrderController extends AbstractController
 
         $this->entityManager = $entityManager;
     }
-    /**
-    * @Route("/account/mes-commandes", name="account_order")
-    */
+    #[Route('/account/mes-commandes', name: 'account_order')]
+
     public function index()
     {
         $orders = $this->entityManager->getRepository(Order::class)->findSuccessOrders($this->getUser());
@@ -31,9 +30,7 @@ class AccountOrderController extends AbstractController
         ]);
     }
 
-    /**
-    /* @Route("/account/mes-commandes/{reference}", name="account_order_show")
-   */
+    #[Route('/account/mes-commandes/{reference}', name: 'account_order_show')]
 
     public function show($reference): Response
     {
