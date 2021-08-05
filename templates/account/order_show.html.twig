@@ -51,7 +51,7 @@
 
     <div class="text-right">
         <strong>sous-total:</strong>{{ (order.getTotal / 100)|number_format(2, '.', ',')  }}<br/>
-        <strong>Livraison:</strong> {{ (order.carrierPrice / 100)|number_format(2, '.', ',')  }}<br/>
+        <strong>Livraison:</strong> {{ (order.carrierPrice)|number_format(2, '.', ',')  }}<br/>
         <strong>total:</strong>{{ ((order.carrierPrice + order.getTotal) / 100)|number_format(2, '.', ',') }} €
     </div>
 

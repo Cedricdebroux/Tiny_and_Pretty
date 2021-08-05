@@ -20,9 +20,9 @@ class ProductController extends AbstractController
         $this->entityManager = $entityManager;
     }
 
-    /**
-     * @Route("/nos-produits", name="products")
-     */
+
+    #[Route('/nos-produits', name :'products')]
+
     public function index(Request $request): Response
     {
         $search = new search();
@@ -41,19 +41,22 @@ class ProductController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/produit/{slug}", name="product")
-     */
+
+
+    #[Route('/produit/{slug}', name :'product')]
+
     public function show($slug): Response
     {
 
         $product = $this->entityManager->getRepository(Products::class)->findOneBySlug($slug);
+        $products = $this->entityManager->getRepository(Products::class)->findByIsBest(1);
 
         if (!$product) {
             return $this->redirectToRoute('products');
         }
         return $this->render('product/show.html.twig', [
-            'product' => $product
+            'product' => $product,
+            'products' => $products
         ]);
     }
 }
