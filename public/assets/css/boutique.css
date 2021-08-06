@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital@1&display=swap");
 .bg-image-banner {
   position: relative;
   background: url("../img/banner-mere-et-enfant.webp") no-repeat center fixed;
@@ -399,6 +400,32 @@ li a {
   text-align: center;
   margin-top: 5px;
   font-size: 14px;
+}
+
+.title {
+  font-family: Quicksand, sans-serif;
+}
+
+.presentation {
+  font-family: Cantarell, sans-serif;
+  padding-left: calc(100vw/5);
+  line-height: 3vh;
+  color: #948E8E;
+}
+
+.video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=boutique.css.map */
