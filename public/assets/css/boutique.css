@@ -1,28 +1,6 @@
-body {
-  padding: 0 !important;
-  margin: 0 !important;
-  width: 100%;
-}
-
-.logo-img {
-  width: 167px;
-  height: 77px;
-  margin-bottom: 26px;
-  margin-left: 44px;
-}
-
-.navigation {
-  margin-left: 10%;
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-@font-face {
-  font-family: "corbel";
-  src: url("fonts/CORBEL.TTF");
-}
-@font-face {
-  font-family: "corbel";
-  src: url("fonts/Corbel Bold.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
 .bg-image-banner {
   position: relative;
   background: url("../img/banner-mere-et-enfant.webp") no-repeat center fixed;
@@ -111,7 +89,7 @@ body {
 .boxtext p {
   font-size: 2.1vh;
   color: #6a6868;
-  font-family: corbel, trueType;
+  font-family: Cantarell, sans-serif;
 }
 .boxtext .profite {
   background-color: #fcd474;
@@ -124,6 +102,153 @@ body {
 .imgblog {
   width: 90%;
   margin-top: 3rem;
+}
+
+.btn-blog {
+  border: 0.1em solid !important;
+  border-color: rgba(148, 142, 142, 0.5) !important;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.2rem;
+  margin: 1rem;
+  color: #948e8e;
+}
+
+.category-blog {
+  font-size: 1.2vh;
+  color: #6a6868;
+}
+
+.title-blog {
+  font-size: 1.8vh;
+  color: #6a6868;
+}
+
+.text-share {
+  font-family: Quicksand, sans-serif;
+  letter-spacing: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
+.content-layout {
+  padding-top: 3vw !important;
+}
+
+.form {
+  padding-left: 2vw;
+}
+
+#submit {
+  background-color: #fcd474;
+  border: none;
+}
+
+.category_description {
+  font-size: 2vh;
+  padding-left: 3vw;
+  margin-bottom: 10rem !important;
+  width: 90%;
+  font-family: Cantarell, sans-serif;
+  color: #948E8E;
+  position: relative;
+}
+
+.descriptionBest {
+  font-size: 1.8vh;
+  font-family: Quicksand, sans-serif;
+}
+
+.product-item {
+  cursor: pointer;
+}
+
+.apercu {
+  display: none;
+  border: none;
+  position: absolute;
+  background-color: #fcd474 !important;
+  width: 75%;
+  height: 3vh;
+  z-index: 2;
+  margin: 0 auto;
+  right: 12.5%;
+  top: 45%;
+}
+
+.apercu:hover {
+  display: inline-block;
+}
+
+.aside-description {
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0 !important;
+  padding: 2vh !important;
+}
+
+hr {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#headingOne {
+  border: none !important;
+}
+
+@media only screen and (min-device-width: 960px) and (max-device-width: 2000px) {
+  .aside-description {
+    text-align: left !important;
+  }
+}
+.title {
+  font-family: Quicksand, sans-serif;
+}
+
+.presentation {
+  font-family: Cantarell, sans-serif;
+  padding-left: calc(100vw/5);
+  line-height: 3vh;
+  color: #948E8E;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.logo-img {
+  width: 167px;
+  height: 77px;
+  margin-bottom: 26px;
+  margin-left: 44px;
+}
+
+.navigation {
+  margin-left: 10%;
 }
 
 .link-home {
@@ -191,15 +316,6 @@ li a {
 
 .menu-deroulant:hover > a:after {
   animation: rotationFleche 0.2s linear forwards;
-.btn-blog {
-  border: 0.1em solid !important;
-  border-color: rgba(148, 142, 142, 0.5) !important;
-  background-color: #FFFFFF;
-  padding: 0.5rem;
-  font-size: 0.6rem;
-  letter-spacing: 0.2rem;
-  margin: 1rem;
-  color: #948e8e;
 }
 
 @keyframes rotationFleche {
@@ -228,71 +344,22 @@ li a {
   display: flex;
   justify-content: space-evenly;
   color: #948E8E;
-.category-blog {
-  font-size: 1.2vh;
-  color: #6a6868;
 }
 .sous-menu h3 {
   font-size: 13px;
   text-transform: uppercase;
   font-weight: initial;
   padding-left: 20px;
-
-.title-blog {
-  font-size: 1.8vh;
-  color: #6a6868;
 }
 
 .menu-deroulant:hover > .sous-menu {
   animation: apparitionSousMenu 2s forwards;
-.text-share {
-  font-family: Quicksand, sans-serif;
-  letter-spacing: 0.3rem;
-  padding-top: 0.3rem;
-  padding-bottom: 2rem;
 }
 
 @keyframes apparitionSousMenu {
   100% {
     max-height: 50em;
   }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .box {
-    width: 60vw;
-    height: 45vh;
-  }
-}
-@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
-  .box {
-    width: 60vw;
-    height: 45vh;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .box {
-    width: 60vw;
-    height: 45vh;
-  }
-}
-.content-layout {
-  padding-top: 3vw !important;
-}
-
-.form {
-  padding-left: 2vw;
-}
-
-#submit {
-  background-color: #fcd474;
-  border: none;
-}
-
-.category_description {
-  font-size: 2.2vh;
-  padding-left: 3vw;
-  margin-bottom: 10rem !important;
-  width: 90%;
-  font-family: corbel, trueType;
 }
 .sous-menu > ul > li > a {
   align-items: center;
@@ -302,17 +369,10 @@ li a {
   width: 100%;
   text-decoration: none;
   color: #948E8E;
-
-.descriptionBest {
-  font-size: 1.8vh;
-  font-family: Quicksand, sans-serif;
 }
 
 .sous-menu > li:hover > a {
   color: white;
-.aside-description {
-  font-family: Quicksand, sans-serif;
-  text-align: center;
 }
 
 .icon-nav, .cart {
@@ -321,9 +381,6 @@ li a {
 }
 .icon-nav a, .cart a {
   margin-right: 30px;
-.btn {
-  border-radius: 0 !important;
-  padding: 2vh !important;
 }
 
 .orange-nav {
@@ -342,19 +399,6 @@ li a {
   text-align: center;
   margin-top: 5px;
   font-size: 14px;
-hr {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#headingOne {
-  border: none !important;
-}
-
-@media only screen and (min-device-width: 960px) and (max-device-width: 2000px) {
-  .aside-description {
-    text-align: left !important;
-  }
 }
 
 /*# sourceMappingURL=boutique.css.map */

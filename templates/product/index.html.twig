@@ -22,8 +22,16 @@
                 {% for product in products  %}
                     <div class="col-md-3 col-sm-10 text-center">
                         <div class="product-item ">
-                            <a href="{{ path('product', {'slug':product.slug}) }}"><img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid" style="width:50%"></a>
-                            <div class="descriptionBest">
+
+                            <a href="{{ path('product', {'slug':product.slug}) }}">
+                                <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid" style="width:80%">
+                                <button type="button" class="btn apercu text-white">APERÇU</button>
+                            </a>
+
+
+
+
+                                <div class="descriptionBest">
                                 <p><span>{{ product.name }}</p></span>
                                 <p><span class="product-subtitle"> {{ product.subtitle }} </span></p>
                                 <p><span class="product-price"> {{ (product.price / 100)|number_format(2,',', '.') }} € </span></p>

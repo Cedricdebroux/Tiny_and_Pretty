@@ -12,15 +12,39 @@
   border: none;
 }
 .category_description{
-  font-size: 2.2vh;
+  font-size: 2vh;
   padding-left: 3vw;
   margin-bottom: 10rem !important;
   width: 90%;
   font-family: $textFontRegular;
+  color:#948E8E;
+  position: relative;
 }
 
 .descriptionBest{
   font-size: 1.8vh;
   font-family: $titleFontRegular;
 }
+.product-item{
+  cursor: pointer;
+
+}
+
+.apercu{
+  display: none;
+  border: none;
+  position: absolute;
+  background-color: $yellow!important;
+  width: 75%;
+  height: 3vh;
+  z-index: 2;
+  margin: 0 auto;
+  right: 12.5%;
+  top: 45%;
+}
+.apercu:hover{
+display: inline-block;
+}
+
+
 
