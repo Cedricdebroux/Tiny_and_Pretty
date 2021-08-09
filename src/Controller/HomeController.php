@@ -22,10 +22,12 @@ class HomeController extends AbstractController
 
     public function index()
     {
-
         $products = $this->entityManager->getRepository(Products::class)->findByIsBest(1);
+        $productN = $this->entityManager->getRepository(Products::class)->findByIsNew(1);
         return $this->render('home/index.html.twig',[
-            'products' => $products
+            'products' => $products,
+            'productN' => $productN
         ]);
     }
+
 }

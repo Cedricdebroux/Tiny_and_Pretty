@@ -58,6 +58,11 @@ class Products
      */
     private $isBest;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isNew;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -155,6 +160,18 @@ class Products
     public function setIsBest(bool $isBest): self
     {
         $this->isBest = $isBest;
+
+        return $this;
+    }
+
+    public function getIsNew(): ?bool
+    {
+        return $this->isNew;
+    }
+
+    public function setIsNew(bool $isNew): self
+    {
+        $this->isNew = $isNew;
 
         return $this;
     }

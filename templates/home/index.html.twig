@@ -5,13 +5,27 @@
 <!-- Three columns of text below the carousel -->
     <h3>Nos meilleures ventes</h3>
     <p>Découvrez nos articles les plus vendus.</p>
-<div class="row">
-   {% for product in products %}
-    <div class="col-md-3">
-        {% include 'product/single_product.html.twig' %}
-    </div>
-    {% endfor %}
-</div><!-- /.row -->
+    <div class="row">
+       {% for product in products %}
+        <div class="col-md-3">
+            {% include 'product/single_product.html.twig' %}
+        </div>
+        {% endfor %}
+    </div><!-- /.row -->
+
+    <h3>Nos nouveaux produits</h3>
+    <p>Découvrez nos noveautées</p>
+    <div class="row">
+        {% for product in productN %}
+            {% if product.isNew == true %}
+                <div class="col-md-3">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {#{% else %}
+            <p> Pas de nouveaux produits pour l'instant !</p>#}
+            {% endif %}
+        {% endfor %}
+    </div><!-- /.row -->
 
 
 <!-- START THE FEATURETTES -->
