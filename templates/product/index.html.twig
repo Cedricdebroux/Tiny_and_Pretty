@@ -22,11 +22,23 @@
                 {% for product in products  %}
                     <div class="col-md-3 col-sm-10 text-center">
                         <div class="product-item ">
-                            <a href="{{ path('product', {'slug':product.slug}) }}"><img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid" style="width:50%"></a>
+                            <a href="{{ path('product', {'slug':product.slug}) }}">
+
+
+                                <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid" style="width:50%">
+
+                            </a>
+
                             <div class="descriptionBest">
                                 <p><span>{{ product.name }}</p></span>
-                                <p><span class="product-subtitle"> {{ product.subtitle }} </span></p>
-                                <p><span class="product-price"> {{ (product.price / 100)|number_format(2,',', '.') }} € </span></p>
+                                {% if product.soldout == false %}
+                                    <p><span class="product-subtitle"> {{ product.subtitle }} </span></p>
+                                    <p><span class="product-price"> {{ (product.price / 100)|number_format(2,',', '.') }} € </span></p>
+                                {% else %}
+                                <p><span class="product-subtitle"> Victime de son succès </span></p>
+
+
+                                {% endif %}
                             </div>
                         </div>
                     </div>

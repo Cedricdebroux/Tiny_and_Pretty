@@ -1,5 +1,6 @@
 
 
+
 body{
   padding:0 !important;
   margin: 0 !important;
@@ -33,7 +34,6 @@ body{
     text-decoration: underline;
     color:black;
 
-
   }
 
 }
@@ -55,7 +55,7 @@ nav > ul {
   display: flex;
   text-align: center;
   box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
-  height: var(--hauteur-menu);
+  height: 60px;
 }
 
 nav ul {
@@ -90,21 +90,7 @@ li a {
   display: inline-block;
 }
 
-.menu-deroulant:hover > a:after{
-  animation: rotationFleche 0.2s linear forwards;
-}
 
-@keyframes rotationFleche {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(45deg);
-  }
-  100%{
-    transform: rotate(90deg);
-  }
-}
 
 .sous-menu {
 
@@ -136,7 +122,10 @@ li a {
 }
 
 .menu-deroulant:hover > .sous-menu {
-  animation: apparitionSousMenu 2s forwards;
+  animation: apparitionSousMenu 5s forwards;
+}
+.menu-deroulant:hover > .sous-menu {
+  animation: apparitionSousMenu 5s backwards;
 }
 
 @keyframes apparitionSousMenu {
@@ -144,6 +133,13 @@ li a {
   100% {
     max-height: 50em;
 
+  }
+}
+
+@keyframes disparitionSousMenu {
+
+  0%{
+    opacity:0%;
   }
 }
 
@@ -196,4 +192,18 @@ li a {
 
 
   }
+}
+
+.username{
+  font-size:9px;
+}
+
+.usericon{
+  font-size:20px;
+  color:black;
+}
+
+.navbar-toggler {
+
+  background-color: #FCD474;
 }

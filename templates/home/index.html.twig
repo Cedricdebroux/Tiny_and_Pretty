@@ -59,61 +59,15 @@
     </div>
 
     <div class="container-fluid col-sm-6 col-md-6 col-lg col-xl col-xxl bestproducts">
-        <div class="row">
-            <div class="col">
-                <a>
-                    <img src="{{ asset('assets/img/pull-bleu.webp') }}" style="width:90%" class="" alt=""/>
-                </a>
-                <div class="descriptionBest">
-                    <p><span>PULL EN TRICOT BLEU PÉTROLE</span></p>
-                    <p><span>MARQUE 1</span></p>
-                    <p><span>€45,00</span></p>
-                </div>
-            </div>
-            <div class="col">
-                <a>
-                    <img src="{{ asset('assets/img/robe-citron-orange-miniature.webp') }}" style="width:90%" class=""
-                         alt=""/>
-                </a>
-                <div class="descriptionBest">
-                    <p><span>ENSEMBLE FLEURI CITRON ET ORANGE</span></p>
-                    <p><span>MARQUE 2</span></p>
-                    <p><span>€25,00</span></p>
-                </div>
-            </div>
-            <div class="col">
-                <a>
-                    <img src="{{ asset('assets/img/pull-lucien-miniature.webp') }}" style="width:90%" class="" alt=""/>
-                </a>
-                <div class="descriptionBest">
-                    <p><span>PULL EN TRICOT BLEU</span></p>
-                    <p><span>MARQUE 2</span></p>
-                    <p><span>€50,00</span></p>
-                </div>
-            </div>
-            <div class="col">
-                <a>
-                    <img src="{{ asset('assets/img/pull-mariniere-miniature.webp') }}" style="width:90%" class=""
-                         alt=""/>
-                </a>
-                <div class="descriptionBest">
-                    <p><span>PULL STYLE MARINIÈRE ET BOUTONS ROUGES</span></p>
-                    <p><span>MARQUE 1</span></p>
-                    <p><span>€25,00</span></p>
-                </div>
-            </div>
-            <div class="col">
-                <a>
-                    <img src="{{ asset('assets/img/pull-marin-miniature.webp') }}" style="width:90%" class="" alt=""/>
-                </a>
-                <div class="descriptionBest">
-                    <p><span>PULL INSPIRATION MARINIÈRE GRIS ET BLANC</span></p>
-                    <p><span>MARQUE 1</span></p>
-                    <p><span>€50,00</span></p>
-                </div>
-            </div>
 
-        </div>
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-md-3">
+                        {% include 'product/single_product.html.twig' %}
+                    </div>
+                {% endfor %}
+            </div><!-- /.row -->
+
     </div>
         <!--deuxième vie -->
 
@@ -246,7 +200,7 @@
     <div class="col-12">
         <h3 class="separator text-center">#TINYANDPRETTY</h3>
         <h5 class="text-share">Partagez avec nous leurs styles uniques !</h5>
-      <a><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+      <a><i class="fab fa-facebook" aria-hidden="true"></i></a>
         <a><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
             <a><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
                 <a><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>

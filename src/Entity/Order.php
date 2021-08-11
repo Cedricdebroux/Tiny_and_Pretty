@@ -68,6 +68,11 @@ class Order
      */
     private $state;
 
+    /**
+     * @ORM\OneToOne(targetEntity=OrderReturn::class, mappedBy="user", cascade={"persist", "remove"})
+     */
+    private $orderReturn;
+
     public function __construct()
     {
         $this->orderDetails = new ArrayCollection();
@@ -210,6 +215,23 @@ class Order
     public function setState(int $state): self
     {
         $this->state = $state;
+
+        return $this;
+    }
+
+    public function getOrderReturn(): ?OrderReturn
+    {
+        return $this->orderReturn;
+    }
+
+    public function setOrderReturn(OrderReturn $orderReturn): self
+    {
+        // set the owning side of the relation if necessary
+        if ($orderReturn->getUser() !== $this) {
+            $orderReturn->setUser($this);
+        }
+
+        $this->orderReturn = $orderReturn;
 
         return $this;
     }

@@ -16,7 +16,11 @@
             <p>
                 {{ product.description }}
             </p>
+            {% if product.soldout == false %}
             <a href="{{ path('add_to_cart', {'id': product.id}) }}" class="btn-primary">Ajouter au panier</a>
+             {% else %}
+            <button class="soldout">Victime de son succès</button>
+            {% endif %}
             <hr>
         </div>
     </div>
