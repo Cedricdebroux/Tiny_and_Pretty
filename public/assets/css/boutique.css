@@ -272,11 +272,6 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar-item-custom {
-  left: 50% !important;
-  right: 50% !important;
-}
-
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {
   /* remove the padding from the navbar so the dropdown hover state is not broken */
