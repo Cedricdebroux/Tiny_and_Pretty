@@ -5,8 +5,11 @@ body{
   margin: 0 !important;
   width:100%;
 }
-
-
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*
 .logo-img {
   width:167px;
   height:77px;
@@ -197,3 +200,132 @@ li a {
 
   }
 }
+
+ */
+
+
+//HEADER
+/*
+.dropdown-menu{
+  font-family: $titleFontRegular;
+  color:  rgba(0,0,0,.5);
+  height: 50vh !important;
+ // width: 200vw!important;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.little-drop{
+  text-align: center!important;
+  height: 10vh!important;
+  width: 10vw!important;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  margin: 0 1vw;
+}
+nav ul li a{
+ // color: white;
+  padding: 1vh ;
+}
+.logo-img{
+  width: 50%;
+  height: auto;
+}
+
+
+.dropdown:hover .dropdown-menu{
+  display: inline-block;
+
+ //transform: translate(-22.5%, 5.8%);
+  transition: visibility 15s, opacity 2s ease;
+
+
+}
+
+//FOOTER
+footer{
+  font-family: $titleFontRegular;
+}
+
+ */
+.logo-img{
+  width: 50%;
+  height: auto;
+}
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="p-2"] {
+  margin-bottom:1rem;
+  flex-direction: column!important;
+}
+
+.navbar .dropdown-menu {
+  font-family: $titleFontRegular;
+  font-size: 2vh;
+  color:  rgba(0,0,0,.5);
+ // width: 50%;
+
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding:.5rem .5rem;
+    margin:0 .25rem;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {position:static;}
+
+  .navbar .dropdown-menu div[class*="p-2"] {
+    flex-direction: row!important;
+  }
+
+  .navbar .dropdown-menu {
+    width:100vw;
+    left:0;
+    right:0;
+    /*  height of nav-item  */
+    top:8vh;
+
+    display:block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+
+  }
+
+
+
+
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+    display:block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
+}
+
+
+
+

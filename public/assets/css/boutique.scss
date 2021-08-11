@@ -6,6 +6,7 @@
 $titleFontRegular: Quicksand, sans-serif;
 $textFontRegular: Cantarell, sans-serif;
 $yellow: rgb(252, 212, 116, 100);
+$green: #a9b97a;
 
 
 @import 'home';
@@ -15,6 +16,9 @@ $yellow: rgb(252, 212, 116, 100);
 @import "header";
 @import 'concept';
 @import 'ateliers';
+@import 'cart';
+@import 'login';
+@import 'order';
 
 
 

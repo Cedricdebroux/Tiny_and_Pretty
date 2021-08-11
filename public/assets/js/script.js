@@ -1,25 +1,23 @@
-let link = document.getElementById("baby-items");
+$(document).ready(function() {
+    // executes when HTML-Document is loaded and DOM is ready
 
-link.addEventListener("mouseover", function(){
+// breakpoint and up
+    $(window).resize(function () {
+        if ($(window).width() >= 980) {
 
-    let div = document.getElementById("div");
+            // when you hover a toggle show its dropdown menu
+            $(".navbar .dropdown-toggle").hover(function () {
+                $(this).parent().toggleClass("show");
+                $(this).parent().find(".dropdown-menu").toggleClass("show");
+            });
 
-    div.classList.remove("display-none");
+            // hide the menu when the mouse leaves the dropdown
+            $(".navbar .dropdown-menu").mouseleave(function () {
+                $(this).removeClass("show");
+            });
 
-
+            // do something here
+        }
+    });
 });
 
-
-link.addEventListener("mouseover", function(){
-    let div = document.getElementById("div");
-
-    div.classList.add("items-hover");
-
-});
-
-link.addEventListener("mouseleave", function(){
-    let div = document.querySelector(".items-hover");
-
-    div.classList.add("display-none");
-
-});

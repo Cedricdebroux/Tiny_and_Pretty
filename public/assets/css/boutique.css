@@ -133,6 +133,10 @@
   padding-bottom: 2rem;
 }
 
+.reseau {
+  font-size: 5vh;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .box {
     width: 60vw;
@@ -184,20 +188,25 @@
 }
 
 .apercu {
-  display: none;
   border: none;
   position: absolute;
   background-color: #fcd474 !important;
   width: 75%;
-  height: 3vh;
   z-index: 2;
   margin: 0 auto;
   right: 12.5%;
   top: 45%;
+  opacity: 0;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
 }
 
 .apercu:hover {
-  display: inline-block;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
 }
 
 .aside-description {
@@ -241,31 +250,43 @@ body {
   width: 100%;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*
 .logo-img {
-  width: 167px;
-  height: 77px;
-  margin-bottom: 26px;
-  margin-left: 44px;
+  width:167px;
+  height:77px;
+
+  margin-bottom:26px;
+  margin-left:44px;
 }
 
-.navigation {
-  margin-left: 10%;
+.navigation{
+  margin-left:10%;
 }
 
-.link-home {
-  color: #948E8E;
+
+.link-home{
+  color:#948E8E;
   font-size: 14px;
-  display: flex;
+  display:flex;
   line-height: 16px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   margin-right: 33px;
+  &:hover{
+    text-decoration: underline;
+    color:black;
+
+
+  }
+
 }
-.link-home:hover {
-  text-decoration: underline;
-  color: black;
-}
+
 
 * {
   margin: 0px;
@@ -282,7 +303,7 @@ nav {
 nav > ul {
   display: flex;
   text-align: center;
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
   height: var(--hauteur-menu);
 }
 
@@ -297,6 +318,7 @@ nav > ul > li {
   flex: 1;
 }
 
+
 nav > ul > li > a {
   position: absolute;
   top: 50%;
@@ -306,16 +328,18 @@ nav > ul > li > a {
 
 li a {
   text-decoration: none;
-  color: #948E8E;
+  color:#948E8E;
+
 }
 
-.menu-deroulant > a:after {
+.menu-deroulant > a:after{
+
   font-size: 15px;
   margin-left: 7px;
   display: inline-block;
 }
 
-.menu-deroulant:hover > a:after {
+.menu-deroulant:hover > a:after{
   animation: rotationFleche 0.2s linear forwards;
 }
 
@@ -326,11 +350,13 @@ li a {
   50% {
     transform: rotate(45deg);
   }
-  100% {
+  100%{
     transform: rotate(90deg);
   }
 }
+
 .sous-menu {
+
   margin-top: 25px;
   width: 100%;
   text-align: left;
@@ -338,19 +364,24 @@ li a {
   max-height: 0;
   border-radius: 2px;
   background-color: white;
-  z-index: 999;
-  position: absolute;
-  left: 0;
-  font-size: 14px;
-  display: flex;
+  z-index:999;
+  position:absolute;
+  left:0;
+  font-size:14px;
+  display:flex;
   justify-content: space-evenly;
-  color: #948E8E;
-}
-.sous-menu h3 {
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: initial;
-  padding-left: 20px;
+  color:#948E8E;
+
+  h3{
+
+
+    font-size:13px;
+    text-transform: uppercase;
+    font-weight: initial;
+    padding-left: 20px;
+  }
+
+
 }
 
 .menu-deroulant:hover > .sous-menu {
@@ -358,10 +389,14 @@ li a {
 }
 
 @keyframes apparitionSousMenu {
+
   100% {
     max-height: 50em;
+
   }
 }
+
+
 .sous-menu > ul > li > a {
   align-items: center;
   display: flex;
@@ -369,45 +404,172 @@ li a {
   padding-left: 20px;
   width: 100%;
   text-decoration: none;
-  color: #948E8E;
+  color:#948E8E;
 }
 
 .sous-menu > li:hover > a {
   color: white;
 }
 
-.icon-nav, .cart {
+.icon-nav{
   text-decoration: none;
-  color: #948E8E;
-}
-.icon-nav a, .cart a {
-  margin-right: 30px;
+  color:#948E8E;
+
+  a {
+    margin-right: 30px;
+
+  }
 }
 
-.orange-nav {
+.cart {
+  @extend .icon-nav;
+}
+
+.orange-nav{
+
   width: 1440px;
   height: 54px;
   left: 0px;
   top: 115px;
   background: #FCD474;
-  border-top: 1px solid #B1AEAE;
-  display: flex;
+  border-top:1px solid #B1AEAE;
+  display:flex;
   justify-content: center;
   align-items: center;
-}
-.orange-nav p {
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  font-size: 14px;
+
+  p{
+    color:white;
+    text-align: center;
+    margin-top: 5px;
+    font-size:14px;
+
+
+  }
 }
 
+ */
+/*
+.dropdown-menu{
+  font-family: $titleFontRegular;
+  color:  rgba(0,0,0,.5);
+  height: 50vh !important;
+ // width: 200vw!important;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.little-drop{
+  text-align: center!important;
+  height: 10vh!important;
+  width: 10vw!important;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  margin: 0 1vw;
+}
+nav ul li a{
+ // color: white;
+  padding: 1vh ;
+}
+.logo-img{
+  width: 50%;
+  height: auto;
+}
+
+
+.dropdown:hover .dropdown-menu{
+  display: inline-block;
+
+ //transform: translate(-22.5%, 5.8%);
+  transition: visibility 15s, opacity 2s ease;
+
+
+}
+
+//FOOTER
+footer{
+  font-family: $titleFontRegular;
+}
+
+ */
+.logo-img {
+  width: 50%;
+  height: auto;
+}
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*=p-2] {
+  margin-bottom: 1rem;
+  flex-direction: column !important;
+}
+
+.navbar .dropdown-menu {
+  font-family: Quicksand, sans-serif;
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu div[class*=p-2] {
+    flex-direction: row !important;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100vw;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 8vh;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+}
 .title {
   font-family: Quicksand, sans-serif;
+  font-size: 3vh;
 }
 
 .presentation {
   font-family: Cantarell, sans-serif;
+  font-size: 1.5vh;
   padding-left: calc(100vw/5);
   line-height: 3vh;
   color: #948E8E;
@@ -426,6 +588,77 @@ li a {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+.empty {
+  font-weight: bold;
+}
+
+.title_cart {
+  font-family: Quicksand, sans-serif;
+  padding: 2vw;
+}
+
+.validation {
+  font-family: Cantarell, sans-serif;
+}
+
+.validate {
+  background-color: #a9b97a !important;
+}
+
+.title_sign {
+  font-family: Quicksand, sans-serif;
+  font-size: 1vh;
+}
+
+.input {
+  font-family: Cantarell, sans-serif;
+}
+
+.connect {
+  background-color: #a9b97a;
+  padding: 2vh;
+}
+
+.reset-register {
+  padding: 5vw;
+}
+
+.title_order {
+  font-family: Quicksand, sans-serif;
+  padding-top: 5vh;
+  font-size: 1vh !important;
+}
+
+.text_order {
+  font-family: Cantarell, sans-serif;
+}
+
+.recap {
+  padding-top: 5vh;
+}
+
+.btn-success {
+  background-color: #a9b97a !important;
+  border: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .title_order {
+    font-size: 0.8vh !important;
+    text-align: center;
+  }
+
+  .img-product {
+    padding: 1vw;
+  }
+}
+@media only screen and (min-device-width: 568px) and (max-device-width: 1024px) {
+  .title_order {
+    font-size: 1.2vh !important;
+    background-color: blue;
+  }
 }
 
 /*# sourceMappingURL=boutique.css.map */

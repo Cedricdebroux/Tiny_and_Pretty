@@ -31,20 +31,27 @@
 }
 
 .apercu{
-  display: none;
+
   border: none;
   position: absolute;
   background-color: $yellow!important;
   width: 75%;
-  height: 3vh;
   z-index: 2;
   margin: 0 auto;
   right: 12.5%;
   top: 45%;
+  opacity: 0;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
 }
 .apercu:hover{
-display: inline-block;
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
 }
+
 
 
 

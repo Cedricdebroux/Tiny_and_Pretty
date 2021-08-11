@@ -4,31 +4,38 @@ body {
   width: 100%;
 }
 
+/*
 .logo-img {
-  width: 167px;
-  height: 77px;
-  margin-bottom: 26px;
-  margin-left: 44px;
+  width:167px;
+  height:77px;
+
+  margin-bottom:26px;
+  margin-left:44px;
 }
 
-.navigation {
-  margin-left: 10%;
+.navigation{
+  margin-left:10%;
 }
 
-.link-home {
-  color: #948E8E;
+
+.link-home{
+  color:#948E8E;
   font-size: 14px;
-  display: flex;
+  display:flex;
   line-height: 16px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   margin-right: 33px;
+  &:hover{
+    text-decoration: underline;
+    color:black;
+
+
+  }
+
 }
-.link-home:hover {
-  text-decoration: underline;
-  color: black;
-}
+
 
 * {
   margin: 0px;
@@ -45,7 +52,7 @@ nav {
 nav > ul {
   display: flex;
   text-align: center;
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
   height: var(--hauteur-menu);
 }
 
@@ -60,6 +67,7 @@ nav > ul > li {
   flex: 1;
 }
 
+
 nav > ul > li > a {
   position: absolute;
   top: 50%;
@@ -69,16 +77,18 @@ nav > ul > li > a {
 
 li a {
   text-decoration: none;
-  color: #948E8E;
+  color:#948E8E;
+
 }
 
-.menu-deroulant > a:after {
+.menu-deroulant > a:after{
+
   font-size: 15px;
   margin-left: 7px;
   display: inline-block;
 }
 
-.menu-deroulant:hover > a:after {
+.menu-deroulant:hover > a:after{
   animation: rotationFleche 0.2s linear forwards;
 }
 
@@ -89,11 +99,13 @@ li a {
   50% {
     transform: rotate(45deg);
   }
-  100% {
+  100%{
     transform: rotate(90deg);
   }
 }
+
 .sous-menu {
+
   margin-top: 25px;
   width: 100%;
   text-align: left;
@@ -101,19 +113,24 @@ li a {
   max-height: 0;
   border-radius: 2px;
   background-color: white;
-  z-index: 999;
-  position: absolute;
-  left: 0;
-  font-size: 14px;
-  display: flex;
+  z-index:999;
+  position:absolute;
+  left:0;
+  font-size:14px;
+  display:flex;
   justify-content: space-evenly;
-  color: #948E8E;
-}
-.sous-menu h3 {
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: initial;
-  padding-left: 20px;
+  color:#948E8E;
+
+  h3{
+
+
+    font-size:13px;
+    text-transform: uppercase;
+    font-weight: initial;
+    padding-left: 20px;
+  }
+
+
 }
 
 .menu-deroulant:hover > .sous-menu {
@@ -121,10 +138,14 @@ li a {
 }
 
 @keyframes apparitionSousMenu {
+
   100% {
     max-height: 50em;
+
   }
 }
+
+
 .sous-menu > ul > li > a {
   align-items: center;
   display: flex;
@@ -132,37 +153,56 @@ li a {
   padding-left: 20px;
   width: 100%;
   text-decoration: none;
-  color: #948E8E;
+  color:#948E8E;
 }
 
 .sous-menu > li:hover > a {
   color: white;
 }
 
-.icon-nav, .cart {
+.icon-nav{
   text-decoration: none;
-  color: #948E8E;
-}
-.icon-nav a, .cart a {
-  margin-right: 30px;
+  color:#948E8E;
+
+  a {
+    margin-right: 30px;
+
+  }
 }
 
-.orange-nav {
+.cart {
+  @extend .icon-nav;
+}
+
+.orange-nav{
+
   width: 1440px;
   height: 54px;
   left: 0px;
   top: 115px;
   background: #FCD474;
-  border-top: 1px solid #B1AEAE;
-  display: flex;
+  border-top:1px solid #B1AEAE;
+  display:flex;
   justify-content: center;
   align-items: center;
+
+  p{
+    color:white;
+    text-align: center;
+    margin-top: 5px;
+    font-size:14px;
+
+
+  }
 }
-.orange-nav p {
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  font-size: 14px;
+
+ */
+.dropdown-menu {
+  background-color: blue;
+}
+
+.nav-link {
+  background-color: #0d5e42;
 }
 
 /*# sourceMappingURL=header.css.map */

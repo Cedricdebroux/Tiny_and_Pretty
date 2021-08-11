@@ -15,38 +15,41 @@
     <title>{% block title %}Tiny & Pretty{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{asset('assets/css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/all.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/boutique.css') }}">
+
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.2.1.slim.min.js">
 
     {% block javascript %}
     {% endblock %}
-   <!-- <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
+    <!-- <style>
+         .bd-placeholder-img {
+             font-size: 1.125rem;
+             text-anchor: middle;
+             -webkit-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;
+         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    -->
+         @media (min-width: 768px) {
+             .bd-placeholder-img-lg {
+                 font-size: 3.5rem;
+             }
+         }
+     </style>
+     -->
     <!-- Custom styles for this template -->
     <link href="{{ asset('assets/css/carousel.css') }}" rel="stylesheet">
 </head>
 <body>
 <header>
+    <!--
     <nav class="navbar navbar-expand-md">
 
         <a class="navbar-brand text-dark" href="{{ path('home') }}">
-            <img src="{{ asset('assets/img/logo.png')}}" alt="Logo Tiny And Pretty" class="logo-img"/>
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Logo Tiny And Pretty" class="logo-img"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,7 +57,7 @@
         <div class="collapse navbar-collapse navigation" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active menu-deroulant">
-                    <a class="nav-link link-home" href="{{ path('products') }}">Bébé</a>
+                    <a class="nav-link link-home" href="{{ path('products') }}">BÉBÉ</a>
                     <div class="sous-menu">
                         <ul>
                             <h3>Vêtements</h3>
@@ -195,90 +198,403 @@
         </div>
 
     </nav>
+    -->
     <!--
     <div class="orange-nav">
         <p>Echanges et retour - 60 jours</p>
     </div>
     -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand flex-grow-1" href="{{ path('home') }}">
+            <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown px-3" href="{{ path('products') }}" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        BÉBÉ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" data-boundary="overflow">
+                        <div class="d-flex  flex-row p-2">
+                            <div class="p-2 bd-highlight">
+                                <h5>VÊTEMENTS</h5>
+                                <hr>
+
+                                <a class="dropdown-item" href="#">t-shirt x sous-pull</a>
+                                <a class="dropdown-item" href="#">manteau x veste</a>
+                                <a class="dropdown-item" href="#">blouse x chemise</a>
+                                <a class="dropdown-item" href="#">pull x gilet </a>
+                                <a class="dropdown-item" href="#">robe x jupe</a>
+                                <a class="dropdown-item" href="#">pantalon x short</a>
+                                <a class="dropdown-item" href="#">salopette x combinaison</a>
+                            </div>
+
+                            <div class="p-2 bd-highlight">
+                                <h5>ACCESSOIRES</h5>
+                                <hr>
+                                <a class="dropdown-item" href="#">bonnet x écharpe</a>
+                                <a class="dropdown-item" href="#">gants x moufles</a>
+                                <a class="dropdown-item" href="#">maillot de bain</a>
+                                <a class="dropdown-item" href="#">cape de bain</a>
+                                <a class="dropdown-item" href="#">bavoir</a>
+                                <a class="dropdown-item" href="#">accessoires cheveux</a>
+                            </div>
+
+
+                            <div class="p-2 bd-highlight">
+                                <h5>NUIT X SOUS-VÊTEMENTS</h5>
+                                <hr>
+
+                                <a class="dropdown-item" href="#">peluche x doudou</a>
+                                <a class="dropdown-item" href="#">body</a>
+                                <a class="dropdown-item" href="#">pyjama</a>
+                                <a class="dropdown-item" href="#">gigoteuse</a>
+                                <a class="dropdown-item" href="#">nid d'ange</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown px-3" href="{{ path('products') }}" id="navbarDropdown"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    FILLES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="d-flex  flex-row p-2">
+                                        <div class="p-2 bd-highlight">
+                                            <h5>VÊTEMENTS</h5>
+
+                                            <a class="dropdown-item" href="#">top x t-shirt</a>
+                                            <a class="dropdown-item" href="#">chemise x blouse</a>
+                                            <a class="dropdown-item" href="#">pull x gilet</a>
+                                            <a class="dropdown-item" href="#">robe x jupe</a>
+                                            <a class="dropdown-item" href="#">pantalon x jeans/a>
+                                            <a class="dropdown-item" href="#">short</a>
+                                            <a class="dropdown-item" href="#">salopette x combinaison</a>
+                                            <a class="dropdown-item" href="#">manteau x veste</a>
+                                        </div>
+
+                                        <div class="p-2 bd-highlight">
+                                            <h5>ACCESSOIRES</h5>
+                                            <a class="dropdown-item" href="#">bonnet x chapeau</a>
+                                            <a class="dropdown-item" href="#">écharpe x foulard</a>
+                                            <a class="dropdown-item" href="#">gants x moufles</a>
+                                            <a class="dropdown-item" href="#">maillot de bain</a>
+                                            <a class="dropdown-item" href="#">accessoires de plage</a>
+                                            <a class="dropdown-item" href="#">accessoires cheveux</a>
+                                        </div>
+
+
+                                        <div class="p-2 bd-highlight">
+                                            <h5>NUIT X SOUS-VÊTEMENTS</h5>
+
+                                            <a class="dropdown-item" href="#">sous-vêtements</a>
+                                            <a class="dropdown-item" href="#">pyjama</a>
+                                            <a class="dropdown-item" href="#">surpyjama</a>
+                                            <a class="dropdown-item" href="#">cape x peignoir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown px-3" href="{{ path('products') }}"
+                                               id="navbarDropdown" role="button" data-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">
+                                                GARÇON
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex  flex-row p-2">
+                                                    <div class="p-2 bd-highlight">
+                                                        <h5>VÊTEMENTS</h5>
+
+                                                        <a class="dropdown-item" href="#">t-shirt x polo</a>
+                                                        <a class="dropdown-item" href="#">chemise</a>
+                                                        <a class="dropdown-item" href="#">pull x gilet </a>
+                                                        <a class="dropdown-item" href="#">pantalon x jeans</a>
+                                                        <a class="dropdown-item" href="#">short</a>
+                                                        <a class="dropdown-item" href="#">salopette x combinaison</a>
+                                                        <a class="dropdown-item" href="#">manteau x veste</a>
+                                                    </div>
+
+                                                    <div class="p-2 bd-highlight">
+                                                        <h5>ACCESSOIRES</h5>
+                                                        <a class="dropdown-item" href="#">bonnet x chapeau</a>
+                                                        <a class="dropdown-item" href="#">écharpe x foulard</a>
+                                                        <a class="dropdown-item" href="#">gants x moufles</a>
+                                                        <a class="dropdown-item" href="#">accessoires de plage</a>
+                                                        <a class="dropdown-item" href="#">cravate x noeud papillon</a>
+                                                    </div>
+
+
+                                                    <div class="p-2 bd-highlight">
+                                                        <h5>NUIT X SOUS-VÊTEMENTS</h5>
+
+                                                        <a class="dropdown-item" href="#">sous-vêtements</a>
+                                                        <a class="dropdown-item" href="#">pyjama</a>
+                                                        <a class="dropdown-item" href="#">surpyjama</a>
+                                                        <a class="dropdown-item" href="#">cape x peignoir</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-3" href="{{ path('products') }}">JOUET</a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link px-3" href="{{ path('deuxieme_vie') }}">DEUXIÈME VIE</a>
+                                        </li>
+                                        <li>
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mr-auto">
+                                                    <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown px-3" href="{{ path('concept') }}"
+                                                           id="navbarDropdown" role="button" data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">CONCEPT</a>
+                                                        <ul class="dropdown-menu little-drop" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="{{ path('ateliers') }}">Nos
+                                                                    ateliers</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                   href="{{ path('partenaires') }}">Nos partenaires</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </li>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link px-3" href="{{ path('tinyworld') }}">TINY
+                                                            WORLD</a>
+                                                    </li>
+
+
+                                                <div class="navbar-item-custom icon-nav pl-5 text-sm-center pl-sm-0">
+                                                    {% if app.user %}
+                                                        <a href="{{ path('account') }}" class="link-home"><i
+                                                                    class="far fa-user-circle"></i>{{ app.user.firstname }}
+                                                        </a>
+                                                        <a href="{{ path('app_logout') }}" class="text-dark"><i
+                                                                    class="fas fa-sign-out-alt"></i></a>
+                                                    {% else %}
+                                                        <a href="{{ path('app_login') }}" class="text-dark"><i
+                                                                    class="far fa-user-circle"></i></a>
+                                                        <a href="" class="text-dark"><i class="far fa-heart"></i></a>
+                                                        <a href="" class="text-dark"><i class="fas fa-search"></i></a>
+                                                        <a href="{{ path('register') }}" class="text-dark"><i
+                                                                    class="fas fa-sign-in-alt"></i></a>
+
+                                                    {% endif %}
+                                                    <a href="{{ path('cart') }}" class="cart text-dark">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </a>
+
+                                                </div>
+                                                </ul>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 </header>
 
 <main role="main">
     {% if block('carousel') is defined %}
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"/>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"/>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                        <rect width="100%" height="100%" fill="#777"/>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 
     {% endif %}
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-<!--
+    <!--
     <div class="container marketing {% if block('carousel') is  not defined %}mt-5{% endif %}">
 -->
-       {% block content %}
-        {% endblock %}
+    {% block content %}
+    {% endblock %}
 
-    </div><!-- /.container -->
 
     <!-- FOOTER -->
-    <footer class="footer-custom">
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <section class="">
 
-        <p>
-            &copy; 2021 Tiny&Pretty<br/>
-            <a href="#">Privacy</a>  <a href="#">Terms</a>
-        </p>
+            <!-- Grid row -->
+            <!-- Content Logo -->
+            <a class="brand " href="{{ path('home') }}">
+                <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img-footer"/>
+            </a>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2  mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            TINY&PRETTY
+
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Qui sommes-nous ?</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">The tiny & pretty blog</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">CGV</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            COMMANDES
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Politique de retour</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Politique d'expédition</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Paiement sécurisé</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        COMMANDES
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Politique de retour</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Politique d'expédition</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Paiement sécurisé</a>
+                    </p>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">Tiny&Pretty</a>
+        </div>
+        <!-- Copyright -->
+
     </footer>
+
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="{{ asset ('assets/js/bootstrap.bundle.js') }}"></script>
 <script src="{{ asset ('assets/js/all.js') }}"></script>
-<!-- <script src="{{ asset ('assets/js/script.js') }}"></script> -->
+<script src="{{ asset ('assets/js/script.js') }}"></script>
 </body>
 
 {% block script %}
