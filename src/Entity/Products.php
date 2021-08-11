@@ -63,6 +63,11 @@ class Products
      */
     private $Soldout;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isNew;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -172,6 +177,18 @@ class Products
     public function setSoldout(bool $Soldout): self
     {
         $this->Soldout = $Soldout;
+
+        return $this;
+    }
+
+    public function getIsNew(): ?bool
+    {
+        return $this->isNew;
+    }
+
+    public function setIsNew(bool $isNew): self
+    {
+        $this->isNew = $isNew;
 
         return $this;
     }
