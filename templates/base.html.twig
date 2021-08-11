@@ -23,187 +23,13 @@
 
     {% block javascript %}
     {% endblock %}
-    <!-- <style>
-         .bd-placeholder-img {
-             font-size: 1.125rem;
-             text-anchor: middle;
-             -webkit-user-select: none;
-             -moz-user-select: none;
-             -ms-user-select: none;
-             user-select: none;
-         }
 
-         @media (min-width: 768px) {
-             .bd-placeholder-img-lg {
-                 font-size: 3.5rem;
-             }
-         }
-     </style>
-     -->
     <!-- Custom styles for this template -->
     <link href="{{ asset('assets/css/carousel.css') }}" rel="stylesheet">
 </head>
 <body>
 <header>
-    <!--
-    <nav class="navbar navbar-expand-md">
 
-        <a class="navbar-brand text-dark" href="{{ path('home') }}">
-            <img src="{{ asset('assets/img/logo.png') }}" alt="Logo Tiny And Pretty" class="logo-img"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navigation" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active menu-deroulant">
-                    <a class="nav-link link-home" href="{{ path('products') }}">BÉBÉ</a>
-                    <div class="sous-menu">
-                        <ul>
-                            <h3>Vêtements</h3>
-                            <li><a href="">T-shirt x sous-pull</a></li>
-                            <li><a href="">Manteau x veste </a></li>
-                            <li><a href="">Blouse x Gilet</a></li>
-                            <li><a href="">Pull x gilet </a></li>
-                            <li><a href="">Robe x jupe </a></li>
-                            <li><a href="">Pantalon x short</a></li>
-                            <li><a href="">Salopette x combinaison</a></li>
-                        </ul>
-
-                        <ul>
-                            <h3>Accesoires</h3>
-                            <li><a href="">Bonnet x écharpe</a></li>
-                            <li><a href="">Gants x moufles </a></li>
-                            <li><a href="">Maillot de bain</a></li>
-                            <li><a href="">Cape de bain</a></li>
-                            <li><a href="">Bavoir</a> </li>
-                            <li><a href="">Accesoires cheveux</a></li>
-                        </ul>
-
-                        <ul>
-                            <h3>Coin nuit x sous-vêtements</h3>
-                            <li><a href="">Peluche x doudou</a></li>
-                            <li><a href="">Body</a></li>
-                            <li><a href="">Pyjama</a></li>
-                            <li><a href="">Gigoteuse </a></li>
-                            <li><a href="">Nid d'ange</a></li>
-                        </ul>
-                    </div>
-
-                </li>
-                <li class="nav-item active menu-deroulant">
-                    <a class="nav-link link-home" href="{{ path('products') }}">Fille</a>
-                    <div class="sous-menu">
-                        <ul>
-                            <h3>Vêtements</h3>
-                            <li><a href="">Top x T-shirt</a></li>
-                            <li><a href="">Chemise x Blouse </a></li>
-                            <li><a href="">Pull x Gilet </a></li>
-                            <li><a href="">Robe x Jupe </a></li>
-                            <li><a href="">Pantalon x Jeans</a></li>
-                            <li><a href="">Short</a></li>
-                            <li><a href="">Salopette x combinaison</a></li>
-                            <li><a href="">Manteau x Veste</a></li>
-                        </ul>
-
-                        <ul>
-                            <h3>Accesoires</h3>
-                            <li><a href="">Bonnet x chapeaux</a></li>
-                            <li><a href="">Echarpe x foulard </a></li>
-                            <li><a href="">Gants x moufles</a></li>
-                            <li><a href="">Maillot de bain</a></li>
-                            <li><a href="">Accessoire de plage</a></li>
-                            <li><a href="">Accesoires cheveux</a></li>
-                        </ul>
-
-                        <ul>
-                            <h3>Coin nuit x sous-vêtements</h3>
-                            <li><a href="">Sous-vêtement</a></li>
-                            <li><a href="">Pyjama</a></li>
-                            <li><a href="">Surpyjama</a></li>
-                            <li><a href="">Cape x peignoir </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item active menu-deroulant">
-                    <a class="nav-link link-home" href="{{ path('products') }}">Garçon</a>
-                    <div class="sous-menu">
-                        <ul>
-                            <h3>Vêtements</h3>
-                            <li><a href="">Polo x T-shirt</a></li>
-                            <li><a href="">Chemise </a></li>
-                            <li><a href="">Pull x Gilet </a></li>
-                            <li><a href="">Pantalon x Jeans</a></li>
-                            <li><a href="">Short</a></li>
-                            <li><a href="">Salopette x combinaison</a></li>
-                            <li><a href="">Manteau x Veste</a></li>
-                        </ul>
-
-                        <ul>
-                            <h3>Accesoires</h3>
-                            <li><a href="">Bonnet x chapeaux</a></li>
-                            <li><a href="">Echarpe x foulard </a></li>
-                            <li><a href="">Gants x moufles</a></li>
-                            <li><a href="">Maillot de bain</a></li>
-                            <li><a href="">Accessoire de plage</a></li>
-                            <li><a href="">Cravate x Noeud de papillon</a></li>
-                        </ul>
-
-                        <ul>
-                            <h3>Coin nuit x sous-vêtements</h3>
-                            <li><a href="">Sous-vêtement</a></li>
-                            <li><a href="">Pyjama</a></li>
-                            <li><a href="">Surpyjama</a></li>
-                            <li><a href="">Cape x peignoir </a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link link-home" href="{{ path('products') }}">Jouet</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link link-home" href="{{ path('deuxieme_vie') }}">Deuxième vie</a>
-                </li>
-                <li class="nav-item active menu-deroulant">
-                    <a class="nav-link link-home" href="{{ path('concept') }}">Notre concept</a>
-                        <div class="sous-menu">
-                            <ul>
-                                <li><a href="{{ path('ateliers') }}">Nos ateliers</a>
-                                <li><a href="{{ path('partenaires') }}">Nos partenaires</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link link-home" href="{{ path('tinyworld') }}">Tiny World</a>
-                </li>
-            </ul>
-
-            <div class="navbar-item-custom icon-nav">
-            {% if app.user %}
-                <a href="{{ path('account') }}" class="link-home"><i class="far fa-user-circle"></i>{{ app.user.firstname }}</a>
-                <a href="{{ path('app_logout') }}" class="text-dark"><i class="fas fa-sign-out-alt"></i></a>
-            {% else %}
-                <a href="{{ path('app_login') }}" class="text-dark"><i class="far fa-user-circle"></i></a>
-                <a href="" class="text-dark"><i class="far fa-heart"></i></a>
-                <a href="" class="text-dark"><i class="fas fa-search"></i></a>
-                <a href="{{ path('register') }}" class="text-dark"><i class="fas fa-sign-in-alt"></i></a>
-
-            {% endif %}
-            </div>
-            <a href="{{ path('cart') }}" class="cart text-dark">
-                <i class="fas fa-shopping-bag"></i>
-            </a>
-        </div>
-
-    </nav>
-    -->
-    <!--
-    <div class="orange-nav">
-        <p>Echanges et retour - 60 jours</p>
-    </div>
-    -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand flex-grow-1" href="{{ path('home') }}">
             <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img"/>
@@ -277,7 +103,7 @@
                                             <a class="dropdown-item" href="#">chemise x blouse</a>
                                             <a class="dropdown-item" href="#">pull x gilet</a>
                                             <a class="dropdown-item" href="#">robe x jupe</a>
-                                            <a class="dropdown-item" href="#">pantalon x jeans/a>
+                                            <a class="dropdown-item" href="#">pantalon x jeans</a>
                                             <a class="dropdown-item" href="#">short</a>
                                             <a class="dropdown-item" href="#">salopette x combinaison</a>
                                             <a class="dropdown-item" href="#">manteau x veste</a>
@@ -371,32 +197,41 @@
                                                         </ul>
 
                                                     </li>
-                                                    </li>
+
                                                     <li class="nav-item">
                                                         <a class="nav-link px-3" href="{{ path('tinyworld') }}">TINY
                                                             WORLD</a>
                                                     </li>
 
 
-                                                <div class="navbar-item-custom icon-nav pl-5 text-sm-center pl-sm-0">
+                                                <div class="navbar-item-custom icon-nav pl-5 text-sm-center pl-sm-0 float-sm-right">
                                                     {% if app.user %}
-                                                        <a href="{{ path('account') }}" class="link-home"><i
+                                                        <li class="nav-item ">
+                                                        <a class="nav-link px-3" href="{{ path('account') }}"style="color:#a9bf7a;" ><i
                                                                     class="far fa-user-circle"></i>{{ app.user.firstname }}
                                                         </a>
-                                                        <a href="{{ path('app_logout') }}" class="text-dark"><i
+                                                        <a class="nav-link px-3" href="{{ path('cart') }}" >
+                                                            <i class="fas fa-shopping-bag"></i>
+                                                        </a>
+                                                        <a class="nav-link px-3" href="" ><i class="far fa-heart"></i></a>
+                                                        <a  class="nav-link px-3"href=""><i class="fas fa-search"></i></a>
+                                                        <a class="nav-link px-3" href="{{ path('app_logout') }}"><i
                                                                     class="fas fa-sign-out-alt"></i></a>
+                                                        </li>
                                                     {% else %}
-                                                        <a href="{{ path('app_login') }}" class="text-dark"><i
+                                                    <li>
+                                                        <a class="nav-link px-3" href="{{ path('app_login') }}"><i
                                                                     class="far fa-user-circle"></i></a>
-                                                        <a href="" class="text-dark"><i class="far fa-heart"></i></a>
-                                                        <a href="" class="text-dark"><i class="fas fa-search"></i></a>
-                                                        <a href="{{ path('register') }}" class="text-dark"><i
+                                                        <a href="" class="nav-link px-3 "><i class="far fa-heart"></i></a>
+                                                        <a href="" class="nav-link px-3 "><i class="fas fa-search"></i></a>
+                                                        <a href="{{ path('register') }}" class="nav-link px-3"><i
                                                                     class="fas fa-sign-in-alt"></i></a>
-
+                                                        <a href="{{ path('cart') }}" class="nav-link px-3">
+                                                            <i class="fas fa-shopping-bag"></i>
+                                                        </a>
+                                                    </li>
                                                     {% endif %}
-                                                    <a href="{{ path('cart') }}" class="cart text-dark">
-                                                        <i class="fas fa-shopping-bag"></i>
-                                                    </a>
+
 
                                                 </div>
                                                 </ul>
