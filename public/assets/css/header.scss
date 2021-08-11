@@ -1,5 +1,3 @@
-
-
 body{
   padding:0 !important;
   margin: 0 !important;
@@ -23,7 +21,7 @@ body{
   font-family: $titleFontRegular;
   font-size: 2vh;
   color:  rgba(0,0,0,.5);
- // width: 50%;
+  // width: 50%;
 
 }
 
@@ -45,7 +43,7 @@ body{
   /* makes the dropdown full width  */
   .little-drop{
     width: 20vw!important;
-left: 50vw!important;
+    left: 50vw!important;
 
   }
   .navbar .dropdown {position:static;}
@@ -86,7 +84,3 @@ left: 50vw!important;
   }
 
 }
-
-
-
-
