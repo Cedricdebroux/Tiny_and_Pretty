@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Category;
 use App\Entity\Products;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
@@ -35,7 +36,7 @@ class ProductsCrudController extends AbstractCrudController
             BooleanField::new('isBest'),
             BooleanField::new('isNew'),
             MoneyField::new('price')->setCurrency('EUR'),
-            AssociationField::new('category')
+            AssociationField::new('category'),
             ];
     }
 

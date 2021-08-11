@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ProductsRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -48,7 +50,7 @@ class Products
     private $price;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="products")
+     * @ORM\ManyToMany(targetEntity=Category::class, inversedBy="products")
      * @ORM\JoinColumn(nullable=false)
      */
     private $category;
@@ -63,6 +65,9 @@ class Products
      */
     private $isNew;
 
+    public function __construct(){
+        $this->category = new ArrayCollection();
+    }
     public function getId(): ?int
     {
         return $this->id;
@@ -140,7 +145,10 @@ class Products
         return $this;
     }
 
-    public function getCategory(): ?Category
+    /**
+    * @return Collection|Category[]
+    */
+    public function getCategory(): Collection
     {
         return $this->category;
     }
