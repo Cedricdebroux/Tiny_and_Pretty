@@ -1,6 +1,40 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
+<!-- Three columns of text below the carousel -->
+    <h3>Nos meilleures ventes</h3>
+    <p>Découvrez nos articles les plus vendus.</p>
+    <div class="row">
+       {% for product in products %}
+        <div class="col-md-3">
+            {% include 'product/single_product.html.twig' %}
+        </div>
+        {% endfor %}
+    </div><!-- /.row -->
+
+    <h3>Nos nouveaux produits</h3>
+    <p>Découvrez nos noveautées</p>
+    <div class="row">
+        {% for product in productN %}
+            {% if product.isNew == true %}
+                <div class="col-md-3">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {#{% else %}
+            <p> Pas de nouveaux produits pour l'instant !</p>#}
+            {% endif %}
+        {% endfor %}
+    </div><!-- /.row -->
+
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+    <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     <!-- banner -->
     <div class="container-fluid col-12">
         <div class="row align-items-center">
