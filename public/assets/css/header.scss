@@ -26,6 +26,10 @@ body{
  // width: 50%;
 
 }
+.navbar-item-custom{
+  left: 50% !important;
+  right: 50% !important;
+}
 
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {
