@@ -20,9 +20,9 @@ class ProductController extends AbstractController
         $this->entityManager = $entityManager;
     }
 
-    /**
-     * @Route("/nos-produits", name="products")
-     */
+
+    #[Route('/nos-produits', name :'products')]
+
     public function index(Request $request): Response
     {
         $search = new search();
@@ -41,9 +41,10 @@ class ProductController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/produit/{slug}", name="product")
-     */
+
+
+    #[Route('/produit/{slug}', name :'product')]
+
     public function show($slug): Response
     {
 

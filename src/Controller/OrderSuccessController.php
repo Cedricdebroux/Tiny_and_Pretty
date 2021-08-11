@@ -17,9 +17,9 @@ class OrderSuccessController extends AbstractController
     {
         $this->entityManager = $entitymanager;
     }
-    /**
-    * @Route("/commandes/merci/{stripeSessionId}", name="order_validate")
-     */
+
+
+    #[Route('/commandes/merci/{stripeSessionId}', name :'order_validate')]
 
     public function index(Cart $cart, $stripeSessionId): Response
     {
