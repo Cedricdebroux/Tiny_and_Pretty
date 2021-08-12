@@ -1,15 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AccountController!{% endblock %}
+{% block title %}MON COMPTE{% endblock %}
 
 {% block content %}
-    <h1>Mon compte</h1>
-    Bienvenue {{ app.user.firstname }} dans votre compte. C'est dans cet espace que vous allez pouvoir gérer toutes vos infos persos.
-    <hr>
-    {%  if is_granted('ROLE_ADMIN') %}
-    <a href="/admin"> Vous êtes un administrateur, accéder au backoffice ?</a><br/>
-    {% endif %}
-    <a href="{{ path('account_password') }}"> Modifier mon mot de passe</a><br/>
-    <a href="{{ path('account_address') }}"> Modifier mes adresses</a><br/>
-    <a href="{{ path('account_order') }}"> Mes commandes</a><br/>
+    <div class="container-fluid text-center mt-5 mb-5">
+        <div class="title_sign">
+            <h1 class="mb-3">MON COMPTE</h1>
+        </div>
+        <div class="intro mt-auto mb-5">
+        <p><span>Bienvenue {{ app.user.firstname }}.</span></p>
+        <p><span>C'est dans cet espace que vous allez pouvoir gérer toutes vos infos personelles.</span></p>
+        <hr>
+        </div>
+
+        <p><span><a href="{{ path('account_password') }}"  style="color:#a9bf7a;"> Modifier mon mot de passe</a></span></p>
+        <p><span> <a href="{{ path('account_address') }}"  style="color:#a9bf7a;"> Modifier mes adresses</a></span></p>
+        <p><span><a href="{{ path('account_order') }}"  style="color:#a9bf7a;"> Mes commandes</a></span></p>
+
+        {% if is_granted('ROLE_ADMIN') %}
+            <a href="/admin"  style="color:#f0cabd;"> Vous êtes un administrateur, accéder au backoffice ?</a>
+        {% endif %}
+    </div>
 {% endblock %}

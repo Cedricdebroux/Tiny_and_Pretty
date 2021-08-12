@@ -3,11 +3,19 @@
 {% block title %}Mes adresses{% endblock %}
 
 {% block content %}
-    <a href="{{ path('account_address_add') }}" class="btn btn-info btn-sm float-right">Ajouter une adresse</a>
-    <h1>Mes adresses</h1>
-    C'est dans cet espace que vous allez pouvoir gérer vos adresses
-    <a href="{{ path('account') }}">Retour</a>
+
+
+<div class="container-fluid text-center mt-5 mb-5">
+    <div class="title_sign">
+    <h1>MES ADRESSES</h1>
+    </div>
+    <div class="intro mt-auto mb-5">
+   <p><span>C'est dans cet espace que vous allez pouvoir gérer vos adresses</span></p>
+   <p><span><a href="{{ path('account') }}" style="color:#a9bf7a;">Retour</a></span></p>
+        <a href="{{ path('account_address_add') }}" class="btn btn-info add-address btn-sm float-right">Ajouter une adresse</a>
+    </div>
     <hr>
+
     {% if app.user.addresses | length == 0 %}
         <p class="text-center">Vous n'avez pas encore d'adresse.</p>
     <a href="">Ajouter une adresse</a>
@@ -15,7 +23,7 @@
             {% for address in app.user.addresses %}
             <div class="row">
                 <div class="col-col-md-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 25vw;">
 
                         <div class="card-body">
                             <h5 class="card-title">{{ address.name }}</h5>
@@ -23,7 +31,8 @@
                                 {{ address.address }}, <br/>
                                 {{ address.postal }} - {{ address.city }} - {{ address.country }}
                             </p>
-                            <a href="{{ path('account_address_edit', {'id': address.id}) }}">Modifier</a> | <a href="{{path ('account_address_delete', {'id' : address.id}) }}">Supprimer</a>
+                            <a href="{{ path('account_address_edit', {'id': address.id}) }}"  style="color:#a9bf7a;">Modifier</a> |
+                            <a href="{{path ('account_address_delete', {'id' : address.id}) }}"  style="color:#f0cabd;">Supprimer</a>
                         </div>
                     </div>
                 </div>

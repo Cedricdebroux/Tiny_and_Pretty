@@ -1,0 +1,38 @@
+.title_order{
+  font-family: $titleFontRegular;
+  padding-top: 5vh;
+  font-size: 1vh!important;
+}
+.text_order{
+  font-family: $textFontRegular;
+}
+
+.recap{
+  padding-top: 5vh;
+}
+.btn-success{
+  background-color: $green!important;
+  border: none;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+  .title_order{
+    font-size: 0.8vh!important;
+    text-align: center;
+  }
+  .img-product{
+    padding: 1vw;
+  }
+}
+@media only screen and (min-device-width : 568px) and (max-device-width : 1024px) {
+
+  .title_order{
+    font-size: 1.2vh!important;
+    background-color: blue;
+  }
+
+}
+//@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+//}

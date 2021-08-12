@@ -3,11 +3,16 @@
 {% block title %}Valider ma commande{% endblock %}
 
 {% block content %}
-    <h2>Je passe ma commande</h2>
-    <p>Choisissez vos préférences</p>
-    <hr>
+    <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
+            <div class="title_order">
+    <h1>Je passe ma commande</h1>
+            </div>
+            <div class="text_order">
+    <p>Choisissez vos préférences</p>
+    <hr>
+
 
             {% set formHtml %}
                 {{ form_start(form,{action:path('order_recap')}) }}
@@ -15,11 +20,11 @@
 
             {% endset %}
             {{ formHtml|replace({'[br]' : '<br/>'})|raw }}
-
+            </div>
         </div>
         <div class="col-md-6">
 
-            <div class="text-center">
+            <div class=" recap mb-5">
                 <b>Récapitulatif de ma commande</b><br/>
             </div>
 
@@ -27,19 +32,20 @@
             <div class="order-summary">
                 {% for key,product in cart %}
                     <div class="row {% if key > 0 %} mt-2 {% endif %}">
-                        <div class="col-2">
+                        <div class="col-2 img-product ">
                             <img src="/uploads/{{ product.product.illustration }}" alt="{{ product.product.name }}" height="75px"><br/>
 
                         </div>
-                        <div class="col-8 my-auto">
+                        <div class="col-8 my-auto description-product ">
                             {{ product.product.name }} <br/>
                             <small> {{ product.product.subtitle }}</small>
                         </div>
-                        <div class="col-2 my-auto">
+                        <div class="col-2 my-auto ">
                             x {{ product.quantity }}
 
                         </div>
                     </div>
+            </div>
 
                 {% endfor %}
             </div>

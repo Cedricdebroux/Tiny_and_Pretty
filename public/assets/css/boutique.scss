@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-
-@font-face {
-  font-family: "corbel";
-  src: url("fonts/CORBEL.TTF");
-}
-@font-face {
-  font-family: "corbel";
-  src: url("fonts/Corbel Bold.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@1&display=swap');
 
 $titleFontRegular: Quicksand, sans-serif;
-$textFontRegular: corbel, trueType;
+$textFontRegular: Cantarell, sans-serif;
 $yellow: rgb(252, 212, 116, 100);
+$green: #a9b97a;
 
 
 @import 'home';
@@ -20,6 +14,13 @@ $yellow: rgb(252, 212, 116, 100);
 @import 'show';
 @import 'deuxiemevie';
 @import "header";
+@import 'concept';
+@import 'ateliers';
+@import 'cart';
+@import 'login';
+@import 'order';
+@import 'password';
+@import 'adress';
 
 
 
