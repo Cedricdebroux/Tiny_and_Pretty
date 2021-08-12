@@ -23,7 +23,7 @@
                             </a>
 
                             <div class="descriptionBest">
-                                <p><span>{{ product.name }}</p></span>
+                                <p><span>{{ product.name }}</span></p>
                                 {% if product.soldout == false %}
                                     <p><span class="product-subtitle"> {{ product.subtitle }} </span></p>
                                     <p><span class="product-price"> {{ (product.price / 100)|number_format(2,',', '.') }} € </span></p>
