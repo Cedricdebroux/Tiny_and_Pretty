@@ -18,7 +18,11 @@
             </p>
 
             {% if product.soldout == false %}
-                <a href="{{ path('add_to_cart', {'id': product.id}) }}" class="btn-primary">Ajouter au panier</a>
+                <button
+                        class="btn btn-outline-secondary col-md-10 col-lg-10 col-xl-10 col-sm-12 mt-3 ml-1 mr-1"
+                        type="button">
+                    <a href="{{ path('add_to_cart', {'id': product.id}) }}" style="color:#000005;">AJOUTER AU PANIER</a>
+                </button>
             {% else %}
                 <button class="soldout">Victime de son succès</button>
             {% endif %}
@@ -28,7 +32,8 @@
                                     type="button" data-toggle="collapse"
                                     data-target="#collapseOne"
                                     aria-expanded="false"
-                                    aria-controls="collapseOne">
+                                    aria-controls="collapseOne"
+                                    style="color:#000005;">
                                 GUIDE DES TAILLES
                             </button>
                     <div id="collapseOne" class="collapse">
