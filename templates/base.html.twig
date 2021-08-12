@@ -251,177 +251,68 @@
 </header>
 
 <main role="main">
-    {% if block('carousel') is defined %}
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777"/>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777"/>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777"/>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+{% block content %}
+{% endblock %}
 
-    {% endif %}
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <!--
-    <div class="container marketing {% if block('carousel') is  not defined %}mt-5{% endif %}">
--->
-    {% block content %}
-    {% endblock %}
 
 
     <!-- FOOTER -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Links  -->
-        <section class="">
+    <hr>
+    <footer class="footer-custom">
 
-            <!-- Grid row -->
-            <!-- Content Logo -->
-            <a class="brand " href="{{ path('home') }}">
-                <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img-footer"/>
-            </a>
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                    </div>
-                    <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2  mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            TINY&PRETTY
-
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Qui sommes-nous ?</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">The tiny & pretty blog</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">CGV</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            COMMANDES
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Politique de retour</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Politique d'expédition</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Paiement sécurisé</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Contact
-                        </h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-                    </div>
-                    <!-- Grid column -->
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        COMMANDES
-                    </h6>
-                    <p>
-                        <a href="#!" class="text-reset">Politique de retour</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Politique d'expédition</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset">Paiement sécurisé</a>
-                    </p>
-                </div>
-                <!-- Grid row -->
+        <div class="container-fluid d-flex  justify-content-between">
+            <img src="{{ asset('assets/img/logo.png')}}" alt="Logo Tiny And Pretty" class="logo-img col-2"/>
+            <div class="col-lg-9 d-flex justify-content-between">
+                <div>
+                <ul>
+                    <li>Tiny&Pretty</li>
+                    <li><a href="">Qui sommes-nous ?</a></li>
+                    <li><a href="">The tiny & pretty blog</a></li>
+                    <li><a href="">CGV</a></li>
+                </ul>
             </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="#">Tiny&Pretty</a>
+            <div>
+                <ul>
+                    <li>Commandes</li>
+                    <li><a href="">Suivi de commande</a></li>
+                    <li><a href="">Livraisons & retours</a></li>
+                    <li><a href="">Paiement sécurisé</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Services</li>
+                    <li><a href="">Devenir partenaire</a></li>
+                    <li><a href="">Cartes cadeaux</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Besoin d'aide ?</li>
+                    <li><a href="">Guide des tailles</a></li>
+                    <li><a href="">Foire aux questions</a></li>
+                    <li><a href="">Contactez-nous</a></li>
+                </ul>
+            </div>
+            </div>
         </div>
-        <!-- Copyright -->
+            <div class="col-12 d-flex justify-content-center cards-icon">
+                <img src="{{ asset('assets/img/amex.png')}}" alt="americain express" class="cards-icon">
+                <img src="{{ asset('assets/img/applepay.png')}}" alt=" Apple Pay" class="cards-icon">
+                <img src="{{ asset('assets/img/bancontact.png')}}" alt="Bancontact" class="cards-icon">
+                <img src="{{ asset('assets/img/amex.png')}}" alt="" class="cards-icon">
+                <img src="{{ asset('assets/img/maestro.png')}}" alt="Maestro" class="cards-icon">
+                <img src="{{ asset('assets/img/mastercard.png')}}" alt="Mastercard" class="cards-icon">
+                <img src="{{ asset('assets/img/paypal.png')}}" alt="Paypal" class="cards-icon">
+                <img src="{{ asset('assets/img/visa.png')}}" alt="Visa" class="cards-icon">
+
+            </div>
+
+    <!-- FOOTER -->
 
     </footer>
 

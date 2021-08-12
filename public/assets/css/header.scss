@@ -11,10 +11,11 @@ body{
   width: 50%;
   height: auto;
 }
+
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="p-2"] {
-  margin-bottom:1rem;
-  flex-direction: column!important;
+  margin-bottom: 1rem;
+  flex-direction: column !important;
 }
 
 .navbar .dropdown-menu {
@@ -22,7 +23,6 @@ body{
   font-size: 2vh;
   color:  rgba(0,0,0,.5);
   // width: 50%;
-
 }
 
 /* breakpoint and up - mega dropdown styles */
@@ -44,32 +44,19 @@ body{
   .little-drop{
     width: 20vw!important;
     left: 65vw!important;
-
   }
   .navbar .dropdown {position:static;}
 
   .navbar .dropdown-menu div[class*="p-2"] {
     flex-direction: row!important;
   }
-
   .navbar .dropdown-menu {
     width:100vw;
     left:0;
     right:0;
     /*  height of nav-item  */
     top:8vh;
-
-    display:block;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s linear;
-
   }
-
-
-
-
-
   /* shows the dropdown menu on hover */
   .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
     display:block;
@@ -84,3 +71,4 @@ body{
   }
 
 }
+

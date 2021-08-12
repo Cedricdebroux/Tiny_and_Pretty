@@ -63,6 +63,11 @@ class Products
     /**
      * @ORM\Column(type="boolean")
      */
+    private $Soldout;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
     private $isNew;
 
     public function __construct(){
@@ -168,6 +173,18 @@ class Products
     public function setIsBest(bool $isBest): self
     {
         $this->isBest = $isBest;
+
+        return $this;
+    }
+
+    public function getSoldout(): ?bool
+    {
+        return $this->Soldout;
+    }
+
+    public function setSoldout(bool $Soldout): self
+    {
+        $this->Soldout = $Soldout;
 
         return $this;
     }

@@ -52,6 +52,7 @@ class ProductController extends AbstractController
         $products = $this->entityManager->getRepository(Products::class)->findByIsBest(1);
         $productN = $this->entityManager->getRepository(Products::class)->findByIsNew(1);
 
+
         if (!$product) {
             return $this->redirectToRoute('products');
         }
