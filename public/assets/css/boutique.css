@@ -264,8 +264,12 @@ body {
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-item {
+  display: flex;
 }
 
 .logo-img {
@@ -289,8 +293,8 @@ body {
 @media screen and (min-width: 992px) {
   /* remove the padding from the navbar so the dropdown hover state is not broken */
   .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
@@ -302,7 +306,8 @@ body {
   /* makes the dropdown full width  */
   .little-drop {
     width: 20vw !important;
-    left: 65vw !important;
+    height: 15vh !important;
+    left: 60vw !important;
   }
 
   .navbar .dropdown {
@@ -315,6 +320,7 @@ body {
 
   .navbar .dropdown-menu {
     width: 100vw;
+    height: 50vh;
     left: 0;
     right: 0;
     /*  height of nav-item  */

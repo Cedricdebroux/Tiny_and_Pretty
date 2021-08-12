@@ -87,7 +87,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown px-3" href="{{ path('products') }}" id="navbarDropdown"
@@ -182,7 +182,7 @@
                                             <a class="nav-link px-3" href="{{ path('deuxieme_vie') }}">DEUXIÈME VIE</a>
                                         </li>
                                         <li>
-                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                                                 <ul class="navbar-nav mr-auto">
                                                     <li class="nav-item dropdown">
                                                         <a class="nav-link dropdown px-3" href="{{ path('concept') }}"
@@ -193,10 +193,12 @@
                                                                     ateliers</a></li>
                                                             <li><a class="dropdown-item"
                                                                    href="{{ path('partenaires') }}">Nos partenaires</a>
-                                                            </li>
+                                                    </li>
                                                         </ul>
 
                                                     </li>
+                                                </ul>
+                                        </li>
 
                                                     <li class="nav-item">
                                                         <a class="nav-link px-3" href="{{ path('tinyworld') }}">TINY
@@ -204,9 +206,9 @@
                                                     </li>
 
 
-                                                <div class="navbar-item-custom icon-nav pl-5 text-sm-center pl-sm-0 float-sm-right">
+
                                                     {% if app.user %}
-                                                        <li class="nav-item ">
+                                                        <li class="nav-item">
                                                         <a class="nav-link px-3" href="{{ path('account') }}"style="color:#a9bf7a;" ><i
                                                                     class="far fa-user-circle"></i>{{ app.user.firstname }}
                                                         </a>
@@ -219,31 +221,26 @@
                                                                     class="fas fa-sign-out-alt"></i></a>
                                                         </li>
                                                     {% else %}
-                                                    <li>
-                                                        <a class="nav-link px-3" href="{{ path('app_login') }}"><i
-                                                                    class="far fa-user-circle"></i></a>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link px-3 pl-5" href="{{ path('app_login') }}"><i class="far fa-user-circle"></i></a>
                                                         <a href="" class="nav-link px-3 "><i class="far fa-heart"></i></a>
                                                         <a href="" class="nav-link px-3 "><i class="fas fa-search"></i></a>
-                                                        <a href="{{ path('register') }}" class="nav-link px-3"><i
-                                                                    class="fas fa-sign-in-alt"></i></a>
-                                                        <a href="{{ path('cart') }}" class="nav-link px-3">
-                                                            <i class="fas fa-shopping-bag"></i>
+                                                        <a href="{{ path('register') }}" class="nav-link px-3"><i class="fas fa-sign-in-alt"></i></a>
+                                                        <a href="{{ path('cart') }}" class="nav-link px-3"><i class="fas fa-shopping-bag"></i>
                                                         </a>
                                                     </li>
                                                     {% endif %}
-
-
-                                                </div>
                                                 </ul>
 
-                                            </div>
-                                        </li>
-                                    </ul>
+
+
+
                                 </div>
                             </li>
                         </ul>
-                    </div>
+
                 </li>
+
             </ul>
         </div>
     </nav>
