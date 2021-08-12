@@ -123,15 +123,19 @@
          </div>
         </div>
     </div>
-    <hr>
-    <h3>Nos meilleures ventes</h3>
-    <p>Découvrez nos articles les plus vendus.</p>
-    <div class="row">
-        {% for product in products %}
-            <div class="col-md-3">
-                {% include 'product/single_product.html.twig' %}
-            </div>
-        {% endfor %}
-    </div><!-- /.row -->
+
+    <div class="container-fluid  bestsellers">
+        <h3 class="separator text-center">BESTSELLERS</h3>
+    </div>
+
+    <div class="container-fluid col-sm-6 col-md-6 col-lg col-xl col-xxl bestproducts">
+        <div class="row">
+            {% for product in products %}
+                <div class="col">
+                    {% include 'product/single_product.html.twig' %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
 {% endblock %}
