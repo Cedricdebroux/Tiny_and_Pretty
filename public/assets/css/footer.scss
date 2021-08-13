@@ -13,8 +13,10 @@ ul{
   align-items: center;
   font-family: $titleFontRegular;
   margin-top: 8vh!important;
-  .logo-img{
-    width: 20%!important;
+  .logo-img img {
+    padding: 2vw;
+    width: 20vw!important;
+    height: auto;
   }
   a{
     color: #0b2e13;
