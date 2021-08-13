@@ -8,11 +8,17 @@
 {% block title %}Paiement{% endblock %}
 
 {% block content %}
-    <h2>Mon recap</h2>
-    <p>Vérifier vos infos</p>
+      <div class="container-fluid">
+         <div class="row">
+              <div class="col-md-6">
+                 <div class="title_order">
+ <h1>Récapitulatif</h1>
+                </div>
+            <div class="text_order">
+    <p>Vérifiez vos infos</p>
     <hr>
-    <div class="row">
-        <div class="col-md-6">
+            </div>
+
 
             <strong>Mon adresse</strong>   <br/>
 
@@ -32,8 +38,8 @@
 
         <div class="col-md-6">
 
-            <div class="text-center">
-                <b>Récap de ma commande</b><br/>
+            <div class=" recap mb-5">
+                <b>Récapitulatif de ma commande</b>
             </div>
 
 
@@ -60,9 +66,11 @@
                 {% endfor %}
             </div>
             <hr>
-            <strong> Sous-total:</strong> {{ ((total / 100)|number_format(2,',', '.')) }} €<br/>
-            <strong> Livraison:</strong>{{ (carrier.price)|number_format(2,',', '.') }} €
-            <strong> Total:</strong> {{ ((total / 100) +  carrier.price /100)|number_format(2,',', '.') }} €
+             <div class=" recap mb-5">
+        <p> <span> <strong> Sous-total:</strong> {{ ((total / 100)|number_format(2,',', '.')) }} €</span></p>
+         <p> <span><strong> Livraison:</strong>{{ (carrier.price)|number_format(2,',', '.') }} €</span></p>
+           <p><span><strong> Total:</strong> {{ ((total / 100) +  carrier.price /100)|number_format(2,',', '.') }} €</span></p>
+            </div>
 
             <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer | {{ ((total / 100) + carrier.price /100)|number_format(2,',', '.') }} € </a>
         </div>
