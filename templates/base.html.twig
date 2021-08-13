@@ -32,7 +32,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand flex-grow-1" href="{{ path('home') }}">
-            <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img"/>
+            <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img-header"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +49,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" data-boundary="overflow">
                         <div class="d-flex  flex-row p-2">
                             <div class="p-2 bd-highlight">
+
                                 <h5>VÊTEMENTS</h5>
                                 <hr>
 
@@ -256,40 +257,43 @@
 
     <!-- FOOTER -->
     <hr>
-    <footer class="footer-custom">
+    <footer class="footer-custom mt-3">
 
 
 
-        <div class="container-fluid d-flex  justify-content-between">
-            <img src="{{ asset('assets/img/logo.png')}}" alt="Logo Tiny And Pretty" class="logo-img col-2"/>
-            <div class="col-lg-9 d-flex justify-content-between">
-                <div>
+        <div class="container-fluid ">
+            <div class="row justify-content-between">
+                <div  class="logo-img col-md  col-sm-12">
+            <img src="{{ asset('assets/img/logo.webp')}}" alt="Logo Tiny And Pretty" />
+                </div>
+            <div class="col-md col-sm-3 ml-3">
+
                 <ul>
-                    <li>Tiny&Pretty</li>
+                    <li><h6>Tiny&Pretty</h6></li>
                     <li><a href="">Qui sommes-nous ?</a></li>
-                    <li><a href="">The tiny & pretty blog</a></li>
+                    <li><a href="">The Tiny & Pretty blog</a></li>
                     <li><a href="">CGV</a></li>
                 </ul>
             </div>
-            <div>
+            <div  class="col-md  col-sm-3 ml-4">
                 <ul>
-                    <li>Commandes</li>
+                    <li><h6>Commandes</h6></li>
                     <li><a href="">Suivi de commande</a></li>
                     <li><a href="">Livraisons & retours</a></li>
                     <li><a href="">Paiement sécurisé</a></li>
                 </ul>
             </div>
-            <div>
+            <div  class="col-md  col-sm-3 ml-3">
                 <ul>
-                    <li>Services</li>
+                    <li><h6>Services</h6></li>
                     <li><a href="">Devenir partenaire</a></li>
                     <li><a href="">Cartes cadeaux</a></li>
                     <li><a href="">Cookies</a></li>
                 </ul>
             </div>
-            <div>
+            <div  class="col-md  col-sm-3 ml-3">
                 <ul>
-                    <li>Besoin d'aide ?</li>
+                    <li><h6>Besoin d'aide ?</h6></li>
                     <li><a href="">Guide des tailles</a></li>
                     <li><a href="">Foire aux questions</a></li>
                     <li><a href="">Contactez-nous</a></li>
@@ -297,7 +301,7 @@
             </div>
             </div>
         </div>
-            <div class="col-12 d-flex justify-content-center cards-icon">
+            <div class="col-12 d-flex justify-content-center mx-auto cards-icon">
                 <img src="{{ asset('assets/img/amex.png')}}" alt="americain express" class="cards-icon">
                 <img src="{{ asset('assets/img/applepay.png')}}" alt=" Apple Pay" class="cards-icon">
                 <img src="{{ asset('assets/img/bancontact.png')}}" alt="Bancontact" class="cards-icon">
