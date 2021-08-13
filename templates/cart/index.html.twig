@@ -57,10 +57,10 @@
     </table>
         <hr>
     <div class=" validation text-center d-flex flex-column mb-5 pb-5">
-      <div class="p-2" ><b>nombre de produits</b> {{ cart|length }} <br/></div>
-        <div class="p-2" > <b>total de mon panier</b> {{ ((total / 100)|number_format(2,',', '.')) }} €</div>
-        <div class="p-2" > <a href="{{ path('order') }}" type="btn" class="btn text-white validate mt-3 pt-5">Valider mon panier</a></div>
-        <div class="p-2" > <a href="{{ path('products') }}" type="btn" class="btn text-white validate mt-3 pt-5">Continuer mes achats</a></div>
+      <div class="p-2" ><b>Nombre d'article(s)</b> {{ cart|length }} <br/></div>
+        <div class="p-2" > <b>Total de mon panier</b> {{ ((total / 100)|number_format(2,',', '.')) }} €</div>
+        <div class="p-2" > <a href="{{ path('order') }}" type="btn" class="btn col-4 text-white validate mt-3 pt-5">Valider mon panier</a></div>
+        <div class="p-2" > <a href="{{ path('products') }}" type="btn" class="btn col-4 text-white validate mt-3 pt-5">Continuer mes achats</a></div>
     </div>
     {% else %}
     <hr>
