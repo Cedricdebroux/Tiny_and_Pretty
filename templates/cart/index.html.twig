@@ -9,7 +9,7 @@
     <p >Contenu de mon panier.</p>
     {% if cart|length > 0 %}
         </div>
-        </div>
+
 
     <table class="table col-md-8 mt-3 ml-5 col-sm-12">
         <thead>
@@ -60,9 +60,11 @@
       <div class="p-2" ><b>nombre de produits</b> {{ cart|length }} <br/></div>
         <div class="p-2" > <b>total de mon panier</b> {{ ((total / 100)|number_format(2,',', '.')) }} €</div>
         <div class="p-2" > <a href="{{ path('order') }}" type="btn" class="btn text-white validate mt-3 pt-5">Valider mon panier</a></div>
+        <div class="p-2" > <a href="{{ path('products') }}" type="btn" class="btn text-white validate mt-3 pt-5">Continuer mes achats</a></div>
     </div>
     {% else %}
     <hr>
     <p class="empty">Votre panier est vide</p>
     {% endif %}
+        </div>
 {% endblock %}

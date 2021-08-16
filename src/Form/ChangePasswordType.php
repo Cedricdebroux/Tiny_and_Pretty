@@ -45,15 +45,15 @@ class ChangePasswordType extends AbstractType
                 'label' => 'mon new mdp',
                 'required' => true,
                 'first_options' => [
-                    'label'  => 'mon new mot de passe',
+                    'label'  => 'Mon nouveau mot de passe',
                     'attr'=>[
                         'placeholder' => 'Votre mot de passe'
                     ]
                 ],
                 'second_options' => [
-                    'label' => 'confirmez  newvotre mot de passe',
+                    'label' => 'Confirmez votre nouveau mot de passe',
                     'attr'=>[
-                        'placeholder' => ' Votre new mot de passe'
+                        'placeholder' => ' Votre nouveau mot de passe'
                     ]
                 ],
 
@@ -61,7 +61,7 @@ class ChangePasswordType extends AbstractType
             ])
 
             ->add('submit', SubmitType::class, [
-                'label' => 'Submit'
+                'label' => 'Envoyer'
             ])
          ;
     }

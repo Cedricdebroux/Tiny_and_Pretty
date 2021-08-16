@@ -38,13 +38,13 @@ class AddressType extends AbstractType
                 'label' => 'Nom de votre entreprise',
                 'required' => false,
                 'attr' => [
-                    'placeholder' => 'Nom de votre entrepris'
+                    'placeholder' => 'Nom de votre entreprise'
                 ]
             ])
             ->add('address', TextType::class, [
                 'label' => 'Votre adresse',
                 'attr' => [
-                    'placeholder' => 'Votre adressee'
+                    'placeholder' => 'Votre adresse'
                 ]
             ])
             ->add('postal', TextType::class, [

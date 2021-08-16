@@ -35,6 +35,9 @@ body{
   color:  rgba(0,0,0,.5);
   // width: 50%;
 }
+.little-drop{
+  left: 20vw!important;
+}
 
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {
@@ -64,7 +67,7 @@ body{
   .little-drop{
     width: 20vw!important;
     height: 15vh!important;
-    left: 60vw!important;
+    left: 50vw!important;
   }
   .navbar .dropdown {position:static;}
 

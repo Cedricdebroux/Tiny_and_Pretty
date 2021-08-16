@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital@1&display=swap");
+.bg-image-banner {
+  position: relative;
+  background: url("../img/banner-mere-et-enfant.webp") no-repeat center fixed;
+  background-size: cover;
+  height: 60vh;
+  width: 120% !important;
+}
+
+.slogan {
+  font-family: Quicksand, sans-serif;
+  font-size: 8vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category {
+  margin-top: 5rem !important;
+  margin-bottom: 10rem;
+  width: 90%;
+}
+
+.Pict {
+  overflow: hidden;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  transition-duration: 875ms;
+}
+
+.Pict:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.description {
+  font-family: Quicksand, sans-serif;
+  font-size: 3vh;
+  font-weight: lighter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.separator {
+  font-family: Quicksand, sans-serif;
+  width: 100%;
+  font-size: 4vh;
+  letter-spacing: 0.3rem;
+  margin-top: 5rem;
+}
+
+.bestproducts {
+  margin-top: 5rem !important;
+  margin-bottom: 10rem !important;
+  width: 90%;
+}
+
+.descriptionBest {
+  font-size: 1.8vh;
+}
+
+.bg-image-deuxieme {
+  background: url("../img/deuxieme-vie-bebe.webp") no-repeat center fixed;
+  background-size: cover;
+  height: 60vh;
+  width: 100% !important;
+  margin-top: 10rem !important;
+  margin-bottom: 5rem;
+}
+
+.box {
+  width: 20vw;
+  height: 45vh;
+  background-color: white;
+  position: absolute;
+  transform: translate(10vw, 15.2vh);
+}
+
+.boxtext {
+  margin: 2vh;
+}
+.boxtext p {
+  font-size: 2.1vh;
+  color: #6a6868;
+  font-family: Cantarell, sans-serif;
+}
+.boxtext .profite {
+  background-color: #fcd474;
+  box-shadow: 0.05em 0.05em 0.05em #aaaaaa;
+  font-size: 1.5vh;
+  color: white;
+  border: none;
+}
+
+.imgblog {
+  width: 90%;
+  margin-top: 3rem;
+}
+
+.btn-blog {
+  border: 0.1em solid !important;
+  border-color: rgba(148, 142, 142, 0.5) !important;
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.2rem;
+  margin: 1rem;
+  color: #948e8e;
+}
+
+.category-blog {
+  font-size: 1.2vh;
+  color: #6a6868;
+}
+
+.title-blog {
+  font-size: 1.8vh;
+  color: #6a6868;
+}
+
+.text-share {
+  font-family: Quicksand, sans-serif;
+  letter-spacing: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
+}
+
+.reseau {
+  font-size: 5vh;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .box {
+    width: 60vw;
+    height: 45vh;
+  }
+}
+.content-layout {
+  padding-top: 3vw !important;
+}
+
+.form {
+  padding-left: 2vw;
+}
+
+#submit {
+  background-color: #fcd474;
+  border: none;
+}
+
+.category_description {
+  font-size: 2vh;
+  padding-left: 3vw;
+  margin-bottom: 10rem !important;
+  width: 90%;
+  font-family: Cantarell, sans-serif;
+  color: #948E8E;
+  position: relative;
+}
+
+.descriptionBest {
+  font-size: 1.8vh;
+  font-family: Quicksand, sans-serif;
+}
+
+.product-item {
+  cursor: pointer;
+}
+
+.apercu {
+  border: none;
+  position: absolute;
+  background-color: #fcd474 !important;
+  width: 75%;
+  z-index: 2;
+  margin: 0 auto;
+  right: 12.5%;
+  top: 45%;
+  opacity: 0;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+}
+
+.apercu:hover {
+  opacity: 1;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+}
+
+.soldout-background {
+  background-color: rgba(168, 168, 168, 0.6);
+}
+
+.aside-description {
+  font-family: Quicksand, sans-serif;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 0 !important;
+  padding: 2vh !important;
+}
+
+hr {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#headingOne {
+  border: none !important;
+}
+
+@media only screen and (min-device-width: 960px) and (max-device-width: 2000px) {
+  .aside-description {
+    text-align: left !important;
+  }
+}
+.soldout {
+  border: 1px solid #b6b6b6;
+  color: #b6b6b6;
+  width: 150px;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  cursor: default;
+}
+
+.title {
+  font-family: Quicksand, sans-serif;
+}
+
+.presentation {
+  font-family: Cantarell, sans-serif;
+  padding-left: calc(100vw/5);
+  line-height: 3vh;
+  color: #948E8E;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-item {
+  display: flex;
+}
+
+.navbar-brand {
+  margin: 0 !important;
+  width: 20%;
+}
+
+.logo-img-header {
+  padding-top: 1vh;
+  padding-bottom: 1.5vh;
+  margin: 0 !important;
+  width: 150%;
+  height: auto;
+}
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*=p-2] {
+  margin-bottom: 1rem;
+  flex-direction: column !important;
+}
+
+.navbar .dropdown-menu {
+  font-family: Quicksand, sans-serif;
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.little-drop {
+  left: 20vw !important;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding: 0.5rem 0.5rem;
+    margin: 0 0.25rem;
+  }
+
+  .logo-img-header {
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    margin: 0 !important;
+    width: 50%;
+    height: auto;
+  }
+
+  /* makes the dropdown full width  */
+  .little-drop {
+    width: 20vw !important;
+    height: 15vh !important;
+    left: 50vw !important;
+  }
+
+  .navbar .dropdown {
+    position: static;
+  }
+
+  .navbar .dropdown-menu div[class*=p-2] {
+    flex-direction: row !important;
+  }
+
+  .navbar .dropdown-menu {
+    width: 100vw;
+    height: 60vh;
+    left: 0;
+    right: 0;
+    /*  height of nav-item  */
+    top: 8vh;
+  }
+
+  /* shows the dropdown menu on hover */
+  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+}
+.title {
+  font-family: Quicksand, sans-serif;
+  font-size: 3vh;
+}
+
+.presentation {
+  font-family: Cantarell, sans-serif;
+  font-size: 1.5vh;
+  padding-left: calc(100vw/5);
+  line-height: 3vh;
+  color: #948E8E;
+}
+
+.video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.empty {
+  font-weight: bold;
+}
+
+.title_cart {
+  font-family: Quicksand, sans-serif;
+  padding: 2vw;
+}
+
+.validation {
+  font-family: Cantarell, sans-serif;
+}
+
+.validate {
+  background-color: #a9b97a !important;
+}
+
+.title_sign {
+  font-family: Quicksand, sans-serif;
+  font-size: 1vh;
+}
+
+.input {
+  font-family: Cantarell, sans-serif;
+}
+
+.connect {
+  background-color: #a9b97a;
+  padding: 2vh;
+}
+
+.reset-register {
+  padding: 5vw;
+}
+
+.title_order {
+  font-family: Quicksand, sans-serif;
+  padding-top: 5vh;
+  font-size: 1vh !important;
+}
+
+.text_order {
+  font-family: Cantarell, sans-serif;
+}
+
+.recap {
+  padding-top: 5vh;
+}
+
+.btn-success {
+  background-color: #a9b97a !important;
+  border: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .title_order {
+    font-size: 0.8vh !important;
+    text-align: center;
+  }
+
+  .img-product {
+    padding: 1vw;
+  }
+}
+@media only screen and (min-device-width: 568px) and (max-device-width: 1024px) {
+  .title_order {
+    font-size: 1.2vh !important;
+    background-color: blue;
+  }
+}
+.btn-primary {
+  background-color: #a9b97a !important;
+  border: none;
+}
+
+.add-address {
+  background-color: #fcd474 !important;
+  border: none;
+}
+
+.logo-img img {
+  padding: 2vw;
+  width: 50vw !important;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.list-footer {
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+a {
+  color: #0b2e13;
+}
+
+.footer-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: Quicksand, sans-serif;
+  margin-top: 8vh !important;
+}
+
+.cards-icon {
+  width: 1.5rem;
+  height: auto;
+  margin: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .logo-img img {
+    padding: 1vw;
+    width: 20vw !important;
+    height: auto;
+  }
+
+  .cards-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=boutique.css.map */
