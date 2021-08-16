@@ -69,10 +69,10 @@
              <div class=" recap mb-5">
         <p> <span> <strong> Sous-total:</strong> {{ ((total / 100)|number_format(2,',', '.')) }} €</span></p>
          <p> <span><strong> Livraison:</strong>{{ (carrier.price)|number_format(2,',', '.') }} €</span></p>
-           <p><span><strong> Total:</strong> {{ ((total / 100) +  carrier.price /100)|number_format(2,',', '.') }} €</span></p>
+           <p><span><strong> Total:</strong> {{ ((total / 100) +  carrier.price)|number_format(2,',', '.') }} €</span></p>
             </div>
 
-            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer | {{ ((total / 100) + carrier.price /100)|number_format(2,',', '.') }} € </a>
+            <a class="btn btn-success btn-block mt-3" id="checkout-button">Payer | {{ ((total / 100) + carrier.price)|number_format(2,',', '.') }} € </a>
         </div>
     </div>
 

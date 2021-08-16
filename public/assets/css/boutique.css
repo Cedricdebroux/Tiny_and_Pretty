@@ -253,6 +253,10 @@ hr {
   color: #948E8E;
 }
 
+.subtitle {
+  font-family: Cantarell, sans-serif;
+}
+
 body {
   padding: 0 !important;
   margin: 0 !important;
@@ -483,6 +487,7 @@ body {
 
 a {
   color: #0b2e13;
+  text-decoration: none;
 }
 
 .footer-custom {
