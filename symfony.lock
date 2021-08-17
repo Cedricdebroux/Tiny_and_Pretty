@@ -106,6 +106,12 @@
     "guzzlehttp/psr7": {
         "version": "1.8.2"
     },
+    "knplabs/knp-menu": {
+        "version": "v3.2.0"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "v3.1.0"
+    },
     "laminas/laminas-code": {
         "version": "4.3.0"
     },
