@@ -1,17 +1,10 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   font-family: $textFontRegular!important;
- *   |                ^^^^^^^^^^^^^^^^
- *   '
- *   faq.scss 2:16  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    font-family: $textFontRegular!important;\d\a   \2502                 ^^^^^^^^^^^^^^^^\a   \2575 \a   faq.scss 2:16  root stylesheet";
+.answer {
+  background-color: #df8c3a !important;
 }
+
+.question {
+  background-color: #df8c3a !important;
+  font-size: 20vh;
+}
+
+/*# sourceMappingURL=faq.css.map */
