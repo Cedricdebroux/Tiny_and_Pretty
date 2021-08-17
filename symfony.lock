@@ -106,11 +106,23 @@
     "guzzlehttp/psr7": {
         "version": "1.8.2"
     },
+    "hamcrest/hamcrest-php": {
+        "version": "v2.0.1"
+    },
+    "knplabs/knp-menu": {
+        "version": "v3.2.0"
+    },
+    "knplabs/knp-menu-bundle": {
+        "version": "v3.1.0"
+    },
     "laminas/laminas-code": {
         "version": "4.3.0"
     },
     "mailjet/mailjet-apiv3-php": {
         "version": "v1.5.1"
+    },
+    "mockery/mockery": {
+        "version": "1.4.3"
     },
     "monolog/monolog": {
         "version": "2.2.0"

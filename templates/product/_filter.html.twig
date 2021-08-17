@@ -1,0 +1,18 @@
+{{ form_start(form2) }}
+    {{ form_row(form2.q) }}
+
+    <h4>Catégories</h4>
+    {{ form_row(form2.categories) }}
+
+    <h4>Prix</h4>
+<div class="row">
+    <div class="col-md-6">
+        {{ form_row(form2.min) }}
+    </div>
+    <div class="col-md-6">
+        {{ form_row(form2.max) }}
+    </div>
+</div>
+
+<button type="submit" class="btn btn-primary w-100">Filtrer</button>
+{{ form_end(form2) }}
