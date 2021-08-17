@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content=" Boutique de vêtements enfants et bébés en ligne">
-    <meta name="author" content="Infinity">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/favicon/android-chrome-192x192.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/favicon-16x16.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/android-chrome-512x512.png') }}">
-    <link rel="apple-touch-icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/apple-touch-icon.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{% block title %}Tiny & Pretty{% endblock %}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/all.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/boutique.css') }}">
 
     <link rel="stylesheet" href="https://code.jquery.com/jquery-3.2.1.slim.min.js">
@@ -31,9 +31,8 @@
 <header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ path('home') }}">
-            <img src="{{ asset('assets/img/Tiny x Pretty - OFFICIAL LOGO .webp') }}" alt="Logo Tiny And Pretty"
-                 class="logo-img-header img-fluid"/>
+        <a class="navbar-brand flex-grow-1" href="{{ path('home') }}">
+            <img src="{{ asset('assets/img/logo.webp') }}" alt="Logo Tiny And Pretty" class="logo-img"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +40,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown px-3" href="{{ path('products') }}" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +49,6 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" data-boundary="overflow">
                         <div class="d-flex  flex-row p-2">
                             <div class="p-2 bd-highlight">
-
                                 <h5>VÊTEMENTS</h5>
                                 <hr>
 
@@ -89,162 +87,165 @@
                     </div>
                 </li>
                 <li>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown px-3" href="{{ path('products') }}" id="navbarDropdown"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    FILLES
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="d-flex  flex-row p-2">
+                                        <div class="p-2 bd-highlight">
+                                            <h5>VÊTEMENTS</h5>
 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown px-3" href="{{ path('products') }}" id="navbarDropdown"
-                               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                FILLES
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="d-flex  flex-row p-2">
-                                    <div class="p-2 bd-highlight">
-                                        <h5>VÊTEMENTS</h5>
+                                            <a class="dropdown-item" href="#">top x t-shirt</a>
+                                            <a class="dropdown-item" href="#">chemise x blouse</a>
+                                            <a class="dropdown-item" href="#">pull x gilet</a>
+                                            <a class="dropdown-item" href="#">robe x jupe</a>
+                                            <a class="dropdown-item" href="#">pantalon x jeans</a>
+                                            <a class="dropdown-item" href="#">short</a>
+                                            <a class="dropdown-item" href="#">salopette x combinaison</a>
+                                            <a class="dropdown-item" href="#">manteau x veste</a>
+                                        </div>
 
-                                        <a class="dropdown-item" href="#">top x t-shirt</a>
-                                        <a class="dropdown-item" href="#">chemise x blouse</a>
-                                        <a class="dropdown-item" href="#">pull x gilet</a>
-                                        <a class="dropdown-item" href="#">robe x jupe</a>
-                                        <a class="dropdown-item" href="#">pantalon x jeans</a>
-                                        <a class="dropdown-item" href="#">short</a>
-                                        <a class="dropdown-item" href="#">salopette x combinaison</a>
-                                        <a class="dropdown-item" href="#">manteau x veste</a>
-                                    </div>
-
-                                    <div class="p-2 bd-highlight">
-                                        <h5>ACCESSOIRES</h5>
-                                        <a class="dropdown-item" href="#">bonnet x chapeau</a>
-                                        <a class="dropdown-item" href="#">écharpe x foulard</a>
-                                        <a class="dropdown-item" href="#">gants x moufles</a>
-                                        <a class="dropdown-item" href="#">maillot de bain</a>
-                                        <a class="dropdown-item" href="#">accessoires de plage</a>
-                                        <a class="dropdown-item" href="#">accessoires cheveux</a>
-                                    </div>
+                                        <div class="p-2 bd-highlight">
+                                            <h5>ACCESSOIRES</h5>
+                                            <a class="dropdown-item" href="#">bonnet x chapeau</a>
+                                            <a class="dropdown-item" href="#">écharpe x foulard</a>
+                                            <a class="dropdown-item" href="#">gants x moufles</a>
+                                            <a class="dropdown-item" href="#">maillot de bain</a>
+                                            <a class="dropdown-item" href="#">accessoires de plage</a>
+                                            <a class="dropdown-item" href="#">accessoires cheveux</a>
+                                        </div>
 
 
-                                    <div class="p-2 bd-highlight">
-                                        <h5>NUIT X SOUS-VÊTEMENTS</h5>
+                                        <div class="p-2 bd-highlight">
+                                            <h5>NUIT X SOUS-VÊTEMENTS</h5>
 
-                                        <a class="dropdown-item" href="#">sous-vêtements</a>
-                                        <a class="dropdown-item" href="#">pyjama</a>
-                                        <a class="dropdown-item" href="#">surpyjama</a>
-                                        <a class="dropdown-item" href="#">cape x peignoir</a>
+                                            <a class="dropdown-item" href="#">sous-vêtements</a>
+                                            <a class="dropdown-item" href="#">pyjama</a>
+                                            <a class="dropdown-item" href="#">surpyjama</a>
+                                            <a class="dropdown-item" href="#">cape x peignoir</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown px-3" href="{{ path('products') }}"
-                                           id="navbarDropdown" role="button" data-toggle="dropdown"
-                                           aria-haspopup="true" aria-expanded="false">
-                                            GARÇON
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <div class="d-flex  flex-row p-2">
-                                                <div class="p-2 bd-highlight">
-                                                    <h5>VÊTEMENTS</h5>
+                            </li>
+                            <li>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown px-3" href="{{ path('products') }}"
+                                               id="navbarDropdown" role="button" data-toggle="dropdown"
+                                               aria-haspopup="true" aria-expanded="false">
+                                                GARÇON
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <div class="d-flex  flex-row p-2">
+                                                    <div class="p-2 bd-highlight">
+                                                        <h5>VÊTEMENTS</h5>
 
-                                                    <a class="dropdown-item" href="#">t-shirt x polo</a>
-                                                    <a class="dropdown-item" href="#">chemise</a>
-                                                    <a class="dropdown-item" href="#">pull x gilet </a>
-                                                    <a class="dropdown-item" href="#">pantalon x jeans</a>
-                                                    <a class="dropdown-item" href="#">short</a>
-                                                    <a class="dropdown-item" href="#">salopette x combinaison</a>
-                                                    <a class="dropdown-item" href="#">manteau x veste</a>
-                                                </div>
+                                                        <a class="dropdown-item" href="#">t-shirt x polo</a>
+                                                        <a class="dropdown-item" href="#">chemise</a>
+                                                        <a class="dropdown-item" href="#">pull x gilet </a>
+                                                        <a class="dropdown-item" href="#">pantalon x jeans</a>
+                                                        <a class="dropdown-item" href="#">short</a>
+                                                        <a class="dropdown-item" href="#">salopette x combinaison</a>
+                                                        <a class="dropdown-item" href="#">manteau x veste</a>
+                                                    </div>
 
-                                                <div class="p-2 bd-highlight">
-                                                    <h5>ACCESSOIRES</h5>
-                                                    <a class="dropdown-item" href="#">bonnet x chapeau</a>
-                                                    <a class="dropdown-item" href="#">écharpe x foulard</a>
-                                                    <a class="dropdown-item" href="#">gants x moufles</a>
-                                                    <a class="dropdown-item" href="#">accessoires de plage</a>
-                                                    <a class="dropdown-item" href="#">cravate x noeud papillon</a>
-                                                </div>
+                                                    <div class="p-2 bd-highlight">
+                                                        <h5>ACCESSOIRES</h5>
+                                                        <a class="dropdown-item" href="#">bonnet x chapeau</a>
+                                                        <a class="dropdown-item" href="#">écharpe x foulard</a>
+                                                        <a class="dropdown-item" href="#">gants x moufles</a>
+                                                        <a class="dropdown-item" href="#">accessoires de plage</a>
+                                                        <a class="dropdown-item" href="#">cravate x noeud papillon</a>
+                                                    </div>
 
 
-                                                <div class="p-2 bd-highlight">
-                                                    <h5>NUIT X SOUS-VÊTEMENTS</h5>
+                                                    <div class="p-2 bd-highlight">
+                                                        <h5>NUIT X SOUS-VÊTEMENTS</h5>
 
-                                                    <a class="dropdown-item" href="#">sous-vêtements</a>
-                                                    <a class="dropdown-item" href="#">pyjama</a>
-                                                    <a class="dropdown-item" href="#">surpyjama</a>
-                                                    <a class="dropdown-item" href="#">cape x peignoir</a>
+                                                        <a class="dropdown-item" href="#">sous-vêtements</a>
+                                                        <a class="dropdown-item" href="#">pyjama</a>
+                                                        <a class="dropdown-item" href="#">surpyjama</a>
+                                                        <a class="dropdown-item" href="#">cape x peignoir</a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link px-3" href="{{ path('products') }}">JOUET</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link px-3" href="{{ path('deuxieme_vie') }}">DEUXIÈME VIE</a>
-                                    </li>
-                                    <li>
+                                        </li>
 
-                                        <ul class="navbar-nav mr-auto">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown px-3" href="{{ path('concept') }}"
-                                                   id="navbarDropdown" role="button" data-toggle="dropdown"
-                                                   aria-haspopup="true" aria-expanded="false">CONCEPT</a>
-                                                <ul class="dropdown-menu little-drop"
-                                                    aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="{{ path('ateliers') }}">Nos
-                                                            ateliers</a></li>
-                                                    <li><a class="dropdown-item"
-                                                           href="{{ path('partenaires') }}">Nos partenaires</a>
+                                        <li class="nav-item">
+                                            <a class="nav-link px-3" href="{{ path('products') }}">JOUET</a>
+                                        </li>
+
+                                        <li class="nav-item ">
+                                            <a class="nav-link px-3" href="{{ path('deuxieme_vie') }}">DEUXIÈME VIE</a>
+                                        </li>
+                                        <li>
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mr-auto">
+                                                    <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown px-3" href="{{ path('concept') }}"
+                                                           id="navbarDropdown" role="button" data-toggle="dropdown"
+                                                           aria-haspopup="true" aria-expanded="false">CONCEPT</a>
+                                                        <ul class="dropdown-menu little-drop" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="{{ path('ateliers') }}">Nos
+                                                                    ateliers</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                   href="{{ path('partenaires') }}">Nos partenaires</a>
+                                                            </li>
+                                                        </ul>
+
                                                     </li>
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link px-3" href="{{ path('tinyworld') }}">TINY
+                                                            WORLD</a>
+                                                    </li>
+
+
+                                                <div class="navbar-item-custom icon-nav pl-5 text-sm-center pl-sm-0 float-sm-right">
+                                                    {% if app.user %}
+                                                        <li class="nav-item ">
+                                                        <a class="nav-link px-3" href="{{ path('account') }}"style="color:#a9bf7a;" ><i
+                                                                    class="far fa-user-circle"></i>{{ app.user.firstname }}
+                                                        </a>
+                                                        <a class="nav-link px-3" href="{{ path('cart') }}" >
+                                                            <i class="fas fa-shopping-bag"></i>
+                                                        </a>
+                                                        <a class="nav-link px-3" href="" ><i class="far fa-heart"></i></a>
+                                                        <a  class="nav-link px-3"href=""><i class="fas fa-search"></i></a>
+                                                        <a class="nav-link px-3" href="{{ path('app_logout') }}"><i
+                                                                    class="fas fa-sign-out-alt"></i></a>
+                                                        </li>
+                                                    {% else %}
+                                                    <li>
+                                                        <a class="nav-link px-3" href="{{ path('app_login') }}"><i
+                                                                    class="far fa-user-circle"></i></a>
+                                                        <a href="" class="nav-link px-3 "><i class="far fa-heart"></i></a>
+                                                        <a href="" class="nav-link px-3 "><i class="fas fa-search"></i></a>
+                                                        <a href="{{ path('register') }}" class="nav-link px-3"><i
+                                                                    class="fas fa-sign-in-alt"></i></a>
+                                                        <a href="{{ path('cart') }}" class="nav-link px-3">
+                                                            <i class="fas fa-shopping-bag"></i>
+                                                        </a>
+                                                    </li>
+                                                    {% endif %}
+
+
+                                                </div>
                                                 </ul>
 
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link px-3" href="{{ path('tinyworld') }}">TINY
-                                            WORLD</a>
-                                    </li>
-
-
-                                    {% if app.user %}
-                                        <li class="nav-item">
-                                            <a class="nav-link px-3" href="{{ path('account') }}"
-                                               style="color:#a9bf7a;"><i
-                                                        class="far fa-user-circle"></i>{{ app.user.firstname }}
-                                            </a>
-                                            <a class="nav-link px-3" href="{{ path('cart') }}">
-                                                <i class="fas fa-shopping-bag"></i>
-                                            </a>
-                                            <a class="nav-link px-3" href=""><i class="far fa-heart"></i></a>
-                                            <a class="nav-link px-3" href=""><i class="fas fa-search"></i></a>
-                                            <a class="nav-link px-3" href="{{ path('app_logout') }}"><i
-                                                        class="fas fa-sign-out-alt"></i></a>
+                                            </div>
                                         </li>
-                                    {% else %}
-                                        <li class="nav-item">
-                                            <a class="nav-link px-3 pl-5" href="{{ path('app_login') }}"><i
-                                                        class="far fa-user-circle"></i></a>
-                                            <a href="" class="nav-link px-3 "><i class="far fa-heart"></i></a>
-                                            <a href="" class="nav-link px-3 "><i class="fas fa-search"></i></a>
-                                            <a href="{{ path('register') }}" class="nav-link px-3"><i
-                                                        class="fas fa-sign-in-alt"></i></a>
-                                            <a href="{{ path('cart') }}" class="nav-link px-3"><i
-                                                        class="fas fa-shopping-bag"></i>
-                                            </a>
-                                        </li>
-                                    {% endif %}
-                                </ul>
-
-
-                            </div>
-                        </li>
-                    </ul>
-
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-
             </ul>
         </div>
     </nav>
@@ -253,69 +254,67 @@
 
 <main role="main">
 
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
+
 
 
     <!-- FOOTER -->
     <hr>
-    <footer class="footer-custom mt-3">
+    <footer class="footer-custom">
 
 
-        <div class="container-fluid ">
-            <div class="row justify-content-between">
-                <div class="logo-img  col-md  col-sm-12 col-xs-12 my-auto">
-                    <img src="{{ asset('assets/img/Tiny x Pretty - OFFICIAL LOGO .webp') }}" alt="Logo Tiny And Pretty"
-                         class="img-fluid"/>
-                </div>
-                <div class="col-md col-sm-3 ml-3">
 
-                    <ul>
-                        <li class="list-footer"><h6>Tiny&Pretty</h6></li>
-                        <li class="list-footer"><a href="{{ path('qui_sommes_nous') }}">Qui sommes-nous ?</a></li>
-                        <li class="list-footer"><a href="">The Tiny & Pretty blog</a></li>
-                        <li class="list-footer"><a href="{{ path('conditions_generales') }}">CGV</a></li>
-                    </ul>
-                </div>
-                <div class="col-md  col-sm-3 ml-4">
-                    <ul>
-                        <li class="list-footer"><h6>Commandes</h6></li>
-                        <li class="list-footer"><a href="">Suivi de commande</a></li>
-                        <li class="list-footer"><a href="{{ path('livraisons_et_retours') }}">Livraisons & retours</a></li>
-                        <li class="list-footer"><a href="{{ path('paiement_securise') }}">Paiement sécurisé</a></li>
-                    </ul>
-                </div>
-                <div class="col-md  col-sm-3 ml-3">
-                    <ul>
-                        <li class="list-footer"><h6>Services</h6></li>
-                        <li class="list-footer"><a href="">Devenir partenaire</a></li>
-                        <li class="list-footer"><a href="">Cartes cadeaux</a></li>
-                        <li class="list-footer"><a href="{{ path('cookie') }}">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="col-md  col-sm-3 ml-3">
-                    <ul>
-                        <li class="list-footer"><h6>Besoin d'aide ?</h6></li>
-                        <li class="list-footer"><a href="">Guide des tailles</a></li>
-                        <li class="list-footer"><a href="{{ path('faq') }}">Foire aux questions</a></li>
-                        <li class="list-footer"><a href="">Contactez-nous</a></li>
-                    </ul>
-                </div>
+        <div class="container-fluid d-flex  justify-content-between">
+            <img src="{{ asset('assets/img/logo.png')}}" alt="Logo Tiny And Pretty" class="logo-img col-2"/>
+            <div class="col-lg-9 d-flex justify-content-between">
+                <div>
+                <ul>
+                    <li>Tiny&Pretty</li>
+                    <li><a href="">Qui sommes-nous ?</a></li>
+                    <li><a href="">The tiny & pretty blog</a></li>
+                    <li><a href="">CGV</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Commandes</li>
+                    <li><a href="">Suivi de commande</a></li>
+                    <li><a href="">Livraisons & retours</a></li>
+                    <li><a href="">Paiement sécurisé</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Services</li>
+                    <li><a href="">Devenir partenaire</a></li>
+                    <li><a href="">Cartes cadeaux</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Besoin d'aide ?</li>
+                    <li><a href="">Guide des tailles</a></li>
+                    <li><a href="">Foire aux questions</a></li>
+                    <li><a href="">Contactez-nous</a></li>
+                </ul>
+            </div>
             </div>
         </div>
-        <div class="col-12 d-flex justify-content-center mx-auto cards-icon">
+            <div class="col-12 d-flex justify-content-center cards-icon">
+                <img src="{{ asset('assets/img/amex.png')}}" alt="americain express" class="cards-icon">
+                <img src="{{ asset('assets/img/applepay.png')}}" alt=" Apple Pay" class="cards-icon">
+                <img src="{{ asset('assets/img/bancontact.png')}}" alt="Bancontact" class="cards-icon">
+                <img src="{{ asset('assets/img/amex.png')}}" alt="" class="cards-icon">
+                <img src="{{ asset('assets/img/maestro.png')}}" alt="Maestro" class="cards-icon">
+                <img src="{{ asset('assets/img/mastercard.png')}}" alt="Mastercard" class="cards-icon">
+                <img src="{{ asset('assets/img/paypal.png')}}" alt="Paypal" class="cards-icon">
+                <img src="{{ asset('assets/img/visa.png')}}" alt="Visa" class="cards-icon">
 
+            </div>
 
-            <img src="{{ asset('assets/img/bancontact.webp') }}" alt="Bancontact" class="cards-icon">
-            <img src="{{ asset('assets/img/maestro.webp') }}" alt="Maestro" class="cards-icon">
-            <img src="{{ asset('assets/img/mastercard.webp') }}" alt="Mastercard" class="cards-icon">
-            <img src="{{ asset('assets/img/paypal.webp') }}" alt="Paypal" class="cards-icon">
-            <img src="{{ asset('assets/img/visa.webp') }}" alt="Visa" class="cards-icon">
-            <img src="{{ asset('assets/img/applepay.webp') }}" alt=" Apple Pay" class="cards-icon">
-
-        </div>
-
-        <!-- FOOTER -->
+    <!-- FOOTER -->
 
     </footer>
 
@@ -328,4 +327,5 @@
 
 {% block script %}
 {% endblock %}
+
 </html>
