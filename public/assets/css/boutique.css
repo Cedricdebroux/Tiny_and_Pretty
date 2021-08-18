@@ -520,5 +520,18 @@ a {
     margin-top: 2rem;
   }
 }
+.question {
+  font-family: Quicksand, sans-serif;
+  background-color: white;
+}
+
+.answer {
+  font-family: Cantarell, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: #1c3531;
+}
 
 /*# sourceMappingURL=boutique.css.map */

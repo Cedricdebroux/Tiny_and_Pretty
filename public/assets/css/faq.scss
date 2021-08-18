@@ -1,11 +1,12 @@
-.answer{
-  background-color: #df8c3a!important;
-
-
-}
 .question{
-  background-color: #df8c3a!important;
-
-  font-size: 20vh;
-
+  font-family: $titleFontRegular;
+  background-color: white;
+}
+.answer{
+  font-family: $textFontRegular;
+}
+a:link
+{
+  text-decoration:none;
+  color: #1c3531 ;
 }

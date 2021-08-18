@@ -1,10 +1,11 @@
-.answer {
-  background-color: #df8c3a !important;
-}
-
 .question {
   background-color: #df8c3a !important;
-  font-size: 20vh;
+  font-size: 20vh !important;
+}
+
+.test {
+  background-color: #6f42c1 !important;
+  font-size: 10vh;
 }
 
 /*# sourceMappingURL=faq.css.map */
