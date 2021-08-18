@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Classe\search;
 
+use App\Entity\Baby;
 use App\Entity\Category;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -30,9 +31,12 @@ class SearchType extends AbstractType
             ->add('categories', EntityType::class, [
                 'label'=>false,
                 'required'=>false,
-                'class'=> Category::class,
+                'class'=> Baby::class,
                 'multiple' => true,
-                'expanded' => true
+                'expanded' => true,
+                'attr'=>[
+                    'class' => 'btn-block'
+    ]
 
     ])
             ->add('submit', SubmitType::class,[

@@ -7,6 +7,7 @@ use App\Data\SearchData;
 use App\Entity\Products;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Knp\Component\Pager\Pagination\PaginationInterface;
 use Stripe\Product;
 
 /**
@@ -71,7 +72,7 @@ class ProductsRepository extends ServiceEntityRepository
         ;
     }
 
-    public function findSearch(SearchData $search):array
+    public function findSearch(SearchData $search)
     {
         $query = $this
             ->createQueryBuilder('p')

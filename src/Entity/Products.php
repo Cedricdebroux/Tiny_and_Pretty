@@ -85,10 +85,6 @@ class Products
      */
     private $accessory;
 
-
-
-
-
     /**
      * @ORM\Column(type="boolean")
      */

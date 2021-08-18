@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Classe\search;
 use App\Data\SearchData;
+use App\Entity\Baby;
 use App\Entity\Products;
 use App\Form\SearchForm;
 use App\Form\SearchType;
@@ -33,22 +34,40 @@ class ProductController extends AbstractController
         $form2 = $this->createForm(SearchForm::class, $data);
         $search = new search();
         $form = $this->createForm(SearchType::class, $search);
-
         $form2->handleRequest($request);
         $products = $repository->findSearch($data);
-    /*    $form->handleRequest($request);*/
+        $productBaby = $this->entityManager->getRepository(Baby::class)->findAll();
+
+        return $this->render('product/index.html.twig', [
+            'products'=>$products,
+            'form' => $form->createView(),
+            'form2'=> $form2->createView(),
+            'productBaby' => $productBaby
+        ]);
+    }
+
+
+        #[Route('/productBaby', name :'productBaby')]
+
+        public function baby()
+    {
+        $productBaby = $this->entityManager->getRepository(Products::class)->findAll();
+
+        return $this->render('product/index.html.twig', [
+
+            'productBaby' => $productBaby
+        ]);
+    }
+
+
+        /*    $form->handleRequest($request);*/
 
       /*  if ($form->isSubmitted() && $form->isValid()) {
             $products = $this->entityManager->getRepository(Products::class)->findWithSearch($search);
         }else {
             $products = $this->entityManager->getRepository(Products::class)->findAll();
         }*/
-        return $this->render('product/index.html.twig', [
-            'products'=>$products,
-            'form' => $form->createView(),
-            'form2'=> $form2->createView()
-        ]);
-    }
+
 
 
 
@@ -72,13 +91,6 @@ class ProductController extends AbstractController
         ]);
 
     }
-    #[Route('/produit/baby', name :'baby')]
-    public function baby($baby): Response
-    {
-        $productbaby = $this->entityManager->getRepository(Products::class)->findWithSearch($baby);
-        return $this->render('product/index.html.twig', [
-            'productbaby'=>$productbaby
-        ]);
-    }
+
 
 }

@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Data\SearchData;
+use App\Entity\Baby;
 use App\Entity\Category;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -27,8 +28,8 @@ class SearchForm extends AbstractType
            ->add('categories', EntityType::class, [
                'label' => false,
                'required' => false,
-               'class' => Category::class,
-               'expanded' => true,
+               'class' => Baby::class,
+               'choice_label' => 'name',
                'multiple' => true
            ] )
            ->add('min', NumberType::class, [
