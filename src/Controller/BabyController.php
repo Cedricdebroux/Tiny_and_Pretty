@@ -4,8 +4,13 @@ namespace App\Controller;
 
 use App\Entity\Baby;
 use App\Entity\Products;
+use App\Data\SearchData;
+
+use App\Form\SearchType;
+use App\Repository\ProductsRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -15,12 +20,16 @@ class BabyController extends AbstractController
     public function __construct(EntityManagerInterface $entityManager) {
         $this->entityManager = $entityManager;
     }
-    #[Route('/baby', name: 'baby')]
-    public function index(): Response
+    #[Route('/baby', name: 'productsBabies')]
+    public function index(ProductsRepository $repository, request $request): Response
     {
-        $product = $this->entityManager->getRepository(Baby::class)->findAll();
-    return $this->render('product/index.html.twig',[
-        'product'=>$product
+        $data = new searchData();
+        $form3 = $this->createForm(SearchType::class, $data);
+        $form3->handleRequest($request);
+        $productsBaby = $repository->findSearchBaby($data);
+    return $this->render('product/baby/productsBabies.html.twig',[
+        'productsBabies'=>$productsBaby,
+        'form3' => $form3->createView()
         ]);
     }
 }

@@ -3,7 +3,10 @@
 namespace App\Form;
 
 use App\Data\SearchData;
+use App\Entity\Boy;
 use App\Entity\Category;
+use App\Entity\Girl;
+use App\Entity\Products;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
@@ -17,20 +20,23 @@ class SearchForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
        $builder
-           ->add('q', TextType::class, [
+           ->add('fille', TextType::class, [
                'label' => false,
                'required' => false,
                'attr' => [
                    'placeholder' => 'Rechercher votre produit'
                ]
            ])
-           ->add('categories', EntityType::class, [
+           ->add('girls', EntityType::class, [
                'label' => false,
                'required' => false,
-               'class' => Category::class,
+               'class' => Girl::class,
                'expanded' => true,
                'multiple' => true
+
            ] )
+
+
            ->add('min', NumberType::class, [
                'label' => false,
                'required' => false,
