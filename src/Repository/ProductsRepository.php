@@ -26,27 +26,6 @@ class ProductsRepository extends ServiceEntityRepository
      * Requête qui permet de récup les produits en fonction de la search
      * @return Product[]
      */
-  /*  public function findWithSearch (Search $search){
-        $queryGirl = $this
-        ->CreateQueryBuilder('p')
-        ->select('g','p')
-        ->join('p.girl', 'g');
-        if(!empty($search->categories)){
-            $queryGirl = $queryGirl
-                ->andWhere('g.id IN(:categories)')
-                ->setParameter('categories', $search->categories);
-        }
-        if(!empty($search->string)){
-            $queryGirl = $queryGirl
-                ->andWhere('p.name LIKE :string')
-                ->setParameter('string', "%$search->string%");
-        }
-        return $queryGirl->getQuery()->getResult();
-
-
-    }*/
-
-
 
    /**
      * @return Products[] Returns an array of Products objects
@@ -167,6 +146,37 @@ class ProductsRepository extends ServiceEntityRepository
             $query = $query
                 ->andWhere('bb.id IN (:babies)')
                 ->setParameter('babies', $search->babies);
+        }
+        return $query->getQuery()->getResult();
+    }
+
+    public function findSearchToy(SearchData $search):array
+    {
+        $query = $this
+            ->createQueryBuilder('p')
+            ->select('j', 'p')
+            ->join('p.toys', 'j');
+        if(!empty($search->jouet)) {
+            $query = $query
+                ->andWhere('p.name LIKE :jouet')
+                ->setParameter('jouet', "%{$search->jouet}%");
+        }
+        // Recherche par prix minimum et maximum
+        if(!empty($search->min)){
+            $query = $query
+                ->andWhere('p.price >= :min')
+                ->setParameter('min', $search->min*100);
+        }
+        if(!empty($search->max)){
+            $query = $query
+                ->andWhere('p.price <= :max')
+                ->setParameter('max', $search->max*100);
+        }
+
+        if(!empty($search->toys)){
+            $query = $query
+                ->andWhere('j.id IN (:toys)')
+                ->setParameter('toys', $search->toys);
         }
         return $query->getQuery()->getResult();
     }

@@ -9,13 +9,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                {% include 'product/boys/_filterToy.html.twig' with {form: form} only %}
+                {% include 'product/toy/_filterToy.html.twig' with {form4: form4} only %}
             </div>
         </div>
     </div>
     <div class="col-md-9">
         <div class="grid">
-            {% for product in productsBoys %}
+            {% for product in productsToy %}
                 {% include '/product/single_product.html.twig' with {product: product} only %}
             {% endfor %}
         </div>

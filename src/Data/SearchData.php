@@ -6,6 +6,7 @@ use App\Entity\Baby;
 use App\Entity\Boy;
 use App\Entity\Category;
 use App\Entity\Girl;
+use App\Entity\Toys;
 
 class SearchData
 {
@@ -40,6 +41,17 @@ class SearchData
      */
 
     public $babies = [];
+
+    /**
+     * @var string
+     */
+    public $jouet = '';
+
+    /**
+     * @var Toys[]
+     */
+
+    public $toys = [];
 
     /**
      * @var Category[]
