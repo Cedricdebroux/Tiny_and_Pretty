@@ -3,12 +3,108 @@
 {% block title %}Nos ateliers{% endblock %}
 
 {% block content %}
-    <section class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/T6ESYqnM2oQ?start=6"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+    <div class="col-12 text-center pt-5">
+        <h1 class="title">
+            NOS ATELIERS
+        </h1>
+        <div class="col-10 text-left pt-5 pb-5">
+            <div class="presentation">
+                Tiny and Pretty ce n’est pas seulement de petites âmes sympathiques qui agitent leurs méninges pour vous
+                dégoter
+                de belles choses. C’est aussi et surtout une grande famille unie, qui place l’humain au centre de ses
+                choix. Il nous
+                tient donc à cœur de partager avec vous ce pretty world qui nous entoure ainsi que celles et ceux qui y
+                contribuent
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center pb-5 ml-5">
+        <div class="row">
+            <div class="col-6"><a href="{{ path('atelier_debora') }}">
+                    <img src="{{ asset('assets/img/debora.webp') }}"  class="img_atelier"
+                         alt="atelier couture enfant debora partenaire"/>
+                    <div class="title_atelier text-center mt-5">
+                        <h3>L’ATELIER DE DÉBORA</h3>
+                    </div>
+                    <div class="description_atelier text-left mt-5 ml-5 mr-5">
+                        <p>Débora n’a pas rejoint la famille Tiny & Pretty par hasard. Ses grandes qualités de couturière
+                        ainsi que sa personne, engagée, pétillante et énergique on fait d’elle l’élément indispensable à
+                            la création de notre toute première collection.</p>
 
-        </iframe>
-    </section>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <div class="coming_soon_box">
+                    <img src="{{ asset('assets/img/calcetines.webp') }}"  class="img_atelier"
+                         alt="atelier couture enfant  partenaire "/>
+                    <div class="coming_soon_text">
+                        <div class="text_soon">
+                            <h4>WE NEED YOU</h4>
+                            <h6>COMING SOON</h6>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="title_atelier text-center mt-5">
+                    <h3>VOTRE ATELIER</h3>
+                </div>
+                <div class="description_atelier text-left mt-5 ml-5 mr-5">
+                    <p>Envie de collaborer avec nous et de faire partie de l'aventure Tiny & Pretty.<br>
+                        Vous avez un atelier ? Vous aimeriez devenir partenaire ?
+                    </p>
+                    <button class="btn-blog join mx-auto"><span>Rejoignez-nous !</span></button>
+
+                </div>
+            </div>
+            <!--
+            <div class="col-4">
+                <img src="{{ asset('assets/img/lisa.webp') }}" style="width:80%" class=""
+                     alt="atelier couture enfant lisa partenaire "/>
+                <div class="title_atelier text-center mt-5">
+                    <h4>LISA ET LES PELOTES DE LAINE</h4>
+                </div>
+                <div class="description_atelier text-left mt-5 ml-5 mr-5">
+                    Il est conçu et fabriqué à Barcelone, et est
+                    réputé pour sa qualité et le savoir-faire de nombreux
+                    années d'expérience. Cóndor est authentique, responsable et
+                    fiable. Des designs exclusifs, des lignes simples, avec
+                    personnage présenté dans un kaléidoscope de couleurs.
+                    Tailles disponibles pour les nouveau-nés jusqu'à 14 ans.
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="coming_soon_box">
+                    <img src="{{ asset('assets/img/calcetines.webp') }}" style="width:80%" class=""
+                         alt="atelier couture enfant calcetines partenaire "/>
+                    <div class="coming_soon_text">
+                        <div class="text_soon">
+                            <h2>COMING SOON</h2>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="title_atelier text-center mt-5">
+                    <h4>LOS CALCETINES</h4>
+                </div>
+                <div class="description_atelier text-left mt-5 ml-5 mr-5">
+                    It is designed and manufactured in Barcelona, and is
+                    renowned for its quality and know-how from many
+                    years’ experience. Cóndor is genuine, responsible and
+                    trustworthy. Exclusive designs, simple lines, with
+                    character presented in a kaleidoscope of colours.
+                    Available sizes for newborns up to 14-year-olds
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+
+
+
 {% endblock %}

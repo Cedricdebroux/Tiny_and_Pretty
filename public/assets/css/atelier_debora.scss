@@ -1,0 +1,33 @@
+.banner-debora {
+  position: relative;
+  background: url('../img/banner-debora.webp') no-repeat center fixed;
+  background-size: cover;
+  height: 50vh;
+  width: 120% !important;
+
+}
+.slogan-debora{
+  font-family: $titleFontRegular;
+  font-size: 8vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+iframe{
+  width:80vw;
+  height: auto;
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 2000px){
+  iframe{
+    width: 560px;
+    height: 315px;
+  }
+}
+
+
+
+

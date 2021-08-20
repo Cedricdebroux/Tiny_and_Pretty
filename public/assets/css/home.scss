@@ -87,11 +87,11 @@ font-size: 4vh;
   margin: 2vh;
   p {
     font-size: 1.8vh;
-    color: rgb(106, 104, 104, 80);
+    color: rgba(106, 104, 104, 80);
     font-family: $textFontRegular;
   }
   .profite{
-    background-color: rgb(252, 212, 116, 100);
+    background-color: rgb(252, 212, 116);
     box-shadow: .050em .050em .050em #aaaaaa;
     font-size: 1.5vh;
     color: white;
@@ -106,7 +106,7 @@ font-size: 4vh;
 }
 .btn-blog{
 border: 0.1em solid !important;
-  border-color: rgb(148, 142, 142, 50%) !important;
+  border-color: rgba(148, 142, 142, 50%) !important;
   background-color: #FFFFFF;
   padding: 0.5rem;
 font-size: 0.6rem;
@@ -116,11 +116,11 @@ font-size: 0.6rem;
 }
 .category-blog{
   font-size: 1.2vh;
-  color: rgb(106, 104, 104, 80);
+  color: rgba(106, 104, 104, 80);
 }
 .title-blog{
  font-size: 1.8vh;
-  color: rgb(106, 104, 104, 60);
+  color: rgba(106, 104, 104, 60);
 }
 
 //SHARE

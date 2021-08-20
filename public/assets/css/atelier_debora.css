@@ -1,0 +1,9 @@
+.banner-debora {
+  position: relative;
+  background: url("../img/banner-mere-et-enfant.webp") no-repeat center fixed;
+  background-size: cover;
+  height: 60vh;
+  width: 120% !important;
+}
+
+/*# sourceMappingURL=atelier_debora.css.map */
