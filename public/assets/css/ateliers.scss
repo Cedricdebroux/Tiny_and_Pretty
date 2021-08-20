@@ -1,14 +1,18 @@
 .title_atelier {
   font-family: $titleFontRegular;
-  font-size: 0.5rem!important;
+  font-size: 0.5vh!important;
   justify-content: center;
+  color: #808080;
 }
+
+
 .description_atelier {
   //padding-left: 5vw;
   width: 100%;
   margin: 0!important;
   font-family: $textFontRegular;
   font-size: 2vh;
+  color: #808080;
   background-color: #0B7FC7;
 
 }
@@ -72,7 +76,9 @@
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 992px)
+and (max-device-width: 2000px)
+and (-webkit-min-device-pixel-ratio: 1){
 
 .coming_soon_box{
   position:relative;
@@ -103,6 +109,7 @@
 }
 .coming_soon_box .coming_soon_text .text_soon {
   font-family: $textFontRegular;
+  font-size: 5vh!important;
   top: 50%;
   left: 50%;
   width:100%;
@@ -117,19 +124,12 @@
  // -webkit-transform: translateY(5%);
 }
 
-  .title_atelier {
-    font-family: $titleFontRegular;
 
+  .description_atelier {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: #9a2d4a;
   }
-
-
-.description_atelier {
-
-  width: 100%;
-  padding-left: 5vw;
-  background-color: #9a2d4a;
-
-}
 
 
 a {

@@ -218,16 +218,12 @@ body {
   margin: 0 !important;
   width: 100%; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 .navbar .nav-item {
   display: flex; }
 
 .navbar-brand {
   margin: 0 !important;
-  width: 20%; }
+  width: 30%; }
 
 .logo-img-header {
   padding-top: 1vh;
@@ -311,14 +307,16 @@ body {
 
 .title_atelier {
   font-family: Quicksand, sans-serif;
-  font-size: 0.5rem !important;
-  justify-content: center; }
+  font-size: 0.5vh !important;
+  justify-content: center;
+  color: #808080; }
 
 .description_atelier {
   width: 100%;
   margin: 0 !important;
   font-family: Cantarell, sans-serif;
   font-size: 2vh;
+  color: #808080;
   background-color: #0B7FC7; }
 
 .img_atelier {
@@ -352,7 +350,7 @@ body {
   height: 100%;
   opacity: 1; }
 
-@media (min-width: 800px) {
+@media (min-width: 992px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 1) {
   .coming_soon_box {
     position: relative;
     padding: 0;
@@ -381,6 +379,7 @@ body {
 
   .coming_soon_box .coming_soon_text .text_soon {
     font-family: Cantarell, sans-serif;
+    font-size: 5vh !important;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -393,12 +392,9 @@ body {
     opacity: 1;
     transform: translateY(50%); }
 
-  .title_atelier {
-    font-family: Quicksand, sans-serif; }
-
   .description_atelier {
-    width: 100%;
     padding-left: 5vw;
+    padding-right: 5vw;
     background-color: #9a2d4a; }
 
   a {
@@ -540,5 +536,14 @@ a:link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+iframe {
+  width: 80vw;
+  height: auto; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 2000px) {
+  iframe {
+    width: 560px;
+    height: 315px; } }
 
 /*# sourceMappingURL=boutique.css.map */
