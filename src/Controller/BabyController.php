@@ -6,6 +6,7 @@ use App\Entity\Baby;
 use App\Entity\Products;
 use App\Data\SearchData;
 
+use App\Form\SearchBaby;
 use App\Form\SearchType;
 use App\Repository\ProductsRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -24,11 +25,11 @@ class BabyController extends AbstractController
     public function index(ProductsRepository $repository, request $request): Response
     {
         $data = new searchData();
-        $form3 = $this->createForm(SearchType::class, $data);
+        $form3 = $this->createForm(SearchBaby::class, $data);
         $form3->handleRequest($request);
         $productsBaby = $repository->findSearchBaby($data);
     return $this->render('product/baby/productsBabies.html.twig',[
-        'productsBabies'=>$productsBaby,
+        'productsBabies' => $productsBaby,
         'form3' => $form3->createView()
         ]);
     }
