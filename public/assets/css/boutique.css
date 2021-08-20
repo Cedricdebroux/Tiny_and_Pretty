@@ -87,11 +87,13 @@
 .boxtext {
   margin: 2vh;
 }
+
 .boxtext p {
-  font-size: 1.8vh;
+  font-size: 2.1vh;
   color: #6a6868;
   font-family: Cantarell, sans-serif;
 }
+
 .boxtext .profite {
   background-color: #fcd474;
   box-shadow: 0.05em 0.05em 0.05em #aaaaaa;
@@ -209,6 +211,10 @@
   transition-duration: 0.4s;
 }
 
+.soldout-background {
+  background-color: rgba(168, 168, 168, 0.6);
+}
+
 .aside-description {
   font-family: Quicksand, sans-serif;
   text-align: center;
@@ -251,10 +257,6 @@ hr {
   padding-left: calc(100vw/5);
   line-height: 3vh;
   color: #948E8E;
-}
-
-.subtitle {
-  font-family: Cantarell, sans-serif;
 }
 
 body {
@@ -340,7 +342,6 @@ body {
 
   .navbar .dropdown-menu {
     width: 100vw;
-    height: 60vh;
     left: 0;
     right: 0;
     /*  height of nav-item  */
@@ -480,6 +481,8 @@ body {
   margin-bottom: 2vh;
 }
 
+ul li {
+
 .list-footer {
   list-style-type: none;
   font-size: 1rem;
@@ -497,6 +500,10 @@ a {
   align-content: center;
   align-items: center;
   font-family: Quicksand, sans-serif;
+}
+
+.footer-custom .logo-img {
+  width: 167px;
   margin-top: 8vh !important;
 }
 
@@ -520,5 +527,292 @@ a {
     margin-top: 2rem;
   }
 }
+
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
+/*# sourceMappingURL=boutique.css.map */
+/*# sourceMappingURL=boutique.scss.map */
 
 /*# sourceMappingURL=boutique.css.map */

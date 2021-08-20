@@ -25,52 +25,6 @@ class ProductController extends AbstractController
     }
 
 
-    #[Route('/nos-produits', name :'products')]
-
-    public function index(ProductsRepository $repository, request $request): Response
-    {
-        /*autre version*/
-        $data = new searchData();
-        $form2 = $this->createForm(SearchForm::class, $data);
-        $search = new search();
-        $form = $this->createForm(SearchType::class, $search);
-        $form2->handleRequest($request);
-        $products = $repository->findSearch($data);
-        $productBaby = $this->entityManager->getRepository(Baby::class)->findAll();
-
-        return $this->render('product/index.html.twig', [
-            'products'=>$products,
-            'form' => $form->createView(),
-            'form2'=> $form2->createView(),
-            'productBaby' => $productBaby
-        ]);
-    }
-
-
-        #[Route('/productBaby', name :'productBaby')]
-
-        public function baby()
-    {
-        $productBaby = $this->entityManager->getRepository(Products::class)->findAll();
-
-        return $this->render('product/index.html.twig', [
-
-            'productBaby' => $productBaby
-        ]);
-    }
-
-
-        /*    $form->handleRequest($request);*/
-
-      /*  if ($form->isSubmitted() && $form->isValid()) {
-            $products = $this->entityManager->getRepository(Products::class)->findWithSearch($search);
-        }else {
-            $products = $this->entityManager->getRepository(Products::class)->findAll();
-        }*/
-
-
-
-
     #[Route('/produit/{slug}', name :'product')]
 
     public function show($slug): Response
@@ -82,7 +36,7 @@ class ProductController extends AbstractController
 
 
         if (!$product) {
-            return $this->redirectToRoute('products');
+            return $this->redirectToRoute('home');
         }
         return $this->render('product/show.html.twig', [
             'product' => $product,
