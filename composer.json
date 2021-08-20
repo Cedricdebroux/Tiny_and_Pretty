@@ -7,13 +7,17 @@
         "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "api-platform/core": "^2.6",
+        "composer/ca-bundle": "^1.2",
         "composer/package-versions-deprecated": "1.11.99.2",
         "doctrine/annotations": "^1.13",
         "doctrine/doctrine-bundle": "^2.3",
         "doctrine/doctrine-migrations-bundle": "^3.1",
         "doctrine/orm": "^2.9",
         "easycorp/easyadmin-bundle": "^3.3",
+        "guzzlehttp/guzzle": "^7.3",
         "mailjet/mailjet-apiv3-php": "^1.5",
+        "nelmio/cors-bundle": "^2.1",
         "phpdocumentor/reflection-docblock": "^5.2",
         "sensio/framework-extra-bundle": "^6.1",
         "stripe/stripe-php": "^7.83",
@@ -45,16 +49,17 @@
         "symfony/web-link": "5.2.*",
         "symfony/yaml": "5.2.*",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0"
+        "twig/twig": "^2.12|^3.0",
+        "vlucas/phpdotenv": "^5.3"
     },
     "require-dev": {
         "symfony/browser-kit": "^5.2",
         "symfony/css-selector": "^5.2",
-        "symfony/debug-bundle": "^5.2",
+        "symfony/debug-bundle": "5.2.*",
         "symfony/maker-bundle": "^1.33",
         "symfony/phpunit-bridge": "^5.2",
         "symfony/stopwatch": "^5.2",
-        "symfony/var-dumper": "^5.2",
+        "symfony/var-dumper": "5.2.*",
         "symfony/web-profiler-bundle": "^5.2"
     },
     "config": {
