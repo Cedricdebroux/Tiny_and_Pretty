@@ -11,7 +11,7 @@ body{
 }
 .navbar-brand{
   margin: 0!important;
-  width: 30%;
+  width: 20vw;
 }
 .logo-img-header{
   padding-top: 1vh;
@@ -47,9 +47,9 @@ body{
   }
 
   /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-  .navbar .nav-item {
+ .navbar .nav-item {
    padding:.5rem .5rem;
-   margin:0 .25rem;
+  margin:0 .25rem;
 
   }
 
