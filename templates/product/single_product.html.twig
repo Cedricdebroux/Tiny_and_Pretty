@@ -5,5 +5,10 @@
         <p><span>{{ product.name }}</span></p>
         <p><span class="product-subtitle"> {{ product.subtitle }} </span></p>
         <p><span class="product-price"> {{ (product.price / 100)|number_format(2,',', '.') }} € </span></p>
+        <div>
+            {% for c in product.category %}
+               <em class="text-muted text-primary text-italic">{{ c.name }}</em>
+            {% endfor %}
+        </div>
     </div>
 </div>

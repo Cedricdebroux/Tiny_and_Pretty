@@ -56,6 +56,40 @@ class Products
     private $category;
 
     /**
+     * @ORM\ManyToMany(targetEntity=Baby::class, inversedBy="products")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $baby;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Girl::class, inversedBy="products")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $girl;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Boy::class, inversedBy="products")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $boy;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Toys::class, inversedBy="products")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $toys;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Accessory::class, inversedBy="products")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $accessory;
+
+
+
+
+
+    /**
      * @ORM\Column(type="boolean")
      */
     private $isBest;
@@ -72,6 +106,11 @@ class Products
 
     public function __construct(){
         $this->category = new ArrayCollection();
+        $this->baby = new ArrayCollection();
+        $this->girl = new ArrayCollection();
+        $this->boy = new ArrayCollection();
+        $this->toys = new ArrayCollection();
+        $this->accessory = new ArrayCollection();
     }
     public function getId(): ?int
     {
@@ -161,6 +200,81 @@ class Products
     public function setCategory(?Category $category): self
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Baby[]
+     */
+    public function getBaby(): Collection
+    {
+        return $this->baby;
+    }
+
+    public function setBaby(?Baby $baby): self
+    {
+        $this->baby = $baby;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Girl[]
+     */
+    public function getGirl(): Collection
+    {
+        return $this->girl;
+    }
+
+    public function setGirl(?Girl $girl): self
+    {
+        $this->girl = $girl;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Boy[]
+     */
+    public function getBoy(): Collection
+    {
+        return $this->boy;
+    }
+
+    public function setBoy(?Boy $boy): self
+    {
+        $this->boy = $boy;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Toys[]
+     */
+    public function getToys(): Collection
+    {
+        return $this->toys;
+    }
+
+    public function setToys(?Toys $toys): self
+    {
+        $this->toys = $toys;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Accessory[]
+     */
+    public function getAccessory(): Collection
+    {
+        return $this->accessory;
+    }
+
+    public function setAccessory(?Accessory $accessory): self
+    {
+        $this->accessory = $accessory;
 
         return $this;
     }

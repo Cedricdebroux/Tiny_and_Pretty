@@ -2,10 +2,13 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Baby;
+use App\Entity\Boy;
 use App\Entity\Carrier;
-use App\Entity\Category;
+use App\Entity\Girl;
 use App\Entity\Order;
 use App\Entity\Products;
+use App\Entity\Toys;
 use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -38,7 +41,10 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Users', 'fas fa-user', User::class);
         yield MenuItem::linkToCrud('Orders', 'fas fa-shopping-cart', Order::class);
-        yield MenuItem::linkToCrud('Category', 'fas fa-list', Category::class);
+        yield MenuItem::linkToCrud('Baby', 'fas fa-baby', Baby::class);
+        yield MenuItem::linkToCrud('Girl', 'fas fa-female', Girl::class);
+        yield MenuItem::linkToCrud('Boy', 'fas fa-male', Boy::class);
+        yield MenuItem::linkToCrud('Toys', 'fas fa-gamepad', Toys::class);
         yield MenuItem::linkToCrud('Products', 'fas fa-tag', Products::class);
         yield MenuItem::linkToCrud('Carrier', 'fas fa-truck', Carrier::class);
     }
