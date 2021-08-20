@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Retourner un article{% endblock %}
+
+{% block content %}
+
+    {% for product in order.orderDetails %}
+        <table class="table ml-5 mr-5">
+            <thead>
+            <tr>
+                <th scope="col">Produit</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Total</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ product.product }}</td>
+                    <td>{{ (product.price / 100)|number_format(2, '.', ',')  }}</td>
+                    <td>{{ (product.total / 100)|number_format(2, '.', ',')  }}</td>
+                    <td>
+
+                    </td>
+                    <td><div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Précisez la raison
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Trop petit</a>
+                                <a class="dropdown-item" href="#">Trop grand</a>
+                                <a class="dropdown-item" href="#">Article abimé</a>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    {% endfor %}
+
+{% endblock %}
