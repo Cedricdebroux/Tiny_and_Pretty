@@ -65,7 +65,7 @@ class ProductsRepository extends ServiceEntityRepository
             ->join('p.girl', 'f');
         if(!empty($search->fille)) {
             $query = $query
-                ->andWhere('p.name LIKE :fille')
+                ->andWhere('f.name LIKE :fille')
                 ->setParameter('fille', "%{$search->fille}%");
         }
         if(!empty($search->min)){
@@ -96,7 +96,7 @@ class ProductsRepository extends ServiceEntityRepository
             ->join('p.boy', 'b');
         if(!empty($search->garcon)) {
             $query = $query
-                ->andWhere('p.name LIKE :garcon')
+                ->andWhere('b.name LIKE :garcon')
                 ->setParameter('garcon', "%{$search->garcon}%");
         }
         // Recherche par prix minimum et maximum
@@ -127,7 +127,7 @@ class ProductsRepository extends ServiceEntityRepository
             ->join('p.baby', 'bb');
         if(!empty($search->bebe)) {
             $query = $query
-                ->andWhere('p.name LIKE :bebe')
+                ->andWhere('bb.name LIKE :bebe')
                 ->setParameter('bebe', "%{$search->bebe}%");
         }
         // Recherche par prix minimum et maximum
@@ -158,7 +158,7 @@ class ProductsRepository extends ServiceEntityRepository
             ->join('p.toys', 'j');
         if(!empty($search->jouet)) {
             $query = $query
-                ->andWhere('p.name LIKE :jouet')
+                ->andWhere('j.name LIKE :jouet')
                 ->setParameter('jouet', "%{$search->jouet}%");
         }
         // Recherche par prix minimum et maximum
