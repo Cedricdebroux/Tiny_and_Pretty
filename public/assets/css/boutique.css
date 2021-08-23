@@ -251,6 +251,11 @@ body {
 .little-drop {
   left: 20vw !important; }
 
+.categories-nav {
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
+  border-bottom-width: 0.002rem; }
+
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {
   /* remove the padding from the navbar so the dropdown hover state is not broken */
@@ -322,8 +327,7 @@ body {
   margin: 0 !important;
   font-family: Cantarell, sans-serif;
   font-size: 2vh;
-  color: #808080;
-  background-color: #0B7FC7; }
+  color: #808080; }
 
 .img_atelier {
   width: 100% !important; }
@@ -400,8 +404,7 @@ body {
 
   .description_atelier {
     padding-left: 5vw;
-    padding-right: 5vw;
-    background-color: #9a2d4a; }
+    padding-right: 5vw; }
 
   a {
     color: gray !important; }
@@ -439,6 +442,9 @@ body {
 
 .reset-register {
   padding: 5vw; }
+
+.inscription {
+  padding-left: 25%; }
 
 .title_order {
   font-family: Quicksand, sans-serif;

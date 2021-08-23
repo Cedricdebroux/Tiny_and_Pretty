@@ -39,6 +39,11 @@ body{
 .little-drop{
   left: 20vw!important;
 }
+.categories-nav{
+  border-bottom-style: solid;
+  border-bottom-color: lightgrey;
+  border-bottom-width: 0.002rem;
+}
 
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {

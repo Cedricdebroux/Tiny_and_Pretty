@@ -13,7 +13,6 @@
   font-family: $textFontRegular;
   font-size: 2vh;
   color: #808080;
-  background-color: #0B7FC7;
 
 }
 .img_atelier{
@@ -31,21 +30,14 @@
   opacity:1;
   position:absolute;
   top:0;
- // left:10%;
   color:gray;
   background-color:rgba(255, 255,255,0.8);
   width:100%;
   height:100%;
   text-align: center;
   font-size: 1vh !important;
- // -webkit-transition: all 400ms ease-out;
- // -moz-transition: all 400ms ease-out;
- // -o-transition: all 400ms ease-out;
- // transition: all 400ms ease-out;
 }
-//.coming_soon_box .coming_soon_text:hover {
- // opacity:1;
-//}
+
 .coming_soon_box .coming_soon_text .text_soon {
   font-family: $textFontRegular;
   font-size: 1vh !important;
@@ -54,19 +46,8 @@
   width:100%;
   height: 100%;
   opacity:1;
-//  transition-delay: 0.4ms;
-//  transition-duration: 1s;
 }
-//.coming_soon_box .coming_soon_text:hover .text_soon {
- // opacity:1;
- // transform: translateY( 50%);
-  // -webkit-transform: translateY(5%);
-//}
-.join{
- // height: 6vh!important;
- // font-size: 0.5vh;
- // width: 100%;
-}
+
 
 
 
@@ -128,7 +109,7 @@ and (-webkit-min-device-pixel-ratio: 1){
   .description_atelier {
     padding-left: 5vw;
     padding-right: 5vw;
-    background-color: #9a2d4a;
+
   }
 
 

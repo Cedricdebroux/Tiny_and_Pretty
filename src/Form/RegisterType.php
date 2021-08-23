@@ -19,7 +19,7 @@ class RegisterType extends AbstractType
     {
         $builder
             ->add('firstname', textType::class, [
-                'label' => 'votre prénom',
+                'label' => 'Votre prénom',
                 'constraints' => new Length([
                     'min' => 2,
                     'max' => 30
@@ -29,33 +29,33 @@ class RegisterType extends AbstractType
                 ]
             ])
             ->add('lastname', textType::class, [
-                'label' => 'votre nom',
+                'label' => 'Votre nom',
 
                 'attr' => [
                     'placeholder' => 'Merci de saisir votre nom'
                 ]
             ])
             ->add('email', EmailType::class, [
-                'label' => 'votre email',
+                'label' => 'Votre email',
 
                 'attr' => [
 
-                'placeholder' => 'Saisssez votre email.']
+                'placeholder' => 'Saisssez votre email']
             ])
             ->add('password', RepeatedType::class, [
                 'type' => PasswordType::class,
                 'invalid_message' => ' Le mdp est incorrect',
 
-                'label' => 'votre mot de passe',
+                'label' => 'Votre mot de passe',
                 'required' => true,
                 'first_options' => [
-                    'label'  => 'mot de passe',
+                    'label'  => 'Mot de passe',
                     'attr'=>[
                         'placeholder' => 'Votre mot de passe'
                         ]
                 ],
                 'second_options' => [
-                    'label' => 'confirmez votre mot de passe',
+                    'label' => 'Confirmez votre mot de passe',
                     'attr'=>[
                     'placeholder' => 'Votre mot de passe'
                         ]
