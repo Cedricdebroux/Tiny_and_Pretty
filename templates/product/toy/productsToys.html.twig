@@ -1,28 +1,30 @@
 {% extends 'base.html.twig' %}
 
 
-{# Affichage pour boys#}
+{# Affichage pour boys #}
 
 
 {% block title %}Nos produits!{% endblock %}
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-3">
                 {% include 'product/toy/_filterToy.html.twig' with {form4: form4} only %}
             </div>
-        </div>
-    </div>
-    <div class="col-md-9">
-        <div class="grid">
-            {% for product in productsToy %}
-                {% include '/product/single_product.html.twig' with {product: product} only %}
-            {% endfor %}
+
+
+            <div class="col-9">
+
+                    {% for product in productsToy %}
+                        {% include '/product/single_product.html.twig' with {product: product} only %}
+                    {% endfor %}
+
+            </div>
         </div>
     </div>
 {% endblock %}
 
-{#{% block content %}
+{# {% block content %}
     <div class="content-layout container-fluid pt-sm-4">
     <div class="row">
         <div class="col-md-3">
@@ -63,4 +65,4 @@
         </div>
     </div>
     </div>
-{% endblock %}#}
+{% endblock %} #}
