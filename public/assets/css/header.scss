@@ -3,6 +3,9 @@ body{
   margin: 0 !important;
   width:100%;
 }
+.navbar .nav-link{
+  cursor: default!important;
+}
 
 
 .navbar .nav-item {
@@ -67,7 +70,9 @@ body{
     height: 15vh!important;
     left: 50vw!important;
   }
-  .navbar .dropdown {position:static;}
+  .navbar .dropdown {
+    position:static;
+  }
 
   .navbar .dropdown-menu div[class*="p-2"] {
     flex-direction: row!important;

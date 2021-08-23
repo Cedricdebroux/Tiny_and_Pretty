@@ -3,24 +3,28 @@
 
 {# Affichage pour boys#}
 
-
-{% block title %}Nos produits!{% endblock %}
+{% block title %}Garçons{% endblock %}
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                {% include '/product/boys/_filterBoy.html.twig' with {form: form} only %}
-            </div>
-        </div>
-    </div>
-    <div class="col-md-9">
-        <div class="grid">
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-md-3">
+            {% include '/product/boys/_filterBoy.html.twig' with {form: form} only %}
+        </aside>
+
+
+        <div class="col-md-9 d-flex flex-wrap">
+
             {% for product in productsBoys %}
-                {% include '/product/single_product.html.twig' with {product: product} only %}
+                <div class="col-md-3 ">
+                    {% include '/product/single_product.html.twig' with {product: product} only %}
+                </div>
             {% endfor %}
         </div>
+
+
     </div>
-{% endblock %}
+
+    {% endblock %}
 
 {#{% block content %}
     <div class="content-layout container-fluid pt-sm-4">
