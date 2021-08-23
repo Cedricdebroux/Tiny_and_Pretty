@@ -8,9 +8,36 @@
 {% block content %}
     <div class="container-fluid">
         <div class="row">
-            <aside class="col-md-3">
-                {% include '/product/baby/_filterBaby.html.twig' with {form3: form3} only %}
-            </aside>
+            <!--Accordion wrapper-->
+            <div class="accordion md-accordion col-md-3 mt-5 " id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                <!-- Accordion card -->
+                <div class="card">
+
+                    <!-- Card header -->
+                    <div class="card-header bg-white" role="tab" id="headingOne1">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+                           aria-controls="collapseOne1">
+                            <h5 class="mb-0 text-black-50">
+                                FILTRE <i class="fas fa-angle-down rotate-icon float-right"></i>
+                            </h5>
+                        </a>
+                    </div>
+
+                    <!-- Card body -->
+                    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                         data-parent="#accordionEx">
+                        <div class="card-body">
+                            <aside class="">
+                                {% include '/product/baby/_filterBaby.html.twig' with {form3: form3} only %}
+                            </aside>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+            </div>
+
 
 
             <div class="col-md-9 d-flex flex-wrap">
@@ -24,6 +51,7 @@
 
 
         </div>
+    </div>
 
 {% endblock %}
 

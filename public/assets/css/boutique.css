@@ -175,6 +175,9 @@
   transition-delay: 0s;
   transition-duration: 0.4s; }
 
+.accordion {
+  font-family: Quicksand, sans-serif; }
+
 .aside-description {
   font-family: Quicksand, sans-serif;
   text-align: center; }
