@@ -238,6 +238,33 @@ body {
   width: 150%;
   height: auto; }
 
+.icones-nav {
+  width: 1.2vw;
+  color: lightgrey; }
+
+.bag-count {
+  position: relative; }
+
+.cercle-bag {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #fcd474;
+  border: 0.2rem solid #fcd474;
+  border-radius: 50%;
+  position: absolute;
+  top: 100%;
+  left: 110%;
+  transform: translate(-50%, -50%); }
+
+.content-bag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Cantarell, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="p-2"] {
   margin-bottom: 1rem;
@@ -557,5 +584,69 @@ iframe {
   iframe {
     width: 560px;
     height: 315px; } }
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.bckimg {
+  --animate-duration: 5s;
+  width: 100%;
+  height: auto;
+  position: relative; }
+
+.comingtext {
+  font-family: Quicksand, sans-serif;
+  color: black;
+  z-index: 5;
+  margin: auto;
+  position: absolute;
+  top: calc(20%/2);
+  left: calc(25%/2); }
+
+.container-soon {
+  position: absolute;
+  width: 25vw;
+  height: 24vh;
+  background-color: white;
+  margin: auto;
+  z-index: 999;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.container-border {
+  position: relative;
+  width: 23.5vw;
+  height: 21.5vh;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: black;
+  margin: auto;
+  top: 5.5%;
+  z-index: 999; }
+
+.background-coming-soon {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  position: relative; }
+
+.send {
+  background-color: #fcd474;
+  border-color: #fcd474; }
+
+.Tiny {
+  font-family: Quicksand, sans-serif;
+  color: white;
+  z-index: 999;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=boutique.css.map */

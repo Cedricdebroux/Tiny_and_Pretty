@@ -18,7 +18,7 @@
         <p><span><a href="{{ path('account_order') }}"  style="color:#a9bf7a;"> Mes commandes</a></span></p>
 
         {% if is_granted('ROLE_ADMIN') %}
-            <a href="/admin"  style="color:#f0cabd;"> Vous êtes un administrateur, accéder au backoffice ?</a>
+           <p> Vous êtes un administrateur? <a href="/admin"  style="color:#f0cabd;"> accéder au backoffice</a></p>
         {% endif %}
     </div>
 {% endblock %}

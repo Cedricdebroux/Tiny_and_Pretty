@@ -21,4 +21,10 @@ $(document).ready(function() {
     });
 });
 
+/*window.onload = function() {
+    $(".background-coming-soon").addClass('zoom');
+};
+
+ */
+
 

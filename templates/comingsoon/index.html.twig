@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content=" Boutique de vêtements enfants et bébés en ligne">
+    <meta name="author" content="Infinity">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/favicon/android-chrome-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/android-chrome-512x512.png') }}">
+    <link rel="apple-touch-icon" type="image/png" sizes="16x16"
+          href="{{ asset('assets/favicon/apple-touch-icon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '562460884952867');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=562460884952867&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <title>{% block title %}Tiny & Pretty{% endblock %}</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('assets/css/all.css') }}" rel="stylesheet">-->
+    <link rel="stylesheet" href="{{ asset('assets/css/boutique.css') }}">
+
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+
+    {% block javascript %}
+    {% endblock %}
+
+</head>
+    <body>
+
+
+<div class="background-coming-soon">
+
+    <img src="{{ asset('assets/img/comingsoondef.webp') }}" class="animate__animated animate__zoomIn bckimg" alt=""/>
+    <div class="Tiny">
+        <h1>TINY & PRETTY</h1></div>
+    <div class="container-soon text-center">
+        <div class="container-border">
+            <div  class="animate__animated animate__slideInLeft comingtext">
+                <h2 class="pb-3">COMING SOON</h2>
+                <p>Get notified when we launch</p>
+                <button type="submit" class=" send float-right">Send</button>
+                <input type="email" id="email" class="float-left"
+                       pattern=".+@globex\.com" size="30" required>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="{{ asset ('assets/js/bootstrap.bundle.js') }}"></script>
+<script src="{{ asset ('assets/js/all.js') }}"></script>
+<script src="{{ asset ('assets/js/script.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+
