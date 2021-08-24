@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+    <div class="container-fluid  align-items-center">
+        <div class="row">
+            <div class="col-4 pl-5 ml-5 mt-5 mb-5">
+    {{ form_start(form) }}
+    {{ form_label(form.name) }}
+    {{ form_widget(form.name) }}
+
+    {{ form_label(form.firstname) }}
+    {{ form_widget(form.firstname) }}
+    {{ form_label(form.mail) }}
+    {{ form_widget(form.mail) }}
+    {{ form_rest(form) }}
+    <button type="submit">Envoyer</button>
+    {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
