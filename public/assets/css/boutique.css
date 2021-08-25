@@ -284,7 +284,14 @@ body {
   border-bottom-width: 0.002rem; }
 
 /* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-width: 992px) {
+  .logo-img-header {
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    margin: 0 !important;
+    width: 45%;
+    height: auto; } }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   /* remove the padding from the navbar so the dropdown hover state is not broken */
   .navbar {
     padding-top: 0;
