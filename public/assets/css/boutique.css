@@ -244,29 +244,32 @@ body {
   width: 1.2vw;
   color: lightgrey; }
 
-.bag-count {
-  position: relative; }
-
-.cercle-bag {
+/*
+.bag-count{
+  position: relative;
+}
+.cercle-bag{
   width: 1.3rem;
   height: 1.3rem;
-  background-color: #fcd474;
-  border: 0.2rem solid #fcd474;
+  background-color: $yellow;
+  border: 0.2rem solid $yellow;
   border-radius: 50%;
   position: absolute;
   top: 100%;
-  left: 110%;
-  transform: translate(-50%, -50%); }
-
-.content-bag {
+ left: 110%;
+  transform: translate(-50%, -50%);
+}
+.content-bag{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Cantarell, sans-serif;
+  font-family: $textFontRegular;
   font-size: 0.8rem;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+ */
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="p-2"] {
   margin-bottom: 1rem;
@@ -461,7 +464,7 @@ body {
 
   .coming_soon_box .coming_soon_text .text_soon {
     font-family: Cantarell, sans-serif;
-    font-size: 5vh !important;
+    font-size: 6vh !important;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -477,9 +480,6 @@ body {
   .description_atelier {
     padding-left: 5vw;
     padding-right: 5vw; }
-
-  a {
-    color: gray !important; }
 
   .join {
     height: 6vh !important;
@@ -566,8 +566,8 @@ body {
   list-style-type: none;
   font-size: 1rem; }
 
-a {
-  color: #0b2e13;
+.link_footer {
+  color: grey;
   text-decoration: none; }
 
 .footer-custom {
@@ -603,8 +603,7 @@ a {
   font-family: Cantarell, sans-serif; }
 
 a:link {
-  text-decoration: none;
-  color: #1c3531; }
+  text-decoration: none; }
 
 .banner-debora {
   position: relative;
