@@ -72,7 +72,12 @@ body{
 }
 
 /* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px)
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi)
+{
 
   /* remove the padding from the navbar so the dropdown hover state is not broken */
   .navbar {
