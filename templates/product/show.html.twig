@@ -4,10 +4,10 @@
 
 {% block content %}
     <div class="row">
-        <div class="container-fluid col-md-5">
+        <div class="container-fluid col-md-5 ml-5 mt-5">
             <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img-fluid">
         </div>
-        <div class="col-md-7 my-auto aside-description mt-sm-5 mx-sm-auto">
+        <div class="col-md-6 my-auto aside-description mt-sm-5 mx-sm-auto">
             <p> {{ product.subtitle }}</p>
             <h3>{{  product.name }}</h3>
             <span class="product-page-price"> {{ (product.price / 100)|number_format(2,',', '.') }} € </span>
