@@ -101,7 +101,7 @@
     <div class="row">
         {% for product in productN %}
         {% if product.isNew == true %}
-        <div class="col col-sm-6 col-md-6">
+        <div class="col">
             {% include 'product/single_product.html.twig' %}
         </div>
         {% endif %}

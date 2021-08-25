@@ -1,7 +1,9 @@
 .aside-description{
   font-family:  $titleFontRegular;
  text-align: center;
+  text-transform: uppercase;
 }
+
 .btn{
   border-radius: 0 !important;
   padding: 2vh!important;
@@ -14,7 +16,6 @@ hr{
 #headingOne{
   border: none!important;
 }
-
 
 @media only screen and (min-device-width : 960px) and (max-device-width : 2000px){
   .aside-description{

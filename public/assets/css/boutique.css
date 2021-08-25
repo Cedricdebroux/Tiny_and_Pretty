@@ -181,7 +181,8 @@
 
 .aside-description {
   font-family: Quicksand, sans-serif;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .btn {
   border-radius: 0 !important;
