@@ -9,16 +9,16 @@
         </div>
         <div class="intro mt-auto mb-5">
         <p><span>Bienvenue {{ app.user.firstname }}.</span></p>
-        <p><span>C'est dans cet espace que vous allez pouvoir gérer toutes vos infos personnelles.</span></p>
+        <p><span>C'est dans cet espace que vous allez pouvoir gérer toutes vos infos personelles.</span></p>
         <hr class="mb-5 mt-5">
         </div>
 
-        <p><span><a class="link_account" href="{{ path('account_password') }}" > Modifier mon mot de passe</a></span></p>
-        <p><span> <a class="link_account" href="{{ path('account_address') }}" > Modifier mes adresses</a></span></p>
-        <p><span><a class="link_account" href="{{ path('account_order') }}" > Mes commandes</a></span></p>
+        <p><span><a class="link_account" href="{{ path('account_password') }}"  style="color:#a9bf7a;"> Modifier mon mot de passe</a></span></p>
+        <p><span> <a class="link_account" href="{{ path('account_address') }}"  style="color:#a9bf7a;"> Modifier mes adresses</a></span></p>
+        <p><span><a class="link_account" href="{{ path('account_order') }}"  style="color:#a9bf7a;"> Mes commandes</a></span></p>
 
         {% if is_granted('ROLE_ADMIN') %}
-           <p> Vous êtes un administrateur? <a class="link_admin"  href="/admin" > accéder au backoffice</a></p>
+           <p> Vous êtes un administrateur? <a class="link_admin"  href="/admin"  style="color:#f0cabd;"> accéder au backoffice</a></p>
         {% endif %}
     </div>
 {% endblock %}

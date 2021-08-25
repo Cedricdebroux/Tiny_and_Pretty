@@ -118,6 +118,9 @@
 .reseau {
   font-size: 5vh; }
 
+.logoreseau {
+  color: dimgrey; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .box {
     width: 60vw;
@@ -281,7 +284,7 @@ body {
   color: rgba(0, 0, 0, 0.5); }
 
 .little-drop {
-  left: 20vw !important; }
+  left: 40vw !important; }
 
 .categories-nav {
   border-bottom-style: solid;
@@ -317,7 +320,7 @@ body {
   .little-drop {
     width: 20vw !important;
     height: 15vh !important;
-    left: 50vw !important; }
+    left: 80vw !important; }
 
   .navbar .dropdown {
     position: static; }
@@ -354,7 +357,7 @@ body {
   .little-drop {
     width: 20vw !important;
     height: 15vh !important;
-    left: 50vw !important; }
+    left: 80vw !important; }
 
   .navbar .dropdown {
     position: static; }
@@ -692,5 +695,9 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.intro {
+  padding: 4vh;
+  margin: 20%; }
 
 /*# sourceMappingURL=boutique.css.map */
