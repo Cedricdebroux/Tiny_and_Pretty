@@ -43,6 +43,12 @@ class Products
     private $file;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     * @var string
+     */
+    private $image;
+
+    /**
      * @Vich\UploadableField(mapping="tp_images", fileNameProperty="image")
      * @var File
      */
@@ -189,6 +195,16 @@ class Products
     public function getImageFile()
     {
         return $this->imageFile;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    public function getImage()
+    {
+        return $this->image;
     }
 
     public function getSubtitle(): ?string
