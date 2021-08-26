@@ -5,7 +5,7 @@ namespace App\Form;
 use App\Data\SearchData;
 use App\Entity\Boy;
 use App\Entity\Category;
-use App\Entity\Girl;
+use App\Entity\Maison;
 use App\Entity\Products;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -20,17 +20,17 @@ class SearchForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
        $builder
-           ->add('fille', TextType::class, [
+           ->add('maison', TextType::class, [
                'label' => false,
                'required' => false,
                'attr' => [
                    'placeholder' => 'Rechercher votre produit'
                ]
            ])
-           ->add('girls', EntityType::class, [
+           ->add('house', EntityType::class, [
                'label' => false,
                'required' => false,
-               'class' => Girl::class,
+               'class' => Maison::class,
                'expanded' => true,
                'multiple' => true
 

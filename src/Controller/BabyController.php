@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\Baby;
+use App\Entity\Mode;
 use App\Entity\Products;
 use App\Data\SearchData;
 
@@ -21,14 +21,14 @@ class BabyController extends AbstractController
     public function __construct(EntityManagerInterface $entityManager) {
         $this->entityManager = $entityManager;
     }
-    #[Route('/baby', name: 'productsBabies')]
+    #[Route('/Mode', name: 'productsBabies')]
     public function index(ProductsRepository $repository, request $request): Response
     {
         $data = new searchData();
         $form3 = $this->createForm(SearchBaby::class, $data);
         $form3->handleRequest($request);
         $productsBaby = $repository->findSearchBaby($data);
-    return $this->render('product/baby/productsBabies.html.twig',[
+    return $this->render('product/Mode/productsBabies.html.twig',[
         'productsBabies' => $productsBaby,
         'form3' => $form3->createView()
         ]);

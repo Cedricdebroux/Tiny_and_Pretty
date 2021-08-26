@@ -5,8 +5,10 @@ namespace App\Controller\Admin;
 
 use App\Entity\Products;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ArrayField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\SlugField;
@@ -33,13 +35,13 @@ class ProductsCrudController extends AbstractCrudController
                 ->setRequired(false),
             TextField::new('Subtitle'),
             TextareaField::new('description'),
+            ArrayField::new('Size'),
             BooleanField::new('isBest'),
             BooleanField::new('isNew'),
             BooleanField::new('soldOut'),
             MoneyField::new('price')->setCurrency('EUR'),
-            AssociationField::new('baby'),
-            AssociationField::new('girl'),
-            AssociationField::new('boy'),
+            AssociationField::new('mode'),
+            AssociationField::new('maison'),
             AssociationField::new('toys')
             ];
     }

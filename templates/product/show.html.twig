@@ -14,8 +14,11 @@
             <p>Taxes incluses</p>
             <p>
                 {{ product.description }}
-                <hr class="mx-auto col-md-10 col-lg-10 col-xl-10 pl-0 ml-0">
             </p>
+            <p> {{ product.size}}</p>
+            <hr class="mx-auto col-md-10 col-lg-10 col-xl-10 pl-0 ml-0">
+
+
 
             {% if product.soldout == false %}
                 <button

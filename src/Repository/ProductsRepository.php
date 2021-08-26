@@ -55,18 +55,18 @@ class ProductsRepository extends ServiceEntityRepository
         ;
     }
 
-    // Public function qui permet de faire une recherche dans la categorie girl et de faire l'affichage via un lien dans le menu header
+    // Public function qui permet de faire une recherche dans la categorie maison et de faire l'affichage via un lien dans le menu header
 
     public function findSearch(SearchData $search):array
     {
         $query = $this
             ->createQueryBuilder('p')
-            ->select('f', 'p')
-            ->join('p.girl', 'f');
-        if(!empty($search->fille)) {
+            ->select('h', 'p')
+            ->join('p.maison', 'h');
+        if(!empty($search->maison)) {
             $query = $query
-                ->andWhere('f.name LIKE :fille')
-                ->setParameter('fille', "%{$search->fille}%");
+                ->andWhere('h.name LIKE :maison')
+                ->setParameter('maison', "%{$search->maison}%");
         }
         if(!empty($search->min)){
             $query = $query
@@ -78,57 +78,57 @@ class ProductsRepository extends ServiceEntityRepository
                 ->andWhere('p.price <= :max')
                 ->setParameter('max', $search->max*100);
         }
-        if(!empty($search->girls)){
+        if(!empty($search->house)){
             $query = $query
-                ->andWhere('f.id IN (:girls)')
-                ->setParameter('girls', $search->girls);
+                ->andWhere('h.id IN (:house)')
+                ->setParameter('house', $search->house);
         }
         return $query->getQuery()->getResult();
     }
 
     // public function qui permet de faire une recherche dans la catégories graçon uniquement et fair un affichage via les liens dans le menu (header)
 
-    public function findSearchBoy(SearchData $search):array
-    {
-        $query = $this
-            ->createQueryBuilder('p')
-            ->select('b', 'p')
-            ->join('p.boy', 'b');
-        if(!empty($search->garcon)) {
-            $query = $query
-                ->andWhere('b.name LIKE :garcon')
-                ->setParameter('garcon', "%{$search->garcon}%");
-        }
-        // Recherche par prix minimum et maximum
-        if(!empty($search->min)){
-            $query = $query
-                ->andWhere('p.price >= :min')
-                ->setParameter('min', $search->min*100);
-        }
-        if(!empty($search->max)){
-            $query = $query
-                ->andWhere('p.price <= :max')
-                ->setParameter('max', $search->max*100);
-        }
-
-        if(!empty($search->boys)){
-            $query = $query
-                ->andWhere('b.id IN (:boys)')
-                ->setParameter('boys', $search->boys);
-        }
-        return $query->getQuery()->getResult();
-    }
+//    public function findSearchBoy(SearchData $search):array
+//    {
+//        $query = $this
+//            ->createQueryBuilder('p')
+//            ->select('b', 'p')
+//            ->join('p.boy', 'b');
+//        if(!empty($search->garcon)) {
+//            $query = $query
+//                ->andWhere('b.name LIKE :garcon')
+//                ->setParameter('garcon', "%{$search->garcon}%");
+//        }
+//        // Recherche par prix minimum et maximum
+//        if(!empty($search->min)){
+//            $query = $query
+//                ->andWhere('p.price >= :min')
+//                ->setParameter('min', $search->min*100);
+//        }
+//        if(!empty($search->max)){
+//            $query = $query
+//                ->andWhere('p.price <= :max')
+//                ->setParameter('max', $search->max*100);
+//        }
+//
+//        if(!empty($search->boys)){
+//            $query = $query
+//                ->andWhere('b.id IN (:boys)')
+//                ->setParameter('boys', $search->boys);
+//        }
+//        return $query->getQuery()->getResult();
+//    }
 
     public function findSearchBaby(SearchData $search):array
     {
         $query = $this
             ->createQueryBuilder('p')
-            ->select('bb', 'p')
-            ->join('p.baby', 'bb');
-        if(!empty($search->bebe)) {
+            ->select('m', 'p')
+            ->join('p.mode', 'm');
+        if(!empty($search->mode)) {
             $query = $query
-                ->andWhere('bb.name LIKE :bebe')
-                ->setParameter('bebe', "%{$search->bebe}%");
+                ->andWhere('m.name LIKE :mode')
+                ->setParameter('mode', "%{$search->mode}%");
         }
         // Recherche par prix minimum et maximum
         if(!empty($search->min)){
@@ -142,10 +142,10 @@ class ProductsRepository extends ServiceEntityRepository
                 ->setParameter('max', $search->max*100);
         }
 
-        if(!empty($search->babies)){
+        if(!empty($search->fashions)){
             $query = $query
-                ->andWhere('bb.id IN (:babies)')
-                ->setParameter('babies', $search->babies);
+                ->andWhere('m.id IN (:fashions)')
+                ->setParameter('fashions', $search->fashions);
         }
         return $query->getQuery()->getResult();
     }
@@ -177,6 +177,26 @@ class ProductsRepository extends ServiceEntityRepository
             $query = $query
                 ->andWhere('j.id IN (:toys)')
                 ->setParameter('toys', $search->toys);
+        }
+        return $query->getQuery()->getResult();
+    }
+
+    public function findSizeType(SearchData $search):array
+    {
+        $query = $this
+            ->createQueryBuilder('p')
+            ->select('s', 'p')
+            ->join('p.size', 's');
+        if(!empty($search->taille)) {
+            $query = $query
+                ->andWhere('s.name LIKE :taille')
+                ->setParameter('taille', "%{$search->taille}%");
+        }
+
+        if(!empty($search->size)){
+            $query = $query
+                ->andWhere('s.id IN (:size)')
+                ->setParameter('size', $search->size);
         }
         return $query->getQuery()->getResult();
     }

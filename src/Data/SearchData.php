@@ -2,10 +2,11 @@
 
 namespace App\Data;
 
-use App\Entity\Baby;
+use App\Entity\Mode;
 use App\Entity\Boy;
 use App\Entity\Category;
-use App\Entity\Girl;
+use App\Entity\Maison;
+use App\Entity\Size;
 use App\Entity\Toys;
 
 class SearchData
@@ -14,12 +15,12 @@ class SearchData
     /**
      * @var string
      */
-    public $fille = '';
+    public $maison = '';
 
     /**
-     * @var Girl[]
+     * @var Maison[]
      */
-    public $girls = [];
+    public $house = [];
 
     /**
      * @var string
@@ -34,13 +35,13 @@ class SearchData
     /**
      * @var string
      */
-    public $bebe = '';
+    public $mode = '';
 
     /**
-     * @var Baby[]
+     * @var Mode[]
      */
 
-    public $babies = [];
+    public $fashions = [];
 
     /**
      * @var string
@@ -65,5 +66,14 @@ class SearchData
     public $max;
 
     public $min;
+    /**
+     * @var string
+     */
+
+    public $taille ='';
+    /**
+     * @var Size[]
+     */
+    public $size = [];
 
 }

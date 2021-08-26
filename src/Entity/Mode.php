@@ -2,13 +2,13 @@
 
 namespace App\Entity;
 
-use App\Repository\GirlRepository;
+use App\Repository\BabyRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=GirlRepository::class)
+ * @ORM\Entity(repositoryClass=BabyRepository::class)
  */
-class Girl
+class Mode
 {
     /**
      * @ORM\Id
@@ -26,13 +26,13 @@ class Girl
     {
         return $this->id;
     }
+    public function __toString(){
+        return $this->getName();
+    }
 
     public function getName(): ?string
     {
         return $this->name;
-    }
-    public function __toString(){
-        return $this->getName();
     }
 
     public function setName(string $name): self

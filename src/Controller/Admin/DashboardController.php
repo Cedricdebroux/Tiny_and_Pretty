@@ -2,12 +2,13 @@
 
 namespace App\Controller\Admin;
 
-use App\Entity\Baby;
+use App\Entity\Mode;
 use App\Entity\Boy;
 use App\Entity\Carrier;
-use App\Entity\Girl;
+use App\Entity\Maison;
 use App\Entity\Order;
 use App\Entity\Products;
+use App\Entity\Size;
 use App\Entity\Toys;
 use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
@@ -39,13 +40,13 @@ class DashboardController extends AbstractDashboardController
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
-        yield MenuItem::linkToCrud('Users', 'fas fa-user', User::class);
-        yield MenuItem::linkToCrud('Orders', 'fas fa-shopping-cart', Order::class);
-        yield MenuItem::linkToCrud('Baby', 'fas fa-baby', Baby::class);
-        yield MenuItem::linkToCrud('Girl', 'fas fa-female', Girl::class);
-        yield MenuItem::linkToCrud('Boy', 'fas fa-male', Boy::class);
-        yield MenuItem::linkToCrud('Toys', 'fas fa-gamepad', Toys::class);
-        yield MenuItem::linkToCrud('Products', 'fas fa-tag', Products::class);
-        yield MenuItem::linkToCrud('Carrier', 'fas fa-truck', Carrier::class);
+        yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-user', User::class);
+        yield MenuItem::linkToCrud('Commandes', 'fas fa-shopping-cart', Order::class);
+        yield MenuItem::linkToCrud('A la mode', 'fas fa-tshirt', Mode::class);
+        yield MenuItem::linkToCrud('A la maison', 'fas fa-home', Maison::class);
+//        yield MenuItem::linkToCrud('Boy', 'fas fa-male', Boy::class);
+        yield MenuItem::linkToCrud('Jouets', 'fas fa-gamepad', Toys::class);
+        yield MenuItem::linkToCrud('Produits', 'fas fa-tag', Products::class);
+        yield MenuItem::linkToCrud('Transport', 'fas fa-truck', Carrier::class);
     }
 }
