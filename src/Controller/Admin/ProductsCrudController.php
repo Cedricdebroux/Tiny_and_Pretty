@@ -12,6 +12,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\SlugField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ProductsCrudController extends AbstractCrudController
 {
@@ -26,6 +27,10 @@ class ProductsCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             SlugField::new('slug')->setTargetFieldName('name'),
+            TextField::new('imageFile')->setFormType(VichImageType::class),
+            ImageField::new('file')
+                ->setBasePath('uploads/images/')
+                ->setUploadDir('public/uploads/images/'),
             Imagefield::new('illustration')
                 ->setBasePath('uploads/')
                 ->setUploadDir('public/uploads/')
