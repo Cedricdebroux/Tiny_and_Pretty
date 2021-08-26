@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
 
-{# Affichage pour boys #}
+{# Affichage pour MODE anciennement baby #}
 
 
-{% block title %}Bébé{% endblock %}
+{% block title %}A la mode{% endblock %}
 {% block content %}
     <div class="container-fluid">
         <div class="row">
@@ -36,7 +36,7 @@
                          data-parent="#accordionEx">
                         <div class="card-body">
                             <aside class="">
-                                {% include '/product/baby/_filterBaby.html.twig' with {form3: form3} only %}
+                                {% include '/product/Mode/_filterBaby.html.twig' with {form3: form3} only %}
                             </aside>
                         </div>
                     </div>

@@ -5,7 +5,7 @@ namespace App\Form;
 use App\Data\SearchData;
 use App\Entity\Boy;
 use App\Entity\Category;
-use App\Entity\Girl;
+use App\Entity\Maison;
 use App\Entity\Products;
 use App\Entity\Toys;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;

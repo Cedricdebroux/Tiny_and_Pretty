@@ -3,7 +3,7 @@
 namespace App\Form;
 
 use App\Data\SearchData;
-use App\Entity\Baby;
+use App\Entity\Mode;
 use App\Entity\Boy;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
@@ -19,7 +19,7 @@ class SearchBaby extends AbstractType
     {
         $builder
 
-            ->add('bebe', TextType::class, [
+            ->add('mode', TextType::class, [
                 'label' => false,
                 'required' => false,
                 'attr' => [
@@ -27,10 +27,10 @@ class SearchBaby extends AbstractType
                 ]
             ])
 
-            ->add('babies', EntityType::class, [
+            ->add('fashions', EntityType::class, [
                 'label' => false,
                 'required' => false,
-                'class' => Baby::class,
+                'class' => Mode::class,
                 'expanded' => true,
                 'multiple' => true
 

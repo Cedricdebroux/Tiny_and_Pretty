@@ -50,22 +50,22 @@ class Products
     private $price;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Category::class, inversedBy="products")
+     * @ORM\ManyToMany(targetEntity=Category::class, inversedBy="products", orphanRemoval=true)
      * @ORM\JoinColumn(nullable=false)
      */
     private $category;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Baby::class, inversedBy="products")
+     * @ORM\ManyToMany(targetEntity=Mode::class, inversedBy="products")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $baby;
+    private $mode;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Girl::class, inversedBy="products")
+     * @ORM\ManyToMany(targetEntity=Maison::class, inversedBy="products")
      * @ORM\JoinColumn(nullable=false)
      */
-    private $girl;
+    private $maison;
 
     /**
      * @ORM\ManyToMany(targetEntity=Boy::class, inversedBy="products")
@@ -86,9 +86,6 @@ class Products
     private $accessory;
 
 
-
-
-
     /**
      * @ORM\Column(type="boolean")
      */
@@ -104,13 +101,21 @@ class Products
      */
     private $isNew;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+
+    private $size;
+
+
+
     public function __construct(){
         $this->category = new ArrayCollection();
-        $this->baby = new ArrayCollection();
-        $this->girl = new ArrayCollection();
+        $this->mode = new ArrayCollection();
+        $this->maison = new ArrayCollection();
         $this->boy = new ArrayCollection();
         $this->toys = new ArrayCollection();
-        $this->accessory = new ArrayCollection();
+
     }
     public function getId(): ?int
     {
@@ -165,6 +170,19 @@ class Products
         return $this;
     }
 
+    public function getSize(): ?string
+    {
+        return $this->size;
+    }
+
+    public function setSize(string $size): self
+    {
+        $this->size = $size;
+
+        return $this;
+    }
+
+
     public function getDescription(): ?string
     {
         return $this->description;
@@ -205,31 +223,31 @@ class Products
     }
 
     /**
-     * @return Collection|Baby[]
+     * @return Collection|Mode[]
      */
-    public function getBaby(): Collection
+    public function getMode(): Collection
     {
-        return $this->baby;
+        return $this->mode;
     }
 
-    public function setBaby(?Baby $baby): self
+    public function setMode(?Mode $mode): self
     {
-        $this->baby = $baby;
+        $this->mode = $mode;
 
         return $this;
     }
 
     /**
-     * @return Collection|Girl[]
+     * @return Collection|Maison[]
      */
-    public function getGirl(): Collection
+    public function getMaison(): Collection
     {
-        return $this->girl;
+        return $this->maison;
     }
 
-    public function setGirl(?Girl $girl): self
+    public function setMaison(?Maison $maison): self
     {
-        $this->girl = $girl;
+        $this->maison = $maison;
 
         return $this;
     }
@@ -278,6 +296,22 @@ class Products
 
         return $this;
     }
+//
+//    /**
+//     * @return Collection|Size[]
+//     */
+//
+//    public function getSize(): Collection
+//    {
+//        return $this->Size;
+//    }
+//
+//    public function setSize(?Size $size): self
+//    {
+//        $this->Size = $size;
+//
+//        return $this;
+//    }
 
     public function getIsBest(): ?bool
     {
@@ -314,4 +348,5 @@ class Products
 
         return $this;
     }
+
 }
