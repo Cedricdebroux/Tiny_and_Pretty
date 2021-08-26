@@ -600,10 +600,15 @@ body {
     margin-top: 2rem; } }
 .question {
   font-family: Quicksand, sans-serif;
-  background-color: white; }
+  background-color: white;
+  color: dimgray; }
+
+.question :hover {
+  color: #a9b97a; }
 
 .answer {
-  font-family: Cantarell, sans-serif; }
+  font-family: Cantarell, sans-serif;
+  color: gray !important; }
 
 a:link {
   text-decoration: none; }
@@ -614,6 +619,10 @@ a:link {
   background-size: cover;
   height: 50vh;
   width: 120% !important; }
+
+.debora-story {
+  color: dimgrey;
+  font-family: Cantarell, sans-serif; }
 
 .slogan-debora {
   font-family: Quicksand, sans-serif;
