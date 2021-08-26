@@ -28,9 +28,12 @@ class BabyController extends AbstractController
         $form3 = $this->createForm(SearchBaby::class, $data);
         $form3->handleRequest($request);
         $productsBaby = $repository->findSearchBaby($data);
+
     return $this->render('product/Mode/productsBabies.html.twig',[
         'productsBabies' => $productsBaby,
         'form3' => $form3->createView()
         ]);
     }
+
+
 }
