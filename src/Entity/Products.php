@@ -106,9 +106,6 @@ class Products
     private $accessory;
 
 
-
-
-
     /**
      * @ORM\Column(type="boolean")
      */
@@ -187,12 +184,10 @@ class Products
     public function setImageFile(File $file = null)
     {
         $this->imageFile = $file;
-        if($file) {
-            $this->createdAt = new \DateTime('now');
-        }
+
     }
 
-    public function getImageFile()
+    public function getImageFile(): ?string
     {
         return $this->imageFile;
     }
@@ -202,7 +197,7 @@ class Products
         $this->image = $image;
     }
 
-    public function getImage()
+    public function getImage(): ?string
     {
         return $this->image;
     }
