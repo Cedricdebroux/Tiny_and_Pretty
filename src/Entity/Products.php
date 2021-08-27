@@ -3,12 +3,16 @@
 namespace App\Entity;
 
 use App\Repository\ProductsRepository;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=ProductsRepository::class)
+ * @Vich\Uploadable
  */
 class Products
 {
@@ -29,10 +33,20 @@ class Products
      */
     private $slug;
 
+
+
     /**
      * @ORM\Column(type="string", length=255)
+     * @var string
      */
-    private $illustration;
+    private $image;
+
+    /**
+     * @Vich\UploadableField(mapping="tp_images", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
+
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -101,13 +115,6 @@ class Products
      */
     private $isNew;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-
-    private $size;
-
-
 
     public function __construct(){
         $this->category = new ArrayCollection();
@@ -146,16 +153,38 @@ class Products
         return $this;
     }
 
-    public function getIllustration(): ?string
+    /**
+     * If manually uploading a file (i.e. not using Symfony Form) ensure an instance
+     * of 'UploadedFile' is injected into this setter to trigger the update. If this
+     * bundle's configuration parameter 'inject_on_load' is set to 'true' this setter
+     * must be able to accept an instance of 'File' as the bundle will inject one here
+     * during Doctrine hydration.
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile|null $imageFile
+     */
+    public function setImageFile(File $image = null)
     {
-        return $this->illustration;
+        $this->imageFile = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+
     }
 
-    public function setIllustration(string $illustration): self
+    public function getImageFile()
     {
-        $this->illustration = $illustration;
+        return $this->imageFile;
+    }
 
-        return $this;
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    public function getImage()
+    {
+        return $this->image;
     }
 
     public function getSubtitle(): ?string
@@ -166,18 +195,6 @@ class Products
     public function setSubtitle(string $subtitle): self
     {
         $this->subtitle = $subtitle;
-
-        return $this;
-    }
-
-    public function getSize(): ?string
-    {
-        return $this->size;
-    }
-
-    public function setSize(string $size): self
-    {
-        $this->size = $size;
 
         return $this;
     }

@@ -8,12 +8,12 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ArrayField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\SlugField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class ProductsCrudController extends AbstractCrudController
 {
@@ -28,14 +28,13 @@ class ProductsCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             SlugField::new('slug')->setTargetFieldName('name'),
-            Imagefield::new('illustration')
-                ->setBasePath('uploads/')
+            TextField::new('imageFile')->setFormType(VichImageType::class)->onlyOnForms(),
+            ImageField::new('image')
+                ->setBasePath('uploads')
                 ->setUploadDir('public/uploads/')
-                ->setUploadedFileNamePattern('[randomhash].[extension]')
-                ->setRequired(false),
+                ->onlyOnIndex(),
             TextField::new('Subtitle'),
             TextareaField::new('description'),
-            ArrayField::new('Size'),
             BooleanField::new('isBest'),
             BooleanField::new('isNew'),
             BooleanField::new('soldOut'),
