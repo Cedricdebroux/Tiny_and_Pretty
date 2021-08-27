@@ -15,7 +15,7 @@
             <p>
                 {{ product.description }}
             </p>
-            <p> {{ product.size}}</p>
+
             <hr class="mx-auto col-md-10 col-lg-10 col-xl-10 pl-0 ml-0">
 
 
@@ -24,7 +24,7 @@
                 <button
                         class="btn btn-outline-secondary col-md-10 col-lg-10 col-xl-10 col-sm-12 mt-3 ml-1 mr-1"
                         type="button">
-                    <a href="{{ path('add_to_cart', {'id': product.id}) }}" style="color:#000005;">AJOUTER AU PANIER</a>
+                    <a href="{{ path('add_to_cart', {'id': product.id}) }}" style="color:#000005;"><div>AJOUTER AU PANIER</div></a>
                 </button>
             {% else %}
                 <button class="btn btn-outline-secondary col-md-10 col-lg-10 col-xl-10 col-sm-12 mt-3 ml-1 mr-1" style="background-color:#f0cabd;">VICTIME DE SON SUCCÈS</button>

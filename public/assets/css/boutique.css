@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cantarell:ital@1&display=swap");
+.body {
+  margin: 0 !important;
+  padding: 0 !important; }
+
 .bg-image-banner {
   position: relative;
   background: url("../img/banner-mere-et-enfant.webp") no-repeat center fixed;
@@ -37,9 +41,8 @@
 .description {
   font-family: Quicksand, sans-serif;
   font-size: 3vh;
-  font-weight: lighter;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
@@ -503,10 +506,13 @@ body {
   padding: 2vw; }
 
 .validation {
-  font-family: Cantarell, sans-serif; }
+  font-family: Quicksand, sans-serif; }
 
 .validate {
   background-color: #a9b97a !important; }
+
+.article_name {
+  text-transform: uppercase !important; }
 
 .title_sign {
   font-family: Quicksand, sans-serif;
@@ -589,19 +595,25 @@ body {
 .cards-icon {
   width: 1.5rem;
   height: auto;
-  margin: 2rem; }
+  margin: 0.5rem; }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .logo-img img {
-    padding: 1vw;
-    width: 20vw !important;
-    height: auto; }
+    padding: 0;
+    width: 15vw !important;
+    height: auto;
+    background-color: red;
+    margin-left: 2vw; }
 
   .cards-icon {
     width: 3rem;
     height: 3rem;
     margin-right: 1rem;
     margin-top: 2rem; } }
+@media (min-width: 1024px) and (orientation: landscape) {
+  .logo-img img {
+    background-color: #00bb00;
+    width: 10vw !important; } }
 .question {
   font-family: Quicksand, sans-serif;
   background-color: white;

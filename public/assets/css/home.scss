@@ -1,5 +1,8 @@
 
-
+.body{
+  margin: 0!important;
+  padding: 0!important;
+}
 
 //banner home
 .bg-image-banner {
@@ -41,9 +44,8 @@
 .description{
   font-family: $titleFontRegular;
   font-size: 3vh;
-  font-weight: lighter;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -145,6 +147,7 @@ font-size: 0.6rem;
     width: 60vw;
     height: 45vh;
   }
+
 
 }
 @media only screen and (min-device-width : 481px) and (max-device-width : 767px) {

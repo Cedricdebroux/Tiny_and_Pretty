@@ -101,11 +101,7 @@ class Products
      */
     private $isNew;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
 
-    private $size;
 
 
 
@@ -170,17 +166,7 @@ class Products
         return $this;
     }
 
-    public function getSize(): ?string
-    {
-        return $this->size;
-    }
 
-    public function setSize(string $size): self
-    {
-        $this->size = $size;
-
-        return $this;
-    }
 
 
     public function getDescription(): ?string
@@ -297,21 +283,7 @@ class Products
         return $this;
     }
 //
-//    /**
-//     * @return Collection|Size[]
-//     */
 //
-//    public function getSize(): Collection
-//    {
-//        return $this->Size;
-//    }
-//
-//    public function setSize(?Size $size): self
-//    {
-//        $this->Size = $size;
-//
-//        return $this;
-//    }
 
     public function getIsBest(): ?bool
     {
