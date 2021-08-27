@@ -177,7 +177,7 @@ class Products
         return $this->imageFile;
     }
 
-    public function setImage($image)
+    public function setImage(? string $image)
     {
         $this->image = $image;
     }
