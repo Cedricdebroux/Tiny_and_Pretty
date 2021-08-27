@@ -234,7 +234,7 @@ body {
 
 .navbar-brand {
   margin: 0 !important;
-  width: 20vw; }
+  width: 30vw; }
 
 .logo-img-header {
   padding-top: 1vh;
@@ -280,11 +280,11 @@ body {
 
 .navbar .dropdown-menu {
   font-family: Quicksand, sans-serif;
-  font-size: 2vh;
+  font-size: 3vh;
   color: rgba(0, 0, 0, 0.5); }
 
 .little-drop {
-  left: 40vw !important; }
+  left: 5vw !important; }
 
 .categories-nav {
   border-bottom-style: solid;
@@ -292,12 +292,12 @@ body {
   border-bottom-width: 0.002rem; }
 
 /* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1024px) {
   .logo-img-header {
     padding-top: 1vh;
     padding-bottom: 1.5vh;
     margin: 0 !important;
-    width: 50%;
+    width: 100%;
     height: auto; }
 
   .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
@@ -318,9 +318,9 @@ body {
 
   /* makes the dropdown full width  */
   .little-drop {
-    width: 20vw !important;
-    height: 15vh !important;
-    left: 80vw !important; }
+    width: 100vw !important;
+    height: 9vh !important;
+    left: 75vw !important; }
 
   .navbar .dropdown {
     position: static; }
@@ -329,9 +329,9 @@ body {
     flex-direction: row !important; }
 
   .navbar .dropdown-menu {
-    width: 100vw;
-    height: 60vh;
-    left: 0;
+    width: 28vw;
+    height: 50vh;
+    left: 50vw;
     right: 0;
     /*  height of nav-item  */
     top: 8vh; } }
