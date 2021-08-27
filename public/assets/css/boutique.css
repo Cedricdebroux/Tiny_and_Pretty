@@ -224,17 +224,23 @@ hr {
 body {
   padding: 0 !important;
   margin: 0 !important;
-  width: 100%; }
+  width: 100vw; }
 
 .navbar .nav-link .inactive {
   cursor: default !important; }
 
+/*.navbar .nav-item {
+  padding:.5rem .5rem;
+  margin:0 .25rem;
+
+}*/
 .navbar .nav-item {
   display: flex; }
 
 .navbar-brand {
   margin: 0 !important;
-  width: 30vw; }
+  width: 40vw;
+  background-color: #00bb00; }
 
 .logo-img-header {
   padding-top: 1vh;
@@ -244,8 +250,8 @@ body {
   height: auto; }
 
 .icones-nav {
-  width: 1.2vw;
-  color: lightgrey; }
+  width: 5vw;
+  fill: grey; }
 
 /*
 .bag-count{
@@ -284,7 +290,9 @@ body {
   color: rgba(0, 0, 0, 0.5); }
 
 .little-drop {
-  left: 5vw !important; }
+  left: 4vw !important;
+  margin: 0 !important;
+  padding: 0 !important; }
 
 .categories-nav {
   border-bottom-style: solid;
@@ -292,72 +300,29 @@ body {
   border-bottom-width: 0.002rem; }
 
 /* breakpoint and up - mega dropdown styles */
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  .logo-img-header {
-    padding-top: 1vh;
-    padding-bottom: 1.5vh;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-link {
+    padding-left: 0vw !important; }
+
+  .icones-nav {
+    width: 2vw; }
+
+  .navbar-brand {
     margin: 0 !important;
+    background-color: red;
+    width: 20%; }
+
+  .logo-img-header {
     width: 100%;
     height: auto; }
 
-  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s, opacity 0.3s linear; }
-
-  /* remove the padding from the navbar so the dropdown hover state is not broken */
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0; }
-
-  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-  .navbar .nav-item {
-    padding: .5rem .5rem;
-    margin: 0 .25rem; }
-
   /* makes the dropdown full width  */
   .little-drop {
-    width: 100vw !important;
-    height: 9vh !important;
-    left: 75vw !important; }
-
-  .navbar .dropdown {
-    position: static; }
-
-  .navbar .dropdown-menu div[class*="p-2"] {
-    flex-direction: row !important; }
-
-  .navbar .dropdown-menu {
-    width: 28vw;
-    height: 50vh;
-    left: 50vw;
-    right: 0;
-    /*  height of nav-item  */
-    top: 8vh; } }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  /* remove the padding from the navbar so the dropdown hover state is not broken */
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0; }
-
-  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-  .navbar .nav-item {
-    padding: .5rem .5rem;
-    margin: 0 .25rem; }
-
-  .logo-img-header {
-    padding-top: 1vh;
-    padding-bottom: 1.5vh;
-    margin: 0 !important;
-    width: 50%;
-    height: auto; }
-
-  /* makes the dropdown full width  */
-  .little-drop {
-    width: 20vw !important;
-    height: 15vh !important;
-    left: 80vw !important; }
+    width: 30vw !important;
+    height: 8vh !important;
+    left: 70vw !important;
+    top: 12vh !important; }
 
   .navbar .dropdown {
     position: static; }
@@ -367,22 +332,63 @@ body {
 
   .navbar .dropdown-menu {
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     left: 0;
     right: 0;
     /*  height of nav-item  */
-    top: 8vh; }
+    top: 12vh;
+    font-size: 1.8vh; } }
+@media (min-width: 1024px) and (orientation: landscape) {
+  .little-drop {
+    width: 20vw !important;
+    height: 10vh !important;
+    left: 75vw !important; }
 
-  /* shows the dropdown menu on hover */
-  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s, opacity 0.3s linear; }
+  .navbar .dropdown {
+    position: static; }
+
+  .navbar .dropdown-menu div[class*="p-2"] {
+    flex-direction: row !important; }
 
   .navbar .dropdown-menu {
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    background-color: #fff; } }
+    width: 50vw;
+    height: 50vh;
+    left: 40vw;
+    right: 0;
+    /*  height of nav-item  */
+    top: 12vh;
+    font-size: 1.8vh; }
+
+  .navbar-brand {
+    margin: 0 !important;
+    background-color: #fcd474;
+    width: 20%; }
+
+  .icones-nav {
+    width: 1vw; }
+
+  .logo-img-header {
+    width: 50%;
+    height: auto; }
+
+  .navbar .nav-item {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 .25rem; } }
+@media screen and (min-device-width: 1025px) and (max-device-width: 2000px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .navbar-brand {
+    margin: 0 !important;
+    width: 20vw;
+    background-color: #0B7FC7; }
+
+  .logo-img-header {
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+    margin: 0 !important;
+    width: 100%;
+    height: auto; }
+
+  .icones-nav {
+    width: 2vw; } }
 .title {
   font-family: Quicksand, sans-serif;
   font-size: 5vh; }
