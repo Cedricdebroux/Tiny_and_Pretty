@@ -1,0 +1,450 @@
+<?php //App__Entity__Products__CLASSMETADATA__
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Products',
+            ],
+            'namespace' => [
+                'App\\Entity',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Products',
+            ],
+            'customRepositoryClassName' => [
+                'App\\Repository\\ProductsRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'id' => true,
+                        'columnName' => 'id',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'name',
+                    ],
+                    'slug' => [
+                        'fieldName' => 'slug',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'slug',
+                    ],
+                    'illustration' => [
+                        'fieldName' => 'illustration',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'illustration',
+                    ],
+                    'subtitle' => [
+                        'fieldName' => 'subtitle',
+                        'type' => 'string',
+                        'scale' => null,
+                        'length' => 255,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'subtitle',
+                    ],
+                    'description' => [
+                        'fieldName' => 'description',
+                        'type' => 'text',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'description',
+                    ],
+                    'price' => [
+                        'fieldName' => 'price',
+                        'type' => 'float',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'price',
+                    ],
+                    'isBest' => [
+                        'fieldName' => 'isBest',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'is_best',
+                    ],
+                    'Soldout' => [
+                        'fieldName' => 'Soldout',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'soldout',
+                    ],
+                    'isNew' => [
+                        'fieldName' => 'isNew',
+                        'type' => 'boolean',
+                        'scale' => null,
+                        'length' => null,
+                        'unique' => false,
+                        'nullable' => false,
+                        'precision' => null,
+                        'columnName' => 'is_new',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'slug' => 'slug',
+                    'illustration' => 'illustration',
+                    'subtitle' => 'subtitle',
+                    'description' => 'description',
+                    'price' => 'price',
+                    'is_best' => 'isBest',
+                    'soldout' => 'Soldout',
+                    'is_new' => 'isNew',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'slug' => 'slug',
+                    'illustration' => 'illustration',
+                    'subtitle' => 'subtitle',
+                    'description' => 'description',
+                    'price' => 'price',
+                    'isBest' => 'is_best',
+                    'Soldout' => 'soldout',
+                    'isNew' => 'is_new',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'products',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'category' => [
+                        'fieldName' => 'category',
+                        'joinTable' => [
+                            'name' => 'products_category',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'products_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'category_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Category',
+                        'mappedBy' => null,
+                        'inversedBy' => 'products',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Products',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'products_id',
+                            'category_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'products_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'category_id' => 'id',
+                        ],
+                    ],
+                    'baby' => [
+                        'fieldName' => 'baby',
+                        'joinTable' => [
+                            'name' => 'products_baby',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'products_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'baby_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Baby',
+                        'mappedBy' => null,
+                        'inversedBy' => 'products',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Products',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'products_id',
+                            'baby_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'products_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'baby_id' => 'id',
+                        ],
+                    ],
+                    'girl' => [
+                        'fieldName' => 'girl',
+                        'joinTable' => [
+                            'name' => 'products_girl',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'products_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'girl_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Girl',
+                        'mappedBy' => null,
+                        'inversedBy' => 'products',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Products',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'products_id',
+                            'girl_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'products_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'girl_id' => 'id',
+                        ],
+                    ],
+                    'boy' => [
+                        'fieldName' => 'boy',
+                        'joinTable' => [
+                            'name' => 'products_boy',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'products_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'boy_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Boy',
+                        'mappedBy' => null,
+                        'inversedBy' => 'products',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Products',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'products_id',
+                            'boy_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'products_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'boy_id' => 'id',
+                        ],
+                    ],
+                    'toys' => [
+                        'fieldName' => 'toys',
+                        'joinTable' => [
+                            'name' => 'products_toys',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'products_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'toys_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Toys',
+                        'mappedBy' => null,
+                        'inversedBy' => 'products',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Products',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'products_id',
+                            'toys_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'products_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'toys_id' => 'id',
+                        ],
+                    ],
+                    'accessory' => [
+                        'fieldName' => 'accessory',
+                        'joinTable' => [
+                            'name' => 'products_accessory',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'products_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'accessory_id',
+                                    'referencedColumnName' => 'id',
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'targetEntity' => 'App\\Entity\\Accessory',
+                        'mappedBy' => null,
+                        'inversedBy' => 'products',
+                        'cascade' => [],
+                        'orphanRemoval' => false,
+                        'fetch' => 2,
+                        'type' => 8,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Products',
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'products_id',
+                            'accessory_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'products_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'accessory_id' => 'id',
+                        ],
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
